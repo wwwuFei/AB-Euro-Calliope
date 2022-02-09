@@ -1,0 +1,2788 @@
+
+
+overrides:
+    transport_demand_exists:
+        techs:
+            demand_heavy_transport.exists: true
+            demand_light_transport.exists: true
+    transport_ev_exists:
+        techs:
+            heavy_transport_ev.exists: true
+            light_transport_ev.exists: true
+    transport_ice_exists:
+        techs:
+            heavy_transport_ice.exists: true
+            light_transport_ice.exists: true
+
+    all_transport:
+        locations:
+            ALB_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1853303191615425  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.025335446165741748  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.433514530356256  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.917054699116257  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.5004492085777386  # (100 Miokm)
+                demand_light_transport:
+            AUT_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18704522312271987  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.006684528863820399  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.473166769861452  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.039967961529209  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.0321952291065415  # (100 Miokm)
+                demand_light_transport:
+            AUT_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19267011798950912  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03749165267362474  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4787216560270426  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0574726201512186  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.065302661023516  # (100 Miokm)
+                demand_light_transport:
+            AUT_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18723030148998376  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.012380747864045211  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4716983560316301  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0353406690806097  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.490719529623029  # (100 Miokm)
+                demand_light_transport:
+            BEL_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19020575728491826  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.116409779138392  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4590340810183646  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.999484501467868  # (0.001 Miokm/MWh)
+                        energy_cap_max: 15.122924895061729  # (100 Miokm)
+                demand_light_transport:
+            BGR_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18653536092940284  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.036095224413513434  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.472566489695442  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0356020517016136  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.068685108024692  # (100 Miokm)
+                demand_light_transport:
+            BIH_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1853183463017154  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02872255998428045  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.447123061814047  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9555718969192672  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.239253110644644  # (100 Miokm)
+                demand_light_transport:
+            CHE_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1906156814585831  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.04667950903351602  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5304505909570332  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.171397511529023  # (0.001 Miokm/MWh)
+                        energy_cap_max: 15.128290502386958  # (100 Miokm)
+                demand_light_transport:
+            CHE_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18846511121223528  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.003740992102712993  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4645057986820516  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.972560908370842  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.171147189496306  # (100 Miokm)
+                demand_light_transport:
+            CYP_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.17502006216324453  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.00957512315270936  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4342741279849294  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9154165724416528  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.3943338055555559  # (100 Miokm)
+                demand_light_transport:
+            CZE_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19018944382206043  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.050842737374611334  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4637109747923904  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.00024990518393  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.551200527625164  # (100 Miokm)
+                demand_light_transport:
+            CZE_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18970138183024463  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03490424257457606  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4797446239595429  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.050234612302771  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.585322972374837  # (100 Miokm)
+                demand_light_transport:
+            DEU_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1923291128339971  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.086469297242996  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4819823454727925  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.068278226454728  # (0.001 Miokm/MWh)
+                        energy_cap_max: 18.744961311415175  # (100 Miokm)
+                demand_light_transport:
+            DEU_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18758624333030885  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.016613879883546866  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4839912675227351  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0746121895524934  # (0.001 Miokm/MWh)
+                        energy_cap_max: 10.908068242486593  # (100 Miokm)
+                demand_light_transport:
+            DEU_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19263933539948155  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.13529957146224803  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.482979470826766  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.071422079246873  # (0.001 Miokm/MWh)
+                        energy_cap_max: 25.229137452783363  # (100 Miokm)
+                demand_light_transport:
+            DEU_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19324252104425713  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.09011916403662694  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4877794176858334  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.086555909988309  # (0.001 Miokm/MWh)
+                        energy_cap_max: 11.424302112643968  # (100 Miokm)
+                demand_light_transport:
+            DEU_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19300429457361346  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.10505097317199326  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4818351425305492  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0678141078971763  # (0.001 Miokm/MWh)
+                        energy_cap_max: 15.930431309776345  # (100 Miokm)
+                demand_light_transport:
+            DEU_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19012224688757756  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03590354384303276  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4826815249499936  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0704826808323546  # (0.001 Miokm/MWh)
+                        energy_cap_max: 15.272348497955656  # (100 Miokm)
+                demand_light_transport:
+            DEU_7.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1907051655707986  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.04905845504528584  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.481202778818531  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.065820318035392  # (0.001 Miokm/MWh)
+                        energy_cap_max: 18.25018263158088  # (100 Miokm)
+                demand_light_transport:
+            DNK_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1891020031721503  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03009149488121141  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.452265766545001  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9769476122038934  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.5042199299065193  # (100 Miokm)
+                demand_light_transport:
+            DNK_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18153570398628335  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.009871327335292284  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4389290389410738  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.93478652606938  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.046140137994715  # (100 Miokm)
+                demand_light_transport:
+            ESP_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19259277432307348  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03389889674589264  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4957131341896306  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0903416983678578  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.7076074724609316  # (100 Miokm)
+                demand_light_transport:
+            ESP_10.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18779971817540128  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.011496849445526211  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4999541095775082  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.1034370775903044  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.274502041522458  # (100 Miokm)
+                demand_light_transport:
+            ESP_11.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18861059347835582  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03061295361140865  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4971074500461072  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0946470982408747  # (0.001 Miokm/MWh)
+                        energy_cap_max: 10.100318745939157  # (100 Miokm)
+                demand_light_transport:
+            ESP_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19358141445543203  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0674237192783897  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.495132699984246  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0885494205689996  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.6613139697741848  # (100 Miokm)
+                demand_light_transport:
+            ESP_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19035911212828818  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.010637867909786299  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.496250386423578  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.092000637903739  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.4842914491244334  # (100 Miokm)
+                demand_light_transport:
+            ESP_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.190869919355932  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.021260436665692137  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.488185255910325  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0670969464436375  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.466296331564311  # (100 Miokm)
+                demand_light_transport:
+            ESP_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19239562655025116  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.015787740216237477  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.492557764119682  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0805984756716716  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.918107296893109  # (100 Miokm)
+                demand_light_transport:
+            ESP_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19185058648245598  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07090594852931764  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4874438169315731  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0648075144830536  # (0.001 Miokm/MWh)
+                        energy_cap_max: 10.95603910430687  # (100 Miokm)
+                demand_light_transport:
+            ESP_7.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18469803112513636  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.016931672192192503  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4777359161615162  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.03483124006251  # (0.001 Miokm/MWh)
+                        energy_cap_max: 9.811874801642276  # (100 Miokm)
+                demand_light_transport:
+            ESP_8.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.191916705653796  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.022589410696883742  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5013734912459558  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.1078198762414933  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.2682297379051737  # (100 Miokm)
+                demand_light_transport:
+            ESP_9.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19154881774739083  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.04445770348439235  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4977861802099894  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0967428965119885  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.405725190842402  # (100 Miokm)
+                demand_light_transport:
+            EST_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18303414809681642  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.010350808991630787  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4552491869483704  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9954589180944335  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.6909873456790125  # (100 Miokm)
+                demand_light_transport:
+            FIN_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19011653280493454  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.017542031250705695  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4708124849306299  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0274235776487894  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.057387813712169  # (100 Miokm)
+                demand_light_transport:
+            FIN_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18794311766994776  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.08047589908723814  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4620140283419516  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.999847433154272  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.758277692460671  # (100 Miokm)
+                demand_light_transport:
+            FRA_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18741041584235582  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02347229183758391  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4508780868199143  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9577993542790812  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.178228272096497  # (100 Miokm)
+                demand_light_transport:
+            FRA_10.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.187491665628554  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.05166104245794378  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4037936773410766  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.811423406292824  # (0.001 Miokm/MWh)
+                        energy_cap_max: 20.08902796780964  # (100 Miokm)
+                demand_light_transport:
+            FRA_11.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18606769598465123  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.006782972444758271  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.460227315967664  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.986864225105543  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.763530415338476  # (100 Miokm)
+                demand_light_transport:
+            FRA_12.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19235884082262505  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07239303326374585  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4602394466191264  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.986901936858268  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.448115254586963  # (100 Miokm)
+                demand_light_transport:
+            FRA_13.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19208983094191903  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0892896570875055  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4582839017553384  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.980822541652192  # (0.001 Miokm/MWh)
+                        energy_cap_max: 10.367741436789329  # (100 Miokm)
+                demand_light_transport:
+            FRA_14.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18959164661381114  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.005142211186355621  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4598831723663592  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.98579435194706  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.2097217716193074  # (100 Miokm)
+                demand_light_transport:
+            FRA_15.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18128736846323454  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0007067889984233125  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.452781828006388  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.96371770228376  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.4661481842997102  # (100 Miokm)
+                demand_light_transport:
+            FRA_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1833954984779378  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.008738360561815189  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4590735607315717  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9832774324007723  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.741223560677404  # (100 Miokm)
+                demand_light_transport:
+            FRA_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1924230449793537  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.08065062186277863  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4484028486794285  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.95010433732303  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.270156199369834  # (100 Miokm)
+                demand_light_transport:
+            FRA_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1877963911403415  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.019995053269228156  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4605648846944792  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9879136583031762  # (0.001 Miokm/MWh)
+                        energy_cap_max: 6.4397775706671165  # (100 Miokm)
+                demand_light_transport:
+            FRA_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1877166476684715  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.01621456617042962  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.46090358209157  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9889666003094253  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.281520893466975  # (100 Miokm)
+                demand_light_transport:
+            FRA_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1885149677412745  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.017985481055791702  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4423800092712966  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9313805423834216  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.3811067011662095  # (100 Miokm)
+                demand_light_transport:
+            FRA_7.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1907966817539562  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.028552608560159426  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4557481049774574  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9729392600867803  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.109191632862928  # (100 Miokm)
+                demand_light_transport:
+            FRA_8.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18758089302995906  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02119371414249081  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4524718155615794  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9627539360180553  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.1773511192783275  # (100 Miokm)
+                demand_light_transport:
+            FRA_9.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18530463622815793  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.006740617292388443  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.463946044652675  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9984250037708637  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.9778201341688173  # (100 Miokm)
+                demand_light_transport:
+            GBR_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18774809573990708  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.06369342769516348  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.428343722646  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.905940344100566  # (0.001 Miokm/MWh)
+                        energy_cap_max: 31.531477684920787  # (100 Miokm)
+                demand_light_transport:
+            GBR_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18867193184531109  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.01673365931172248  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4486993321739146  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9706532632542153  # (0.001 Miokm/MWh)
+                        energy_cap_max: 6.760698234710312  # (100 Miokm)
+                demand_light_transport:
+            GBR_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1915258664252522  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.14737464228534944  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.453231142739751  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9850604314780136  # (0.001 Miokm/MWh)
+                        energy_cap_max: 29.09607787941824  # (100 Miokm)
+                demand_light_transport:
+            GBR_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19314064406250434  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.08744981779502974  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4525954770966114  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9830395743124822  # (0.001 Miokm/MWh)
+                        energy_cap_max: 7.87668986361436  # (100 Miokm)
+                demand_light_transport:
+            GBR_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1925957065881919  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03476703758840291  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.446451825194351  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9635081695508645  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.428292393050257  # (100 Miokm)
+                demand_light_transport:
+            GBR_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1902785494140854  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.008116532995480574  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4555183716993592  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.992331806110447  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.2949264134218508  # (100 Miokm)
+                demand_light_transport:
+            GRC_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18414605910730852  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.038025907971608694  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5699885250750767  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.238855591959826  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.853514730739514  # (100 Miokm)
+                demand_light_transport:
+            GRC_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18668091870334066  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07731138608318015  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5386436872819147  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.1483964276900536  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.90480533716172  # (100 Miokm)
+                demand_light_transport:
+            HRV_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1867097998393896  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.04365886355402338  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4713499094276403  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0435880931044252  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.8406558919753087  # (100 Miokm)
+                demand_light_transport:
+            HUN_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1871115684168355  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.06682683965330323  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4414562430394542  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9446314224207537  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.358098413580247  # (100 Miokm)
+                demand_light_transport:
+            IRL_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1893901672489354  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.053572515117999216  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4421237354946197  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9570599056059996  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.411234956790123  # (100 Miokm)
+                demand_light_transport:
+            ISL_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1878569167130613  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0020118837066369463  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4658929707983324  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0203021982063785  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.5630945996744591  # (100 Miokm)
+                demand_light_transport:
+            ITA_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1854456568864759  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.27803046924469665  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4953809797576587  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.059447032743721  # (0.001 Miokm/MWh)
+                        energy_cap_max: 49.59284643650287  # (100 Miokm)
+                demand_light_transport:
+            ITA_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18145353787374174  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03757552688774193  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5033673439936115  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.083375303985142  # (0.001 Miokm/MWh)
+                        energy_cap_max: 11.000975000537704  # (100 Miokm)
+                demand_light_transport:
+            ITA_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1781046408793933  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.05305053588359176  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.500463482520333  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.074674926325515  # (0.001 Miokm/MWh)
+                        energy_cap_max: 22.531004839712338  # (100 Miokm)
+                demand_light_transport:
+            ITA_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18859362255333018  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.11578923560170078  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.51802471779658  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.127290858758546  # (0.001 Miokm/MWh)
+                        energy_cap_max: 11.802606515201244  # (100 Miokm)
+                demand_light_transport:
+            ITA_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18870227861141695  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.08541168785446672  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.516136044199347  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.121632126851774  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.542672129578994  # (100 Miokm)
+                demand_light_transport:
+            ITA_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18934685300558465  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03201925524508598  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.5110551088102613  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.106408929341839  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.8159855969853784  # (100 Miokm)
+                demand_light_transport:
+            LTU_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1907711600571738  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.024689556375599615  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4728260794090924  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0536297166503896  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.511970811728395  # (100 Miokm)
+                demand_light_transport:
+            LUX_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18764895265877463  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.004722100565275772  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4624022178821736  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0163915123058533  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.9673555895061731  # (100 Miokm)
+                demand_light_transport:
+            LVA_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18771978772682854  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02011381793804518  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4565083800139182  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9996095605959683  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.6843804969135803  # (100 Miokm)
+                demand_light_transport:
+            MKD_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18529386776390072  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.013171451287406185  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4551339171251023  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9792806165233148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.239863926546995  # (100 Miokm)
+                demand_light_transport:
+            MNE_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18532849339604737  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.004745061118228894  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4451129076032352  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9479492638880624  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.3482044511573429  # (100 Miokm)
+                demand_light_transport:
+            NLD_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19147226686071347  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07564648917930718  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4656454034845146  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9994921782799215  # (0.001 Miokm/MWh)
+                        energy_cap_max: 22.153894373456794  # (100 Miokm)
+                demand_light_transport:
+            NOR_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.185277329254749  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.004518145710891587  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.441566382533683  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.949004134735984  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.8152106570667061  # (100 Miokm)
+                demand_light_transport:
+            NOR_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19156105505801355  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.014113081803608235  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.44971804598981  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.974950040999758  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.7398311391114251  # (100 Miokm)
+                demand_light_transport:
+            NOR_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18684883608779737  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.004632150976128738  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4371448922897578  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9349309861041126  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.6897136299429424  # (100 Miokm)
+                demand_light_transport:
+            NOR_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.17865275371346076  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.006197184106438951  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4248946822141195  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.8959398275455306  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.2163930652763755  # (100 Miokm)
+                demand_light_transport:
+            NOR_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1902314954969405  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.007873301125064595  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4658552451156026  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.026313085871657  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.5779318314505618  # (100 Miokm)
+                demand_light_transport:
+            NOR_6.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18934847707002078  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.005678968788903004  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4514319189891873  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9804051224600254  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.5294321296612875  # (100 Miokm)
+                demand_light_transport:
+            NOR_7.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.16819358922754615  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.00011385327153649232  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.442965908430909  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.953458681705273  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0749459897913613  # (100 Miokm)
+                demand_light_transport:
+            POL_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19021441752400944  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07655161494850007  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4199725296221357  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.874064268322975  # (0.001 Miokm/MWh)
+                        energy_cap_max: 12.690973865834188  # (100 Miokm)
+                demand_light_transport:
+            POL_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19241915662164372  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.11525150706968562  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.455071460354306  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9849101874103114  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.41633944967315  # (100 Miokm)
+                demand_light_transport:
+            POL_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19206451771150834  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.14197442678286823  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4439682779936593  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9498452316442334  # (0.001 Miokm/MWh)
+                        energy_cap_max: 12.420262675667505  # (100 Miokm)
+                demand_light_transport:
+            POL_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19087550104528822  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.09154555297237738  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4432336001381707  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9475250458030704  # (0.001 Miokm/MWh)
+                        energy_cap_max: 12.12050398772355  # (100 Miokm)
+                demand_light_transport:
+            POL_5.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19219630623438733  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.10210058614200206  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.446857069073296  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.958968321595807  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.39283574641026  # (100 Miokm)
+                demand_light_transport:
+            PRT_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1894665182502964  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.021907456751694743  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.466847713315321  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.015560906736882  # (0.001 Miokm/MWh)
+                        energy_cap_max: 6.442434269476069  # (100 Miokm)
+                demand_light_transport:
+            PRT_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19060521556424198  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.027593470675458837  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4452548878638702  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9478436703704207  # (0.001 Miokm/MWh)
+                        energy_cap_max: 6.912200761388131  # (100 Miokm)
+                demand_light_transport:
+            ROU_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18136928795298168  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.03324028568338619  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4464070270214342  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.964005171610122  # (0.001 Miokm/MWh)
+                        energy_cap_max: 3.288429275025226  # (100 Miokm)
+                demand_light_transport:
+            ROU_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1729299946044523  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02146208096528709  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.42700533639627  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.902280058676839  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.072154819658116  # (100 Miokm)
+                demand_light_transport:
+            ROU_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.1748000931151064  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.02433752816553204  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4607211829399265  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0095446510134063  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.478774050378385  # (100 Miokm)
+                demand_light_transport:
+            SRB_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18521276202101108  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990148  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.050223355123996144  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4540570420435353  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.9790855027921674  # (0.001 Miokm/MWh)
+                        energy_cap_max: 4.773446017094138  # (100 Miokm)
+                demand_light_transport:
+            SVK_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19041211764272337  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.07069389525600557  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4384145820223146  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.943296959746029  # (0.001 Miokm/MWh)
+                        energy_cap_max: 5.024945330246914  # (100 Miokm)
+                demand_light_transport:
+            SVN_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19021953269297295  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.015217007303356924  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4735672015959067  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0486784874791177  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.913537675925926  # (100 Miokm)
+                demand_light_transport:
+            SWE_1.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.19155354157475385  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.0038310854766079034  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4565258046181326  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.996473556964759  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.31250901266074044  # (100 Miokm)
+                demand_light_transport:
+            SWE_2.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18991432591486007  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.30788177339901474  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.008872303165510185  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4627970004084114  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.0164309616256717  # (0.001 Miokm/MWh)
+                        energy_cap_max: 1.1312651825541367  # (100 Miokm)
+                demand_light_transport:
+            SWE_3.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18692693588984594  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.037896893044833485  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4574862449266943  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 2.999530054725574  # (0.001 Miokm/MWh)
+                        energy_cap_max: 8.505853095600816  # (100 Miokm)
+                demand_light_transport:
+            SWE_4.techs:
+                heavy_transport_ice:
+                    constraints:
+                        energy_eff: 0.18485121385481898  # (0.001 Miokm/MWh)
+                heavy_transport_ev:
+                    constraints:
+                        energy_eff: 0.3078817733990147  # (0.001 Miokm/MWh)
+                        energy_cap_max: 0.00842473201393082  # (100 Miokm)
+                demand_heavy_transport:
+                light_transport_ice:
+                    constraints:
+                        energy_eff: 1.4633878953778543  # (0.001 Miokm/MWh)
+                light_transport_ev:
+                    constraints:
+                        energy_eff: 3.018311421176232  # (0.001 Miokm/MWh)
+                        energy_cap_max: 2.4602356875793694  # (100 Miokm)
+                demand_light_transport:
+
+    annual_transport_distance:
+        group_constraints:
+            heavy_ALB_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ALB_1]
+                carrier_con_equals:
+                    heavy_transport: -7.88424876296017  # (100 Miokm)
+            light_ALB_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ALB_1]
+                carrier_con_equals:
+                    light_transport: -70.34122385625308  # (100 Miokm)
+
+            heavy_AUT_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [AUT_1]
+                carrier_con_equals:
+                    heavy_transport: -4.77828004567  # (100 Miokm)
+            light_AUT_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [AUT_1]
+                carrier_con_equals:
+                    light_transport: -172.98907861626557  # (100 Miokm)
+
+            heavy_AUT_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [AUT_2]
+                carrier_con_equals:
+                    heavy_transport: -25.889050396775147  # (100 Miokm)
+            light_AUT_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [AUT_2]
+                carrier_con_equals:
+                    light_transport: -230.79086811943773  # (100 Miokm)
+
+            heavy_AUT_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [AUT_3]
+                carrier_con_equals:
+                    heavy_transport: -8.839854903372103  # (100 Miokm)
+            light_AUT_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [AUT_3]
+                carrier_con_equals:
+                    light_transport: -313.65855203697504  # (100 Miokm)
+
+            heavy_BEL_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [BEL_1]
+                carrier_con_equals:
+                    heavy_transport: -42.89290912263632  # (100 Miokm)
+            light_BEL_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [BEL_1]
+                carrier_con_equals:
+                    light_transport: -993.1171073417258  # (100 Miokm)
+
+            heavy_BGR_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [BGR_1]
+                carrier_con_equals:
+                    heavy_transport: -16.16149778041394  # (100 Miokm)
+            light_BGR_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [BGR_1]
+                carrier_con_equals:
+                    light_transport: -263.8029736530413  # (100 Miokm)
+
+            heavy_BIH_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [BIH_1]
+                carrier_con_equals:
+                    heavy_transport: -8.939389867636656  # (100 Miokm)
+            light_BIH_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [BIH_1]
+                carrier_con_equals:
+                    light_transport: -95.60528825063867  # (100 Miokm)
+
+            heavy_CHE_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [CHE_1]
+                carrier_con_equals:
+                    heavy_transport: -21.317664449657926  # (100 Miokm)
+            light_CHE_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [CHE_1]
+                carrier_con_equals:
+                    light_transport: -636.3998956177978  # (100 Miokm)
+
+            heavy_CHE_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [CHE_2]
+                carrier_con_equals:
+                    heavy_transport: -1.7586847150632055  # (100 Miokm)
+            light_CHE_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [CHE_2]
+                carrier_con_equals:
+                    light_transport: -99.33551847781737  # (100 Miokm)
+
+            heavy_CYP_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [CYP_1]
+                carrier_con_equals:
+                    heavy_transport: -2.2561631935314272  # (100 Miokm)
+            light_CYP_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [CYP_1]
+                carrier_con_equals:
+                    light_transport: -65.12878474764725  # (100 Miokm)
+
+            heavy_CZE_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [CZE_1]
+                carrier_con_equals:
+                    heavy_transport: -25.135241203169976  # (100 Miokm)
+            light_CZE_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [CZE_1]
+                carrier_con_equals:
+                    light_transport: -288.92577225327597  # (100 Miokm)
+
+            heavy_CZE_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [CZE_2]
+                carrier_con_equals:
+                    heavy_transport: -17.267874160961192  # (100 Miokm)
+            light_CZE_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [CZE_2]
+                carrier_con_equals:
+                    light_transport: -209.2861769043888  # (100 Miokm)
+
+            heavy_DEU_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_1]
+                carrier_con_equals:
+                    heavy_transport: -66.41877389306454  # (100 Miokm)
+            light_DEU_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_1]
+                carrier_con_equals:
+                    light_transport: -895.5886912906445  # (100 Miokm)
+
+            heavy_DEU_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_2]
+                carrier_con_equals:
+                    heavy_transport: -12.39320338131848  # (100 Miokm)
+            light_DEU_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_2]
+                carrier_con_equals:
+                    light_transport: -520.2330152311397  # (100 Miokm)
+
+            heavy_DEU_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_3]
+                carrier_con_equals:
+                    heavy_transport: -104.12864613872995  # (100 Miokm)
+            light_DEU_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_3]
+                carrier_con_equals:
+                    light_transport: -1204.3205997097873  # (100 Miokm)
+
+            heavy_DEU_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_4]
+                carrier_con_equals:
+                    heavy_transport: -69.62070577436849  # (100 Miokm)
+            light_DEU_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_4]
+                carrier_con_equals:
+                    light_transport: -543.0302253035222  # (100 Miokm)
+
+            heavy_DEU_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_5]
+                carrier_con_equals:
+                    heavy_transport: -81.03449649751876  # (100 Miokm)
+            light_DEU_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_5]
+                carrier_con_equals:
+                    light_transport: -761.2167831374919  # (100 Miokm)
+
+            heavy_DEU_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_6]
+                carrier_con_equals:
+                    heavy_transport: -27.20213067847086  # (100 Miokm)
+            light_DEU_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_6]
+                carrier_con_equals:
+                    light_transport: -729.2229779264401  # (100 Miokm)
+
+            heavy_DEU_7_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DEU_7]
+                carrier_con_equals:
+                    heavy_transport: -37.30325037874675  # (100 Miokm)
+            light_DEU_7_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DEU_7]
+                carrier_con_equals:
+                    light_transport: -872.5533444226648  # (100 Miokm)
+
+            heavy_DNK_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DNK_1]
+                carrier_con_equals:
+                    heavy_transport: -18.51800785722449  # (100 Miokm)
+            light_DNK_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DNK_1]
+                carrier_con_equals:
+                    light_transport: -220.8516184328904  # (100 Miokm)
+
+            heavy_DNK_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [DNK_2]
+                carrier_con_equals:
+                    heavy_transport: -6.485484116270294  # (100 Miokm)
+            light_DNK_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [DNK_2]
+                carrier_con_equals:
+                    light_transport: -193.8673615341225  # (100 Miokm)
+
+            heavy_ESP_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_1]
+                carrier_con_equals:
+                    heavy_transport: -15.903874321539236  # (100 Miokm)
+            light_ESP_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_1]
+                carrier_con_equals:
+                    light_transport: -170.23022154048027  # (100 Miokm)
+
+            heavy_ESP_10_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_10]
+                carrier_con_equals:
+                    heavy_transport: -5.387342437649961  # (100 Miokm)
+            light_ESP_10_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_10]
+                carrier_con_equals:
+                    light_transport: -196.1461971545433  # (100 Miokm)
+
+            heavy_ESP_11_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_11]
+                carrier_con_equals:
+                    heavy_transport: -14.347927557825509  # (100 Miokm)
+            light_ESP_11_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_11]
+                carrier_con_equals:
+                    light_transport: -463.6564036915014  # (100 Miokm)
+
+            heavy_ESP_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_2]
+                carrier_con_equals:
+                    heavy_transport: -31.640092862923623  # (100 Miokm)
+            light_ESP_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_2]
+                carrier_con_equals:
+                    light_transport: -168.1178846911271  # (100 Miokm)
+
+            heavy_ESP_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_3]
+                carrier_con_equals:
+                    heavy_transport: -4.988026987212502  # (100 Miokm)
+            light_ESP_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_3]
+                carrier_con_equals:
+                    light_transport: -114.05490453861385  # (100 Miokm)
+
+            heavy_ESP_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_4]
+                carrier_con_equals:
+                    heavy_transport: -9.970156578990903  # (100 Miokm)
+            light_ESP_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_4]
+                carrier_con_equals:
+                    light_transport: -205.2730753385431  # (100 Miokm)
+
+            heavy_ESP_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_5]
+                carrier_con_equals:
+                    heavy_transport: -7.40654855654251  # (100 Miokm)
+            light_ESP_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_5]
+                carrier_con_equals:
+                    light_transport: -88.10505627553431  # (100 Miokm)
+
+            heavy_ESP_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_6]
+                carrier_con_equals:
+                    heavy_transport: -33.259768950824196  # (100 Miokm)
+            light_ESP_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_6]
+                carrier_con_equals:
+                    light_transport: -503.5951519953419  # (100 Miokm)
+
+            heavy_ESP_7_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_7]
+                carrier_con_equals:
+                    heavy_transport: -7.927903637948792  # (100 Miokm)
+            light_ESP_7_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_7]
+                carrier_con_equals:
+                    light_transport: -451.59600479337763  # (100 Miokm)
+
+            heavy_ESP_8_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_8]
+                carrier_con_equals:
+                    heavy_transport: -10.596163651370807  # (100 Miokm)
+            light_ESP_8_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_8]
+                carrier_con_equals:
+                    light_transport: -149.9421682702419  # (100 Miokm)
+
+            heavy_ESP_9_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ESP_9]
+                carrier_con_equals:
+                    heavy_transport: -20.85214458592754  # (100 Miokm)
+            light_ESP_9_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ESP_9]
+                carrier_con_equals:
+                    light_transport: -339.9296089322347  # (100 Miokm)
+
+            heavy_EST_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [EST_1]
+                carrier_con_equals:
+                    heavy_transport: -4.012636021729902  # (100 Miokm)
+            light_EST_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [EST_1]
+                carrier_con_equals:
+                    light_transport: -68.40297801195157  # (100 Miokm)
+
+            heavy_FIN_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FIN_1]
+                carrier_con_equals:
+                    heavy_transport: -4.363233450538173  # (100 Miokm)
+            light_FIN_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FIN_1]
+                carrier_con_equals:
+                    light_transport: -55.47996464528738  # (100 Miokm)
+
+            heavy_FIN_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FIN_2]
+                carrier_con_equals:
+                    heavy_transport: -21.035588621103315  # (100 Miokm)
+            light_FIN_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FIN_2]
+                carrier_con_equals:
+                    light_transport: -410.5143694739415  # (100 Miokm)
+
+            heavy_FRA_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_1]
+                carrier_con_equals:
+                    heavy_transport: -12.724998759761995  # (100 Miokm)
+            light_FRA_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_1]
+                carrier_con_equals:
+                    light_transport: -446.6610476819975  # (100 Miokm)
+
+            heavy_FRA_10_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_10]
+                carrier_con_equals:
+                    heavy_transport: -27.998362173705807  # (100 Miokm)
+            light_FRA_10_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_10]
+                carrier_con_equals:
+                    light_transport: -1166.9221109844948  # (100 Miokm)
+
+            heavy_FRA_11_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_11]
+                carrier_con_equals:
+                    heavy_transport: -3.695921036799243  # (100 Miokm)
+            light_FRA_11_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_11]
+                carrier_con_equals:
+                    light_transport: -149.16245403182361  # (100 Miokm)
+
+            heavy_FRA_12_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_12]
+                carrier_con_equals:
+                    heavy_transport: -38.52873225847939  # (100 Miokm)
+            light_FRA_12_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_12]
+                carrier_con_equals:
+                    light_transport: -402.0083286386312  # (100 Miokm)
+
+            heavy_FRA_13_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_13]
+                carrier_con_equals:
+                    heavy_transport: -47.568668963030994  # (100 Miokm)
+            light_FRA_13_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_13]
+                carrier_con_equals:
+                    light_transport: -560.9698199369886  # (100 Miokm)
+
+            heavy_FRA_14_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_14]
+                carrier_con_equals:
+                    heavy_transport: -2.7650390610832187  # (100 Miokm)
+            light_FRA_14_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_14]
+                carrier_con_equals:
+                    light_transport: -65.32332738397854  # (100 Miokm)
+
+            heavy_FRA_15_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_15]
+                carrier_con_equals:
+                    heavy_transport: -0.3922093287144133  # (100 Miokm)
+            light_FRA_15_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_15]
+                carrier_con_equals:
+                    light_transport: -25.397714959664935  # (100 Miokm)
+
+            heavy_FRA_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_2]
+                carrier_con_equals:
+                    heavy_transport: -4.810000272149356  # (100 Miokm)
+            light_FRA_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_2]
+                carrier_con_equals:
+                    light_transport: -256.28000754639777  # (100 Miokm)
+
+            heavy_FRA_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_3]
+                carrier_con_equals:
+                    heavy_transport: -42.91337271375203  # (100 Miokm)
+            light_FRA_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_3]
+                carrier_con_equals:
+                    light_transport: -453.10539108401605  # (100 Miokm)
+
+            heavy_FRA_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_4]
+                carrier_con_equals:
+                    heavy_transport: -10.824163890490272  # (100 Miokm)
+            light_FRA_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_4]
+                carrier_con_equals:
+                    light_transport: -347.44196217227415  # (100 Miokm)
+
+            heavy_FRA_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_5]
+                carrier_con_equals:
+                    heavy_transport: -8.78025858943284  # (100 Miokm)
+            light_FRA_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_5]
+                carrier_con_equals:
+                    light_transport: -284.8301761183843  # (100 Miokm)
+
+            heavy_FRA_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_6]
+                carrier_con_equals:
+                    heavy_transport: -9.710074221246664  # (100 Miokm)
+            light_FRA_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_6]
+                carrier_con_equals:
+                    light_transport: -297.0986074895257  # (100 Miokm)
+
+            heavy_FRA_7_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_7]
+                carrier_con_equals:
+                    heavy_transport: -15.284379777885711  # (100 Miokm)
+            light_FRA_7_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_7]
+                carrier_con_equals:
+                    light_transport: -277.3285794438263  # (100 Miokm)
+
+            heavy_FRA_8_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_8]
+                carrier_con_equals:
+                    heavy_transport: -11.482349230884246  # (100 Miokm)
+            light_FRA_8_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_8]
+                carrier_con_equals:
+                    light_transport: -391.2058690297504  # (100 Miokm)
+
+            heavy_FRA_9_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [FRA_9]
+                carrier_con_equals:
+                    heavy_transport: -3.6834751947898354  # (100 Miokm)
+            light_FRA_9_annual_distance:
+                techs: [demand_light_transport]
+                locs: [FRA_9]
+                carrier_con_equals:
+                    light_transport: -159.98249810835108  # (100 Miokm)
+
+            heavy_GBR_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_1]
+                carrier_con_equals:
+                    heavy_transport: -36.38527812517968  # (100 Miokm)
+            light_GBR_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_1]
+                carrier_con_equals:
+                    light_transport: -1680.4755440807694  # (100 Miokm)
+
+            heavy_GBR_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_2]
+                carrier_con_equals:
+                    heavy_transport: -9.423508940163986  # (100 Miokm)
+            light_GBR_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_2]
+                carrier_con_equals:
+                    light_transport: -348.7070977760175  # (100 Miokm)
+
+            heavy_GBR_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_3]
+                carrier_con_equals:
+                    heavy_transport: -79.5068757061257  # (100 Miokm)
+            light_GBR_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_3]
+                carrier_con_equals:
+                    light_transport: -1490.0489417988401  # (100 Miokm)
+
+            heavy_GBR_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_4]
+                carrier_con_equals:
+                    heavy_transport: -46.08273045695447  # (100 Miokm)
+            light_GBR_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_4]
+                carrier_con_equals:
+                    light_transport: -403.7790348301569  # (100 Miokm)
+
+            heavy_GBR_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_5]
+                carrier_con_equals:
+                    heavy_transport: -18.465595899116412  # (100 Miokm)
+            light_GBR_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_5]
+                carrier_con_equals:
+                    light_transport: -229.22013668265106  # (100 Miokm)
+
+            heavy_GBR_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GBR_6]
+                carrier_con_equals:
+                    heavy_transport: -4.460677305713309  # (100 Miokm)
+            light_GBR_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GBR_6]
+                carrier_con_equals:
+                    light_transport: -117.10543424734803  # (100 Miokm)
+
+            heavy_GRC_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GRC_1]
+                carrier_con_equals:
+                    heavy_transport: -9.434509929402067  # (100 Miokm)
+            light_GRC_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GRC_1]
+                carrier_con_equals:
+                    light_transport: -216.5383532787239  # (100 Miokm)
+
+            heavy_GRC_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [GRC_2]
+                carrier_con_equals:
+                    heavy_transport: -18.005538302884478  # (100 Miokm)
+            light_GRC_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [GRC_2]
+                carrier_con_equals:
+                    light_transport: -339.1444611621781  # (100 Miokm)
+
+            heavy_HRV_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [HRV_1]
+                carrier_con_equals:
+                    heavy_transport: -10.580828843702365  # (100 Miokm)
+            light_HRV_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [HRV_1]
+                carrier_con_equals:
+                    light_transport: -210.25824222223204  # (100 Miokm)
+
+            heavy_HUN_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [HUN_1]
+                carrier_con_equals:
+                    heavy_transport: -26.1211987567923  # (100 Miokm)
+            light_HUN_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [HUN_1]
+                carrier_con_equals:
+                    light_transport: -319.3231385393319  # (100 Miokm)
+
+            heavy_IRL_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [IRL_1]
+                carrier_con_equals:
+                    heavy_transport: -20.437398543047717  # (100 Miokm)
+            light_IRL_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [IRL_1]
+                carrier_con_equals:
+                    light_transport: -378.293894705993  # (100 Miokm)
+
+            heavy_ISL_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ISL_1]
+                carrier_con_equals:
+                    heavy_transport: -1.2936693861077622  # (100 Miokm)
+            light_ISL_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ISL_1]
+                carrier_con_equals:
+                    light_transport: -31.144681025671733  # (100 Miokm)
+
+            heavy_ITA_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_1]
+                carrier_con_equals:
+                    heavy_transport: -63.28227382506595  # (100 Miokm)
+            light_ITA_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_1]
+                carrier_con_equals:
+                    light_transport: -2082.0785380492143  # (100 Miokm)
+
+            heavy_ITA_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_2]
+                carrier_con_equals:
+                    heavy_transport: -9.882978256324016  # (100 Miokm)
+            light_ITA_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_2]
+                carrier_con_equals:
+                    light_transport: -456.51353667824054  # (100 Miokm)
+
+            heavy_ITA_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_3]
+                carrier_con_equals:
+                    heavy_transport: -16.04728081434136  # (100 Miokm)
+            light_ITA_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_3]
+                carrier_con_equals:
+                    light_transport: -938.9327031862274  # (100 Miokm)
+
+            heavy_ITA_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_4]
+                carrier_con_equals:
+                    heavy_transport: -23.82551756553676  # (100 Miokm)
+            light_ITA_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_4]
+                carrier_con_equals:
+                    light_transport: -479.592395410506  # (100 Miokm)
+
+            heavy_ITA_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_5]
+                carrier_con_equals:
+                    heavy_transport: -17.51682038955946  # (100 Miokm)
+            light_ITA_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_5]
+                carrier_con_equals:
+                    light_transport: -348.05957736878645  # (100 Miokm)
+
+            heavy_ITA_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ITA_6]
+                carrier_con_equals:
+                    heavy_transport: -6.440590623310939  # (100 Miokm)
+            light_ITA_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ITA_6]
+                carrier_con_equals:
+                    light_transport: -115.56898855036368  # (100 Miokm)
+
+            heavy_LTU_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [LTU_1]
+                carrier_con_equals:
+                    heavy_transport: -7.867213620877701  # (100 Miokm)
+            light_LTU_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [LTU_1]
+                carrier_con_equals:
+                    light_transport: -181.08052605745038  # (100 Miokm)
+
+            heavy_LUX_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [LUX_1]
+                carrier_con_equals:
+                    heavy_transport: -2.497968044026816  # (100 Miokm)
+            light_LUX_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [LUX_1]
+                carrier_con_equals:
+                    light_transport: -59.560236297389466  # (100 Miokm)
+
+            heavy_LVA_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [LVA_1]
+                carrier_con_equals:
+                    heavy_transport: -5.79190814037272  # (100 Miokm)
+            light_LVA_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [LVA_1]
+                carrier_con_equals:
+                    light_transport: -74.82183754414054  # (100 Miokm)
+
+            heavy_MKD_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [MKD_1]
+                carrier_con_equals:
+                    heavy_transport: -4.100749689886753  # (100 Miokm)
+            light_MKD_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [MKD_1]
+                carrier_con_equals:
+                    light_transport: -50.52449771615414  # (100 Miokm)
+
+            heavy_MNE_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [MNE_1]
+                carrier_con_equals:
+                    heavy_transport: -1.4766431858150195  # (100 Miokm)
+            light_MNE_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [MNE_1]
+                carrier_con_equals:
+                    light_transport: -14.926033598707638  # (100 Miokm)
+
+            heavy_NLD_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NLD_1]
+                carrier_con_equals:
+                    heavy_transport: -60.66172719925225  # (100 Miokm)
+            light_NLD_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NLD_1]
+                carrier_con_equals:
+                    light_transport: -1218.2204275047452  # (100 Miokm)
+
+            heavy_NOR_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_1]
+                carrier_con_equals:
+                    heavy_transport: -3.010376311632234  # (100 Miokm)
+            light_NOR_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_1]
+                carrier_con_equals:
+                    light_transport: -53.3777020109818  # (100 Miokm)
+
+            heavy_NOR_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_2]
+                carrier_con_equals:
+                    heavy_transport: -8.686246344429486  # (100 Miokm)
+            light_NOR_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_2]
+                carrier_con_equals:
+                    light_transport: -48.2289458080063  # (100 Miokm)
+
+            heavy_NOR_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_3]
+                carrier_con_equals:
+                    heavy_transport: -3.023903387092  # (100 Miokm)
+            light_NOR_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_3]
+                carrier_con_equals:
+                    light_transport: -45.26901063471274  # (100 Miokm)
+
+            heavy_NOR_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_4]
+                carrier_con_equals:
+                    heavy_transport: -4.522725976072283  # (100 Miokm)
+            light_NOR_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_4]
+                carrier_con_equals:
+                    light_transport: -146.44668742885685  # (100 Miokm)
+
+            heavy_NOR_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_5]
+                carrier_con_equals:
+                    heavy_transport: -4.925291510175825  # (100 Miokm)
+            light_NOR_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_5]
+                carrier_con_equals:
+                    light_transport: -37.34958655190483  # (100 Miokm)
+
+            heavy_NOR_6_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_6]
+                carrier_con_equals:
+                    heavy_transport: -3.591707155373351  # (100 Miokm)
+            light_NOR_6_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_6]
+                carrier_con_equals:
+                    light_transport: -34.48132389136636  # (100 Miokm)
+
+            heavy_NOR_7_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [NOR_7]
+                carrier_con_equals:
+                    heavy_transport: -0.09781250322665379  # (100 Miokm)
+            light_NOR_7_annual_distance:
+                techs: [demand_light_transport]
+                locs: [NOR_7]
+                carrier_con_equals:
+                    light_transport: -4.903532614318369  # (100 Miokm)
+
+            heavy_POL_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [POL_1]
+                carrier_con_equals:
+                    heavy_transport: -24.149709854551734  # (100 Miokm)
+            light_POL_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [POL_1]
+                carrier_con_equals:
+                    light_transport: -375.79964345595164  # (100 Miokm)
+
+            heavy_POL_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [POL_2]
+                carrier_con_equals:
+                    heavy_transport: -34.87644212085281  # (100 Miokm)
+            light_POL_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [POL_2]
+                carrier_con_equals:
+                    light_transport: -234.08229984409644  # (100 Miokm)
+
+            heavy_POL_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [POL_3]
+                carrier_con_equals:
+                    heavy_transport: -43.2466372339055  # (100 Miokm)
+            light_POL_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [POL_3]
+                carrier_con_equals:
+                    light_transport: -352.2107775097939  # (100 Miokm)
+
+            heavy_POL_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [POL_4]
+                carrier_con_equals:
+                    heavy_transport: -28.516525619844863  # (100 Miokm)
+            light_POL_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [POL_4]
+                carrier_con_equals:
+                    light_transport: -344.1564529610542  # (100 Miokm)
+
+            heavy_POL_5_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [POL_5]
+                carrier_con_equals:
+                    heavy_transport: -31.024635482245436  # (100 Miokm)
+            light_POL_5_annual_distance:
+                techs: [demand_light_transport]
+                locs: [POL_5]
+                carrier_con_equals:
+                    light_transport: -236.794936983059  # (100 Miokm)
+
+            heavy_PRT_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [PRT_1]
+                carrier_con_equals:
+                    heavy_transport: -8.601553458978366  # (100 Miokm)
+            light_PRT_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [PRT_1]
+                carrier_con_equals:
+                    light_transport: -340.20842309836866  # (100 Miokm)
+
+            heavy_PRT_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [PRT_2]
+                carrier_con_equals:
+                    heavy_transport: -10.846661083187122  # (100 Miokm)
+            light_PRT_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [PRT_2]
+                carrier_con_equals:
+                    light_transport: -359.0379345098055  # (100 Miokm)
+
+            heavy_ROU_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ROU_1]
+                carrier_con_equals:
+                    heavy_transport: -10.945256606139836  # (100 Miokm)
+            light_ROU_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ROU_1]
+                carrier_con_equals:
+                    light_transport: -127.39497540870235  # (100 Miokm)
+
+            heavy_ROU_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ROU_2]
+                carrier_con_equals:
+                    heavy_transport: -9.834475267282377  # (100 Miokm)
+            light_ROU_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ROU_2]
+                carrier_con_equals:
+                    light_transport: -201.89260116346773  # (100 Miokm)
+
+            heavy_ROU_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [ROU_3]
+                carrier_con_equals:
+                    heavy_transport: -10.2615889281068  # (100 Miokm)
+            light_ROU_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [ROU_3]
+                carrier_con_equals:
+                    light_transport: -170.15450653519832  # (100 Miokm)
+
+            heavy_SRB_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SRB_1]
+                carrier_con_equals:
+                    heavy_transport: -15.658606202183563  # (100 Miokm)
+            light_SRB_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SRB_1]
+                carrier_con_equals:
+                    light_transport: -198.44212230459362  # (100 Miokm)
+
+            heavy_SVK_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SVK_1]
+                carrier_con_equals:
+                    heavy_transport: -20.706477441112728  # (100 Miokm)
+            light_SVK_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SVK_1]
+                carrier_con_equals:
+                    light_transport: -177.04081001960472  # (100 Miokm)
+
+            heavy_SVN_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SVN_1]
+                carrier_con_equals:
+                    heavy_transport: -7.898439645795484  # (100 Miokm)
+            light_SVN_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SVN_1]
+                carrier_con_equals:
+                    light_transport: -167.65671401478355  # (100 Miokm)
+
+            heavy_SWE_1_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SWE_1]
+                carrier_con_equals:
+                    heavy_transport: -2.381633861862473  # (100 Miokm)
+            light_SWE_1_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SWE_1]
+                carrier_con_equals:
+                    light_transport: -17.81783995854648  # (100 Miokm)
+
+            heavy_SWE_2_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SWE_2]
+                carrier_con_equals:
+                    heavy_transport: -5.6731301858671515  # (100 Miokm)
+            light_SWE_2_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SWE_2]
+                carrier_con_equals:
+                    light_transport: -64.23745132527465  # (100 Miokm)
+
+            heavy_SWE_3_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SWE_3]
+                carrier_con_equals:
+                    heavy_transport: -25.562968509173956  # (100 Miokm)
+            light_SWE_3_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SWE_3]
+                carrier_con_equals:
+                    light_transport: -484.66208938076045  # (100 Miokm)
+
+            heavy_SWE_4_annual_distance:
+                techs: [demand_heavy_transport]
+                locs: [SWE_4]
+                carrier_con_equals:
+                    heavy_transport: -5.908296355794489  # (100 Miokm)
+            light_SWE_4_annual_distance:
+                techs: [demand_light_transport]
+                locs: [SWE_4]
+                carrier_con_equals:
+                    light_transport: -139.64787098665334  # (100 Miokm)
+
+
+    monthly_transport_demand_range:
+        techs:
+            heavy_transport_ev:
+                constraints:
+                    carrier_prod_per_month_min_time_varying: file=demand-min-heavy-ev.csv
+                    carrier_prod_per_month_max_time_varying: file=demand-max-heavy-ev.csv
+            light_transport_ev:
+                constraints:
+                    carrier_prod_per_month_min_time_varying: file=demand-min-light-ev.csv
+                    carrier_prod_per_month_max_time_varying: file=demand-max-light-ev.csv
+
+    monthly_transport_demand_equality:
+        techs:
+            heavy_transport_ev:
+                constraints:
+                    carrier_prod_per_month_equals_time_varying: file=demand-equals-heavy-ev.csv
+            light_transport_ev:
+                constraints:
+                    carrier_prod_per_month_equals_time_varying: file=demand-equals-light-ev.csv
+
+scenarios:
+    transport: [all_transport, annual_transport_distance, transport_demand_exists, transport_ev_exists, transport_ice_exists, monthly_transport_demand_equality]

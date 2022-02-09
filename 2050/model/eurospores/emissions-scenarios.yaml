@@ -1,0 +1,147 @@
+
+overrides:
+    2030_current:
+        group_constraints:
+            systemwide_co2_max_0:
+                locs: ['AUT_1', 'AUT_2', 'AUT_3', 'BEL_1', 'BGR_1', 'CYP_1', 'CZE_1', 'CZE_2', 'DEU_1', 'DEU_2', 'DEU_3', 'DEU_4', 'DEU_5', 'DEU_6', 'DEU_7', 'DNK_1', 'DNK_2', 'ESP_1', 'ESP_10', 'ESP_11', 'ESP_2', 'ESP_3', 'ESP_4', 'ESP_5', 'ESP_6', 'ESP_7', 'ESP_8', 'ESP_9', 'EST_1', 'FIN_1', 'FIN_2', 'FRA_1', 'FRA_10', 'FRA_11', 'FRA_12', 'FRA_13', 'FRA_14', 'FRA_15', 'FRA_2', 'FRA_3', 'FRA_4', 'FRA_5', 'FRA_6', 'FRA_7', 'FRA_8', 'FRA_9', 'GBR_1', 'GBR_2', 'GBR_3', 'GBR_4', 'GBR_5', 'GBR_6', 'GRC_1', 'GRC_2', 'HRV_1', 'HUN_1', 'IRL_1', 'ITA_1', 'ITA_2', 'ITA_3', 'ITA_4', 'ITA_5', 'ITA_6', 'LTU_1', 'LUX_1', 'LVA_1', 'NLD_1', 'POL_1', 'POL_2', 'POL_3', 'POL_4', 'POL_5', 'PRT_1', 'PRT_2', 'ROU_1', 'ROU_2', 'ROU_3', 'SVK_1', 'SVN_1', 'SWE_1', 'SWE_2', 'SWE_3', 'SWE_4']
+                cost_max.co2: 2494.922  # (1e+06 tCO2)
+            systemwide_co2_max_1:
+                locs: ['CHE_1', 'CHE_2']
+                cost_max.co2: 22.683999999999997  # (1e+06 tCO2)
+            systemwide_co2_max_2:
+                locs: ['NOR_1', 'NOR_2', 'NOR_3', 'NOR_4', 'NOR_5', 'NOR_6', 'NOR_7']
+                cost_max.co2: 22.896000000000004  # (1e+06 tCO2)
+            systemwide_co2_max_3:
+                locs: ['ISL_1']
+                cost_max.co2: 1.4310000000000003  # (1e+06 tCO2)
+            systemwide_co2_max_4:
+                locs: ['ALB_1']
+                cost_max.co2: 4.49175  # (1e+06 tCO2)
+            systemwide_co2_max_5:
+                locs: ['SRB_1']
+                cost_max.co2: 32.595  # (1e+06 tCO2)
+            systemwide_co2_max_6:
+                locs: ['BIH_1']
+                cost_max.co2: 11.964749999999999  # (1e+06 tCO2)
+            systemwide_co2_max_7:
+                locs: ['MKD_1']
+                cost_max.co2: 5.5649999999999995  # (1e+06 tCO2)
+            systemwide_co2_max_8:
+                locs: ['MNE_1']
+                cost_max.co2: 1.0335  # (1e+06 tCO2)
+    2030_neutral:
+        group_constraints:
+            systemwide_co2_max_0:
+                locs: ['AUT_1', 'AUT_2', 'AUT_3', 'BEL_1', 'BGR_1', 'CYP_1', 'CZE_1', 'CZE_2', 'DEU_1', 'DEU_2', 'DEU_3', 'DEU_4', 'DEU_5', 'DEU_6', 'DEU_7', 'DNK_1', 'DNK_2', 'ESP_1', 'ESP_10', 'ESP_11', 'ESP_2', 'ESP_3', 'ESP_4', 'ESP_5', 'ESP_6', 'ESP_7', 'ESP_8', 'ESP_9', 'EST_1', 'FIN_1', 'FIN_2', 'FRA_1', 'FRA_10', 'FRA_11', 'FRA_12', 'FRA_13', 'FRA_14', 'FRA_15', 'FRA_2', 'FRA_3', 'FRA_4', 'FRA_5', 'FRA_6', 'FRA_7', 'FRA_8', 'FRA_9', 'GBR_1', 'GBR_2', 'GBR_3', 'GBR_4', 'GBR_5', 'GBR_6', 'GRC_1', 'GRC_2', 'HRV_1', 'HUN_1', 'IRL_1', 'ITA_1', 'ITA_2', 'ITA_3', 'ITA_4', 'ITA_5', 'ITA_6', 'LTU_1', 'LUX_1', 'LVA_1', 'NLD_1', 'POL_1', 'POL_2', 'POL_3', 'POL_4', 'POL_5', 'PRT_1', 'PRT_2', 'ROU_1', 'ROU_2', 'ROU_3', 'SVK_1', 'SVN_1', 'SWE_1', 'SWE_2', 'SWE_3', 'SWE_4']
+                cost_max.co2: 2118.3299999999995  # (1e+06 tCO2)
+            systemwide_co2_max_1:
+                locs: ['CHE_1', 'CHE_2']
+                cost_max.co2: 19.259999999999994  # (1e+06 tCO2)
+            systemwide_co2_max_2:
+                locs: ['NOR_1', 'NOR_2', 'NOR_3', 'NOR_4', 'NOR_5', 'NOR_6', 'NOR_7']
+                cost_max.co2: 19.439999999999994  # (1e+06 tCO2)
+            systemwide_co2_max_3:
+                locs: ['ISL_1']
+                cost_max.co2: 1.2149999999999996  # (1e+06 tCO2)
+            systemwide_co2_max_4:
+                locs: ['ALB_1']
+                cost_max.co2: 3.8137499999999993  # (1e+06 tCO2)
+            systemwide_co2_max_5:
+                locs: ['SRB_1']
+                cost_max.co2: 27.674999999999994  # (1e+06 tCO2)
+            systemwide_co2_max_6:
+                locs: ['BIH_1']
+                cost_max.co2: 10.15875  # (1e+06 tCO2)
+            systemwide_co2_max_7:
+                locs: ['MKD_1']
+                cost_max.co2: 4.725  # (1e+06 tCO2)
+            systemwide_co2_max_8:
+                locs: ['MNE_1']
+                cost_max.co2: 0.8775  # (1e+06 tCO2)
+    2030_neutral_extra:
+        group_constraints:
+            systemwide_co2_max_0:
+                locs: ['AUT_1', 'AUT_2', 'AUT_3', 'BEL_1', 'BGR_1', 'CYP_1', 'CZE_1', 'CZE_2', 'DEU_1', 'DEU_2', 'DEU_3', 'DEU_4', 'DEU_5', 'DEU_6', 'DEU_7', 'DNK_1', 'DNK_2', 'ESP_1', 'ESP_10', 'ESP_11', 'ESP_2', 'ESP_3', 'ESP_4', 'ESP_5', 'ESP_6', 'ESP_7', 'ESP_8', 'ESP_9', 'EST_1', 'FIN_1', 'FIN_2', 'FRA_1', 'FRA_10', 'FRA_11', 'FRA_12', 'FRA_13', 'FRA_14', 'FRA_15', 'FRA_2', 'FRA_3', 'FRA_4', 'FRA_5', 'FRA_6', 'FRA_7', 'FRA_8', 'FRA_9', 'GBR_1', 'GBR_2', 'GBR_3', 'GBR_4', 'GBR_5', 'GBR_6', 'GRC_1', 'GRC_2', 'HRV_1', 'HUN_1', 'IRL_1', 'ITA_1', 'ITA_2', 'ITA_3', 'ITA_4', 'ITA_5', 'ITA_6', 'LTU_1', 'LUX_1', 'LVA_1', 'NLD_1', 'POL_1', 'POL_2', 'POL_3', 'POL_4', 'POL_5', 'PRT_1', 'PRT_2', 'ROU_1', 'ROU_2', 'ROU_3', 'SVK_1', 'SVN_1', 'SWE_1', 'SWE_2', 'SWE_3', 'SWE_4']
+                cost_max.co2: 1647.5899999999997  # (1e+06 tCO2)
+            systemwide_co2_max_1:
+                locs: ['CHE_1', 'CHE_2']
+                cost_max.co2: 14.979999999999997  # (1e+06 tCO2)
+            systemwide_co2_max_2:
+                locs: ['NOR_1', 'NOR_2', 'NOR_3', 'NOR_4', 'NOR_5', 'NOR_6', 'NOR_7']
+                cost_max.co2: 8.207999999999998  # (1e+06 tCO2)
+            systemwide_co2_max_3:
+                locs: ['ISL_1']
+                cost_max.co2: 0.2699999999999999  # (1e+06 tCO2)
+            systemwide_co2_max_4:
+                locs: ['ALB_1']
+                cost_max.co2: 2.5425000000000004  # (1e+06 tCO2)
+            systemwide_co2_max_5:
+                locs: ['SRB_1']
+                cost_max.co2: 18.450000000000003  # (1e+06 tCO2)
+            systemwide_co2_max_6:
+                locs: ['BIH_1']
+                cost_max.co2: 6.772500000000001  # (1e+06 tCO2)
+            systemwide_co2_max_7:
+                locs: ['MKD_1']
+                cost_max.co2: 3.1500000000000004  # (1e+06 tCO2)
+            systemwide_co2_max_8:
+                locs: ['MNE_1']
+                cost_max.co2: 0.5850000000000001  # (1e+06 tCO2)
+    2050_current:
+        group_constraints:
+            systemwide_co2_max_0:
+                locs: ['AUT_1', 'AUT_2', 'AUT_3', 'BEL_1', 'BGR_1', 'CYP_1', 'CZE_1', 'CZE_2', 'DEU_1', 'DEU_2', 'DEU_3', 'DEU_4', 'DEU_5', 'DEU_6', 'DEU_7', 'DNK_1', 'DNK_2', 'ESP_1', 'ESP_10', 'ESP_11', 'ESP_2', 'ESP_3', 'ESP_4', 'ESP_5', 'ESP_6', 'ESP_7', 'ESP_8', 'ESP_9', 'EST_1', 'FIN_1', 'FIN_2', 'FRA_1', 'FRA_10', 'FRA_11', 'FRA_12', 'FRA_13', 'FRA_14', 'FRA_15', 'FRA_2', 'FRA_3', 'FRA_4', 'FRA_5', 'FRA_6', 'FRA_7', 'FRA_8', 'FRA_9', 'GBR_1', 'GBR_2', 'GBR_3', 'GBR_4', 'GBR_5', 'GBR_6', 'GRC_1', 'GRC_2', 'HRV_1', 'HUN_1', 'IRL_1', 'ITA_1', 'ITA_2', 'ITA_3', 'ITA_4', 'ITA_5', 'ITA_6', 'LTU_1', 'LUX_1', 'LVA_1', 'NLD_1', 'POL_1', 'POL_2', 'POL_3', 'POL_4', 'POL_5', 'PRT_1', 'PRT_2', 'ROU_1', 'ROU_2', 'ROU_3', 'SVK_1', 'SVN_1', 'SWE_1', 'SWE_2', 'SWE_3', 'SWE_4']
+                cost_max.co2: 1694.6639999999998  # (1e+06 tCO2)
+            systemwide_co2_max_1:
+                locs: ['CHE_1', 'CHE_2']
+                cost_max.co2: 15.407999999999998  # (1e+06 tCO2)
+            systemwide_co2_max_2:
+                locs: ['NOR_1', 'NOR_2', 'NOR_3', 'NOR_4', 'NOR_5', 'NOR_6', 'NOR_7']
+                cost_max.co2: 15.552  # (1e+06 tCO2)
+            systemwide_co2_max_3:
+                locs: ['ISL_1']
+                cost_max.co2: 0.972  # (1e+06 tCO2)
+            systemwide_co2_max_4:
+                locs: ['ALB_1']
+                cost_max.co2: 3.0509999999999993  # (1e+06 tCO2)
+            systemwide_co2_max_5:
+                locs: ['SRB_1']
+                cost_max.co2: 22.14  # (1e+06 tCO2)
+            systemwide_co2_max_6:
+                locs: ['BIH_1']
+                cost_max.co2: 8.126999999999999  # (1e+06 tCO2)
+            systemwide_co2_max_7:
+                locs: ['MKD_1']
+                cost_max.co2: 3.78  # (1e+06 tCO2)
+            systemwide_co2_max_8:
+                locs: ['MNE_1']
+                cost_max.co2: 0.702  # (1e+06 tCO2)
+    2050_neutral:
+        group_constraints:
+            systemwide_co2_max_0:
+                locs: ['AUT_1', 'AUT_2', 'AUT_3', 'BEL_1', 'BGR_1', 'CYP_1', 'CZE_1', 'CZE_2', 'DEU_1', 'DEU_2', 'DEU_3', 'DEU_4', 'DEU_5', 'DEU_6', 'DEU_7', 'DNK_1', 'DNK_2', 'ESP_1', 'ESP_10', 'ESP_11', 'ESP_2', 'ESP_3', 'ESP_4', 'ESP_5', 'ESP_6', 'ESP_7', 'ESP_8', 'ESP_9', 'EST_1', 'FIN_1', 'FIN_2', 'FRA_1', 'FRA_10', 'FRA_11', 'FRA_12', 'FRA_13', 'FRA_14', 'FRA_15', 'FRA_2', 'FRA_3', 'FRA_4', 'FRA_5', 'FRA_6', 'FRA_7', 'FRA_8', 'FRA_9', 'GBR_1', 'GBR_2', 'GBR_3', 'GBR_4', 'GBR_5', 'GBR_6', 'GRC_1', 'GRC_2', 'HRV_1', 'HUN_1', 'IRL_1', 'ITA_1', 'ITA_2', 'ITA_3', 'ITA_4', 'ITA_5', 'ITA_6', 'LTU_1', 'LUX_1', 'LVA_1', 'NLD_1', 'POL_1', 'POL_2', 'POL_3', 'POL_4', 'POL_5', 'PRT_1', 'PRT_2', 'ROU_1', 'ROU_2', 'ROU_3', 'SVK_1', 'SVN_1', 'SWE_1', 'SWE_2', 'SWE_3', 'SWE_4']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_1:
+                locs: ['CHE_1', 'CHE_2']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_2:
+                locs: ['NOR_1', 'NOR_2', 'NOR_3', 'NOR_4', 'NOR_5', 'NOR_6', 'NOR_7']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_3:
+                locs: ['ISL_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_4:
+                locs: ['ALB_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_5:
+                locs: ['SRB_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_6:
+                locs: ['BIH_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_7:
+                locs: ['MKD_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)
+            systemwide_co2_max_8:
+                locs: ['MNE_1']
+                cost_max.co2: 0.0  # (1e+06 tCO2)

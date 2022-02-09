@@ -9,10 +9,10 @@ import os
 
 parent_path = '/Users/feiwufei/2022-02-08'
 path_to_model_yaml = '2050/model/national/model-2018.yaml'
-path_to_netcdf_of_model_inputs = 'nc_model_inputs'
-path_to_netcdf_of_results = 'nc_results'
-os.mkdir(os.path.join(parent_path, path_to_netcdf_of_model_inputs), 0o777) # read/write by everyone
-os.mkdir(os.path.join(parent_path, path_to_netcdf_of_results), 0o777) # read/write by everyone
+path_to_netcdf_of_model_inputs = os.path.join(parent_path, 'test_inputs.nc')
+path_to_netcdf_of_results = os.path.join(parent_path, 'test.results.nc')
+# os.mkdir(path_to_netcdf_of_model_inputs, 0o777) # read/write by everyone
+# os.mkdir(path_to_netcdf_of_results, 0o777) # read/write by everyone
 
 scenarios_string = 'res_12h,industry_fuel,transport,heat,config_overrides,res_12h,gas_storage,link_cap_dynamic,freeze-hydro-capacities,add-biofuel,synfuel_transmission'
 

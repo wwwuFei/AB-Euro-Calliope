@@ -10,13 +10,13 @@ def build_model(path_to_model, scenario, path_to_output, subset_days):
 
     model._model_data.attrs["scenario"] = scenario
     
-    #subseting annnual supply and demand data
-    var_list = ['group_carrier_prod_max',
- 'group_carrier_con_equals',
- 'group_carrier_con_min',
- 'group_carrier_prod_equals']
-    for var in var_list:
-        model._model_data[var] = model._model_data[var] / int(subset_days)
+#     #subseting annnual supply and demand data
+#     var_list = ['group_carrier_prod_max',
+#  'group_carrier_con_equals',
+#  'group_carrier_con_min',
+#  'group_carrier_prod_equals']
+#     for var in var_list:
+#         model._model_data[var] = model._model_data[var] / int(subset_days)
 
     model.to_netcdf(path_to_output)
 
