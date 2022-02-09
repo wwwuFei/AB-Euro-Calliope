@@ -1,0 +1,609 @@
+
+overrides:
+    biofuel-supply:
+        techs:
+            biofuel_supply:
+                essentials:
+                    name: Biofuel
+                    parent: supply
+                    carrier: biofuel
+                constraints:
+                    lifetime: 20  # arbritrarily chosen to avoid Calliope errors
+                costs.monetary:
+                    om_prod: 0.0016128374565425507 # (10,000 EUR/MWh)
+
+        locations:
+            ALB_1.techs.biofuel_supply:
+            AUT_1.techs.biofuel_supply:
+            AUT_2.techs.biofuel_supply:
+            AUT_3.techs.biofuel_supply:
+            BEL_1.techs.biofuel_supply:
+            BGR_1.techs.biofuel_supply:
+            BIH_1.techs.biofuel_supply:
+            CHE_1.techs.biofuel_supply:
+            CHE_2.techs.biofuel_supply:
+            CYP_1.techs.biofuel_supply:
+            CZE_1.techs.biofuel_supply:
+            CZE_2.techs.biofuel_supply:
+            DEU_1.techs.biofuel_supply:
+            DEU_2.techs.biofuel_supply:
+            DEU_3.techs.biofuel_supply:
+            DEU_4.techs.biofuel_supply:
+            DEU_5.techs.biofuel_supply:
+            DEU_6.techs.biofuel_supply:
+            DEU_7.techs.biofuel_supply:
+            DNK_1.techs.biofuel_supply:
+            DNK_2.techs.biofuel_supply:
+            ESP_1.techs.biofuel_supply:
+            ESP_10.techs.biofuel_supply:
+            ESP_11.techs.biofuel_supply:
+            ESP_2.techs.biofuel_supply:
+            ESP_3.techs.biofuel_supply:
+            ESP_4.techs.biofuel_supply:
+            ESP_5.techs.biofuel_supply:
+            ESP_6.techs.biofuel_supply:
+            ESP_7.techs.biofuel_supply:
+            ESP_8.techs.biofuel_supply:
+            ESP_9.techs.biofuel_supply:
+            EST_1.techs.biofuel_supply:
+            FIN_1.techs.biofuel_supply:
+            FIN_2.techs.biofuel_supply:
+            FRA_1.techs.biofuel_supply:
+            FRA_10.techs.biofuel_supply:
+            FRA_11.techs.biofuel_supply:
+            FRA_12.techs.biofuel_supply:
+            FRA_13.techs.biofuel_supply:
+            FRA_14.techs.biofuel_supply:
+            FRA_15.techs.biofuel_supply:
+            FRA_2.techs.biofuel_supply:
+            FRA_3.techs.biofuel_supply:
+            FRA_4.techs.biofuel_supply:
+            FRA_5.techs.biofuel_supply:
+            FRA_6.techs.biofuel_supply:
+            FRA_7.techs.biofuel_supply:
+            FRA_8.techs.biofuel_supply:
+            FRA_9.techs.biofuel_supply:
+            GBR_1.techs.biofuel_supply:
+            GBR_2.techs.biofuel_supply:
+            GBR_3.techs.biofuel_supply:
+            GBR_4.techs.biofuel_supply:
+            GBR_5.techs.biofuel_supply:
+            GBR_6.techs.biofuel_supply:
+            GRC_1.techs.biofuel_supply:
+            GRC_2.techs.biofuel_supply:
+            HRV_1.techs.biofuel_supply:
+            HUN_1.techs.biofuel_supply:
+            IRL_1.techs.biofuel_supply:
+            ISL_1.techs.biofuel_supply:
+            ITA_1.techs.biofuel_supply:
+            ITA_2.techs.biofuel_supply:
+            ITA_3.techs.biofuel_supply:
+            ITA_4.techs.biofuel_supply:
+            ITA_5.techs.biofuel_supply:
+            ITA_6.techs.biofuel_supply:
+            LTU_1.techs.biofuel_supply:
+            LUX_1.techs.biofuel_supply:
+            LVA_1.techs.biofuel_supply:
+            MKD_1.techs.biofuel_supply:
+            MNE_1.techs.biofuel_supply:
+            NLD_1.techs.biofuel_supply:
+            NOR_1.techs.biofuel_supply:
+            NOR_2.techs.biofuel_supply:
+            NOR_3.techs.biofuel_supply:
+            NOR_4.techs.biofuel_supply:
+            NOR_5.techs.biofuel_supply:
+            NOR_6.techs.biofuel_supply:
+            NOR_7.techs.biofuel_supply:
+            POL_1.techs.biofuel_supply:
+            POL_2.techs.biofuel_supply:
+            POL_3.techs.biofuel_supply:
+            POL_4.techs.biofuel_supply:
+            POL_5.techs.biofuel_supply:
+            PRT_1.techs.biofuel_supply:
+            PRT_2.techs.biofuel_supply:
+            ROU_1.techs.biofuel_supply:
+            ROU_2.techs.biofuel_supply:
+            ROU_3.techs.biofuel_supply:
+            SRB_1.techs.biofuel_supply:
+            SVK_1.techs.biofuel_supply:
+            SVN_1.techs.biofuel_supply:
+            SWE_1.techs.biofuel_supply:
+            SWE_2.techs.biofuel_supply:
+            SWE_3.techs.biofuel_supply:
+            SWE_4.techs.biofuel_supply:
+
+    biofuel_maximum:
+        group_constraints:
+            biofuel_ALB_1:
+                locs: [ALB_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 58.33333333333333 # (100,000 MW)
+            biofuel_AUT_1:
+                locs: [AUT_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 235.69298547289728 # (100,000 MW)
+            biofuel_AUT_2:
+                locs: [AUT_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 307.7240025388666 # (100,000 MW)
+            biofuel_AUT_3:
+                locs: [AUT_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 176.3052342104583 # (100,000 MW)
+            biofuel_BEL_1:
+                locs: [BEL_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 342.77777777777777 # (100,000 MW)
+            biofuel_BGR_1:
+                locs: [BGR_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 298.8888888888889 # (100,000 MW)
+            biofuel_BIH_1:
+                locs: [BIH_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 123.33333333333333 # (100,000 MW)
+            biofuel_CHE_1:
+                locs: [CHE_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 222.59401917473832 # (100,000 MW)
+            biofuel_CHE_2:
+                locs: [CHE_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 98.79486971415055 # (100,000 MW)
+            biofuel_CYP_1:
+                locs: [CYP_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 13.61111111111111 # (100,000 MW)
+            biofuel_CZE_1:
+                locs: [CZE_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 376.88721397823343 # (100,000 MW)
+            biofuel_CZE_2:
+                locs: [CZE_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 263.3905637995444 # (100,000 MW)
+            biofuel_DEU_1:
+                locs: [DEU_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 466.1878967364037 # (100,000 MW)
+            biofuel_DEU_2:
+                locs: [DEU_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 458.21803433975344 # (100,000 MW)
+            biofuel_DEU_3:
+                locs: [DEU_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 271.4801584049657 # (100,000 MW)
+            biofuel_DEU_4:
+                locs: [DEU_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 407.46459566641045 # (100,000 MW)
+            biofuel_DEU_5:
+                locs: [DEU_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 385.75347745414416 # (100,000 MW)
+            biofuel_DEU_6:
+                locs: [DEU_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 294.29515511428446 # (100,000 MW)
+            biofuel_DEU_7:
+                locs: [DEU_7]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 590.7673489507048 # (100,000 MW)
+            biofuel_DNK_1:
+                locs: [DNK_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 229.2990224528959 # (100,000 MW)
+            biofuel_DNK_2:
+                locs: [DNK_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 68.47875532488183 # (100,000 MW)
+            biofuel_ESP_1:
+                locs: [ESP_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 131.06070265523547 # (100,000 MW)
+            biofuel_ESP_10:
+                locs: [ESP_10]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 94.24501594567221 # (100,000 MW)
+            biofuel_ESP_11:
+                locs: [ESP_11]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 129.61944760838654 # (100,000 MW)
+            biofuel_ESP_2:
+                locs: [ESP_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 166.74804073634695 # (100,000 MW)
+            biofuel_ESP_3:
+                locs: [ESP_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 158.10019435689213 # (100,000 MW)
+            biofuel_ESP_4:
+                locs: [ESP_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 78.34439459725223 # (100,000 MW)
+            biofuel_ESP_5:
+                locs: [ESP_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 103.25516942184217 # (100,000 MW)
+            biofuel_ESP_6:
+                locs: [ESP_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 103.8906844281276 # (100,000 MW)
+            biofuel_ESP_7:
+                locs: [ESP_7]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 24.819533493367672 # (100,000 MW)
+            biofuel_ESP_8:
+                locs: [ESP_8]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 132.05965045384175 # (100,000 MW)
+            biofuel_ESP_9:
+                locs: [ESP_9]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 82.0238329697019 # (100,000 MW)
+            biofuel_EST_1:
+                locs: [EST_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 238.05555555555551 # (100,000 MW)
+            biofuel_FIN_1:
+                locs: [FIN_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 546.3267786310639 # (100,000 MW)
+            biofuel_FIN_2:
+                locs: [FIN_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 633.9509991467138 # (100,000 MW)
+            biofuel_FRA_1:
+                locs: [FRA_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 394.497213321862 # (100,000 MW)
+            biofuel_FRA_10:
+                locs: [FRA_10]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 81.68760869254477 # (100,000 MW)
+            biofuel_FRA_11:
+                locs: [FRA_11]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 166.02148033813535 # (100,000 MW)
+            biofuel_FRA_12:
+                locs: [FRA_12]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 288.8840843153416 # (100,000 MW)
+            biofuel_FRA_13:
+                locs: [FRA_13]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 184.04899586072375 # (100,000 MW)
+            biofuel_FRA_14:
+                locs: [FRA_14]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 72.40903480593799 # (100,000 MW)
+            biofuel_FRA_15:
+                locs: [FRA_15]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 84.97968242471917 # (100,000 MW)
+            biofuel_FRA_2:
+                locs: [FRA_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 283.74195903315336 # (100,000 MW)
+            biofuel_FRA_3:
+                locs: [FRA_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 209.07549855595605 # (100,000 MW)
+            biofuel_FRA_4:
+                locs: [FRA_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 227.594976237242 # (100,000 MW)
+            biofuel_FRA_5:
+                locs: [FRA_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 349.52879983242946 # (100,000 MW)
+            biofuel_FRA_6:
+                locs: [FRA_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 152.89831159848407 # (100,000 MW)
+            biofuel_FRA_7:
+                locs: [FRA_7]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 218.52038886238603 # (100,000 MW)
+            biofuel_FRA_8:
+                locs: [FRA_8]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 183.7646876448412 # (100,000 MW)
+            biofuel_FRA_9:
+                locs: [FRA_9]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 92.90283403179865 # (100,000 MW)
+            biofuel_GBR_1:
+                locs: [GBR_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 293.6912948044375 # (100,000 MW)
+            biofuel_GBR_2:
+                locs: [GBR_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 67.01390139981847 # (100,000 MW)
+            biofuel_GBR_3:
+                locs: [GBR_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 206.2690862630516 # (100,000 MW)
+            biofuel_GBR_4:
+                locs: [GBR_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 154.02990178076226 # (100,000 MW)
+            biofuel_GBR_5:
+                locs: [GBR_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 204.10539423282253 # (100,000 MW)
+            biofuel_GBR_6:
+                locs: [GBR_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 13.501532630218781 # (100,000 MW)
+            biofuel_GRC_1:
+                locs: [GRC_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 106.18737046506703 # (100,000 MW)
+            biofuel_GRC_2:
+                locs: [GRC_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 60.20151842382179 # (100,000 MW)
+            biofuel_HRV_1:
+                locs: [HRV_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 150.55555555555554 # (100,000 MW)
+            biofuel_HUN_1:
+                locs: [HUN_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 605.8333333333334 # (100,000 MW)
+            biofuel_IRL_1:
+                locs: [IRL_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 183.3333333333333 # (100,000 MW)
+            biofuel_ISL_1:
+                locs: [ISL_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 0.0 # (100,000 MW)
+            biofuel_ITA_1:
+                locs: [ITA_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 563.5970869789219 # (100,000 MW)
+            biofuel_ITA_2:
+                locs: [ITA_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 187.42426989213126 # (100,000 MW)
+            biofuel_ITA_3:
+                locs: [ITA_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 161.04923094961927 # (100,000 MW)
+            biofuel_ITA_4:
+                locs: [ITA_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 160.2897742339186 # (100,000 MW)
+            biofuel_ITA_5:
+                locs: [ITA_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 68.7905409407823 # (100,000 MW)
+            biofuel_ITA_6:
+                locs: [ITA_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 82.18243033795994 # (100,000 MW)
+            biofuel_LTU_1:
+                locs: [LTU_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 298.0555555555556 # (100,000 MW)
+            biofuel_LUX_1:
+                locs: [LUX_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 21.11111111111111 # (100,000 MW)
+            biofuel_LVA_1:
+                locs: [LVA_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 435.8333333333333 # (100,000 MW)
+            biofuel_MKD_1:
+                locs: [MKD_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 60.55555555555556 # (100,000 MW)
+            biofuel_MNE_1:
+                locs: [MNE_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 79.72222222222221 # (100,000 MW)
+            biofuel_NLD_1:
+                locs: [NLD_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 203.88888888888889 # (100,000 MW)
+            biofuel_NOR_1:
+                locs: [NOR_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 48.52987660336395 # (100,000 MW)
+            biofuel_NOR_2:
+                locs: [NOR_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 66.16696851901568 # (100,000 MW)
+            biofuel_NOR_3:
+                locs: [NOR_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 52.582663082697934 # (100,000 MW)
+            biofuel_NOR_4:
+                locs: [NOR_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 134.0060096345808 # (100,000 MW)
+            biofuel_NOR_5:
+                locs: [NOR_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 60.48188605146062 # (100,000 MW)
+            biofuel_NOR_6:
+                locs: [NOR_6]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 131.39613588179864 # (100,000 MW)
+            biofuel_NOR_7:
+                locs: [NOR_7]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 23.22534911597129 # (100,000 MW)
+            biofuel_POL_1:
+                locs: [POL_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 373.5030834757963 # (100,000 MW)
+            biofuel_POL_2:
+                locs: [POL_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 287.38056434362653 # (100,000 MW)
+            biofuel_POL_3:
+                locs: [POL_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 202.85858132458193 # (100,000 MW)
+            biofuel_POL_4:
+                locs: [POL_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 409.22500291693797 # (100,000 MW)
+            biofuel_POL_5:
+                locs: [POL_5]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 364.5327679390573 # (100,000 MW)
+            biofuel_PRT_1:
+                locs: [PRT_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 263.07912192195386 # (100,000 MW)
+            biofuel_PRT_2:
+                locs: [PRT_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 141.6431003002684 # (100,000 MW)
+            biofuel_ROU_1:
+                locs: [ROU_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 383.2928852074389 # (100,000 MW)
+            biofuel_ROU_2:
+                locs: [ROU_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 399.2990653692633 # (100,000 MW)
+            biofuel_ROU_3:
+                locs: [ROU_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 304.3524938677422 # (100,000 MW)
+            biofuel_SRB_1:
+                locs: [SRB_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 280.27777777777777 # (100,000 MW)
+            biofuel_SVK_1:
+                locs: [SVK_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 289.4444444444444 # (100,000 MW)
+            biofuel_SVN_1:
+                locs: [SVN_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 205.27777777777777 # (100,000 MW)
+            biofuel_SWE_1:
+                locs: [SWE_1]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 423.34039532691355 # (100,000 MW)
+            biofuel_SWE_2:
+                locs: [SWE_2]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 691.9702700640976 # (100,000 MW)
+            biofuel_SWE_3:
+                locs: [SWE_3]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 664.9962039342572 # (100,000 MW)
+            biofuel_SWE_4:
+                locs: [SWE_4]
+                techs: [biofuel_supply]
+                carrier_prod_max:
+                    biofuel: 178.5820195636205 # (100,000 MW)
+
+scenarios:
+    add-biofuel: [biofuel-supply, biofuel_maximum]
