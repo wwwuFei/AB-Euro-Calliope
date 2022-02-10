@@ -2,6 +2,8 @@
 # and python run.py -i [path_to_model_input_data_nc] -o [path_to_optimised_output_nc] to optimise it
 # you then just need to include an extra script and argument in run.py to update the underlying model data with e.g. your sensitivity data before you run it
 
+import sys,os
+sys.path.append(os.getcwd())
 import argparse
 
 import pyomo.core as po
