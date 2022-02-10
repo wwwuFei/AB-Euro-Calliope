@@ -3,9 +3,9 @@ import argparse
 import calliope
 
 
-def build_model(path_to_model, scenario, path_to_output, subset_days):
+def build_model(path_to_model, scenario, path_to_output): #subset_days
 
-    calliope.set_log_verbosity("info", include_solver_output=True, capture_warnings=True)
+    calliope.set_log_verbosity("info", include_solver_output=False, capture_warnings=True)
     model = calliope.Model(path_to_model, scenario=scenario)
 
     model._model_data.attrs["scenario"] = scenario

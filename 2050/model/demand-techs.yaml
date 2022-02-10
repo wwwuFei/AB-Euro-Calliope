@@ -131,7 +131,7 @@ techs:
     demand_industry_methanol:
         exists: false
         essentials:
-            name: 'Industry methane feedstock demand'
+            name: 'Industry methanol feedstock demand'
             parent: demand
             carrier: methanol
         constraints:

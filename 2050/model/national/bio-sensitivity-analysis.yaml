@@ -1,0 +1,274 @@
+overrides:
+##cost relaxation (70%, 80%, 90%, 100% (no change), 110%, 120%, 130%)
+# change hydrogen transformation tech costs
+  hydrogen_trans_cost_70_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 105.0 #150*70%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 105.0 #150*70%
+      hydrogen_to_methane.costs.monetary.energy_cap: 21.0 #30*70%
+  hydrogen_trans_cost_80_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 120.0 #150*80%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 120.0 #150*80%
+      hydrogen_to_methane.costs.monetary.energy_cap: 24.0 #30*80%
+  hydrogen_trans_cost_90_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 135.0 #150*90%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 135.0 #150*90%
+      hydrogen_to_methane.costs.monetary.energy_cap: 27.0 #30*90%
+  # hydrogen_trans_cost_100_perc:
+  #   techs:
+  #     hydrogen_to_liquids.costs.monetary.energy_cap: 150.0 #150*#
+  #     # hydrogen_to_methanol.costs.monetary.energy_cap: 150.0 #150*100%
+  #     # hydrogen_to_methane.costs.monetary.energy_cap: 30.0 #30*100%
+  hydrogen_trans_cost_110_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 165.0 #150*110%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 165.0 #150*110%
+      hydrogen_to_methane.costs.monetary.energy_cap: 33.0 #30*110%
+  hydrogen_trans_cost_120_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 180.0 #150*120%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 180.0 #150*120%
+      hydrogen_to_methane.costs.monetary.energy_cap: 36.0 #30*120%
+  hydrogen_trans_cost_130_perc:
+    techs:
+      hydrogen_to_liquids.costs.monetary.energy_cap: 195.0 #150*130%
+      hydrogen_to_methanol.costs.monetary.energy_cap: 195.0 #150*130%
+      hydrogen_to_methane.costs.monetary.energy_cap: 39.0 #30*130%
+# change hydrogen production costs
+  electrolysis_cost_70_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 42.60403914429463 #60.86291306327804*70%
+  electrolysis_cost_80_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 48.69033045062243 #60.86291306327804*80%
+  electrolysis_cost_90_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 54.776621756950234 #60.86291306327804*90%
+  # electrolysis_cost_100_perc:
+  #   techs:
+  #     # electrolysis.costs.monetary.energy_cap: 60.86291306327805 #60.86291306327804*100%
+  electrolysis_cost_110_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 66.94920436960585 #60.86291306327804*110%
+  electrolysis_cost_120_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 73.03549567593365 #60.86291306327804*120%
+  electrolysis_cost_130_perc:
+    techs:
+      electrolysis.costs.monetary.energy_cap: 79.12178698226145 #60.86291306327804*130%
+# change storage costs
+  storage_cost_70_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 1.47 #2.1*70%
+      battery.costs.monetary:
+        storage_cap: 7.086674000000001 #10.123820000000002*70%
+        energy_cap: 5.990975200000001 #8.558536000000002*70%
+  storage_cost_80_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 1.68 #2.1*80%
+      battery.costs.monetary:
+        storage_cap: 8.099056000000001 #10.123820000000002*80%
+        energy_cap: 6.846828800000002 #8.558536000000002*80%
+  storage_cost_90_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 1.89 #2.1*90%
+      battery.costs.monetary:
+        storage_cap: 9.111438000000001 #10.123820000000002*90%
+        energy_cap: 7.702682400000002 #8.558536000000002*90%
+  # storage_cost_100_perc:
+  #   techs:
+  #     # hydrogen_storage.costs.monetary.storage_cap: 2.1 #2.1*100%
+  #     battery.costs.monetary:
+  #       # storage_cap: 10.123820000000002 #10.123820000000002*100%
+  #       energy_cap: 8.558536000000002 #8.558536000000002*100%
+  storage_cost_110_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 2.31 #2.1*110%
+      battery.costs.monetary:
+        storage_cap: 11.136202000000003 #10.123820000000002*110%
+        energy_cap: 9.414389600000002 #8.558536000000002*110%
+  storage_cost_120_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 2.52 #2.1*120%
+      battery.costs.monetary:
+        storage_cap: 12.148584000000003 #10.123820000000002*120%
+        energy_cap: 10.270243200000003 #8.558536000000002*120%
+  storage_cost_130_perc:
+    techs:
+      hydrogen_storage.costs.monetary.storage_cap: 2.73 #2.1*130%
+      battery.costs.monetary:
+        storage_cap: 13.160966000000004 #10.123820000000002*130%
+        energy_cap: 11.126096800000003 #8.558536000000002*130%
+# change bioenergy supply costs
+  biomass_supply_cost_70_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.004537953049460766 #0.0064827900706582375*70%
+  biomass_supply_cost_80_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.00518623205652659 #0.0064827900706582375*80%
+  biomass_supply_cost_90_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.005834511063592413 #0.0064827900706582375*90%
+  # biomass_supply_cost_100_perc:
+  #   tech_groups:
+  #     biomass.costs.monetary.om_con: 0.0064827900706582375 #0.0064827900706582375*100%
+  biomass_supply_cost_110_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.007131069077724062 #0.0064827900706582375*110%
+  biomass_supply_cost_120_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.007779348084789885 #0.0064827900706582375*120%
+  biomass_supply_cost_130_perc:
+    tech_groups:
+      biomass.costs.monetary.om_con: 0.008427627091855709 #0.0064827900706582375*130%
+# change bio-transmissions costs
+  bio_trans_cost_70_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 361.78245614035086 #516.8320802005012*70%
+      biofuel_to_diesel.costs.monetary.energy_cap: 65.1 #93.0*70%
+      biofuel_to_methanol.costs.monetary.energy_cap: 102.2 #146.0*70%
+      biofuel_to_methane.costs.monetary.energy_cap: 105.0 #150*70%
+      manure_to_biogas.costs.monetary.energy_cap: 97.3 #139*70%
+      biogas_to_methane.costs.monetary.energy_cap: 24.01 #34.3*70%
+      biogas_to_sng.costs.monetary.energy_cap: 31.5 #45*70%
+      biogas_engines.costs.monetary.energy_cap: 59.5 #85*70%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 58.8 #84*70%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 40.6 #58*70%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 49.7 #71*70%
+  bio_trans_cost_80_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 413.46566416040093 #516.8320802005012*80%
+      biofuel_to_diesel.costs.monetary.energy_cap: 74.4 #93.0*80%
+      biofuel_to_methanol.costs.monetary.energy_cap: 116.8 #146.0*80%
+      biofuel_to_methane.costs.monetary.energy_cap: 120.0 #150*80%
+      manure_to_biogas.costs.monetary.energy_cap: 111.2 #139*80%
+      biogas_to_methane.costs.monetary.energy_cap: 27.44 #34.3*80%
+      biogas_to_sng.costs.monetary.energy_cap: 36.0 #45*80%
+      biogas_engines.costs.monetary.energy_cap: 68.0 #85*80%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 67.2 #84*80%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 46.4 #58*80%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 56.8 #71*80%
+  bio_trans_cost_90_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 465.14887218045106 #516.8320802005012*90%
+      biofuel_to_diesel.costs.monetary.energy_cap: 83.7 #93.0*90%
+      biofuel_to_methanol.costs.monetary.energy_cap: 131.4 #146.0*90%
+      biofuel_to_methane.costs.monetary.energy_cap: 135.0 #150*90%
+      manure_to_biogas.costs.monetary.energy_cap: 125.1 #139*90%
+      biogas_to_methane.costs.monetary.energy_cap: 30.869999999999994 #34.3*90%
+      biogas_to_sng.costs.monetary.energy_cap: 40.5 #45*90%
+      biogas_engines.costs.monetary.energy_cap: 76.5 #85*90%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 75.6 #84*90%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 52.2 #58*90%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 63.9 #71*90%
+  # bio_trans_cost_100_perc:
+  #   techs:
+  #     biofuel_to_liquids.costs.monetary.energy_cap: 516.8320802005012 #516.8320802005012*100%
+  #     biofuel_to_diesel.costs.monetary.energy_cap: 93.0 #93.0*100%
+  #     biofuel_to_methanol.costs.monetary.energy_cap: 146.0 #146.0*100%
+  #     biofuel_to_methane.costs.monetary.energy_cap: 150.0 #150*100%
+  #     manure_to_biogas.costs.monetary.energy_cap: 139.0 #139*100%
+  #     biogas_to_methane.costs.monetary.energy_cap: 34.3 #34.3*100%
+  #     biogas_to_sng.costs.monetary.energy_cap: 45.0 #45*100%
+  #     biogas_engines.costs.monetary.energy_cap: 85.0 #85*100%
+  #     fats_uco_to_diesel.costs.monetary.energy_cap: 84.0 #84*100%
+  #     fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 58.0 #58*100%
+  #     fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 71.0 #71*100%
+  bio_trans_cost_110_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 568.5152882205513 #516.8320802005012*110%
+      biofuel_to_diesel.costs.monetary.energy_cap: 102.3 #93.0*110%
+      biofuel_to_methanol.costs.monetary.energy_cap: 160.6 #146.0*110%
+      biofuel_to_methane.costs.monetary.energy_cap: 165.0 #150*110%
+      manure_to_biogas.costs.monetary.energy_cap: 152.9 #139*110%
+      biogas_to_methane.costs.monetary.energy_cap: 37.73 #34.3*110%
+      biogas_to_sng.costs.monetary.energy_cap: 49.5 #45*110%
+      biogas_engines.costs.monetary.energy_cap: 93.5 #85*110%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 92.4 #84*110%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 63.8 #58*110%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 78.1 #71*110%
+  bio_trans_cost_120_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 620.1984962406015 #516.8320802005012*120%
+      biofuel_to_diesel.costs.monetary.energy_cap: 111.6 #93.0*120%
+      biofuel_to_methanol.costs.monetary.energy_cap: 175.2 #146.0*120%
+      biofuel_to_methane.costs.monetary.energy_cap: 180.0 #150*120%
+      manure_to_biogas.costs.monetary.energy_cap: 166.8 #139*120%
+      biogas_to_methane.costs.monetary.energy_cap: 41.16 #34.3*120%
+      biogas_to_sng.costs.monetary.energy_cap: 54.0 #45*120%
+      biogas_engines.costs.monetary.energy_cap: 102.0 #85*120%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 100.8 #84*120%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 69.6 #58*120%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 85.2 #71*120%
+  bio_trans_cost_130_perc:
+    techs:
+      biofuel_to_liquids.costs.monetary.energy_cap: 671.8817042606516 #516.8320802005012*130%
+      biofuel_to_diesel.costs.monetary.energy_cap: 120.9 #93.0*130%
+      biofuel_to_methanol.costs.monetary.energy_cap: 189.8 #146.0*130%
+      biofuel_to_methane.costs.monetary.energy_cap: 195.0 #150*130%
+      manure_to_biogas.costs.monetary.energy_cap: 180.7 #139*130%
+      biogas_to_methane.costs.monetary.energy_cap: 44.59 #34.3*130%
+      biogas_to_sng.costs.monetary.energy_cap: 58.5 #45*130%
+      biogas_engines.costs.monetary.energy_cap: 110.5 #85*130%
+      fats_uco_to_diesel.costs.monetary.energy_cap: 109.2 #84*130%
+      fats_uco_hydrogen_to_diesel.costs.monetary.energy_cap: 75.4 #58*130%
+      fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 92.3 #71*130%
+
+
+## energy_eff (70%, 80%, 90%, 100% (no change), 110%, 120%, 130%)
+# change hydrogen production eff
+  electrolysis_eff_70_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.5021333333333334 #0.7173333333333334*70%
+  electrolysis_eff_80_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.5738666666666667 #0.7173333333333334*80%
+  electrolysis_eff_90_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.6456000000000001 #0.7173333333333334*90%
+  # electrolysis_eff_100_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.7173333333333334 #0.7173333333333334*100%
+  electrolysis_eff_110_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.7890666666666667 #0.7173333333333334*110%
+  electrolysis_eff_120_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.8608000000000001 #0.7173333333333334*120%
+  electrolysis_eff_130_perc:
+    techs:
+      electrolysis.constraints.energy_eff: 0.9325333333333334 #0.7173333333333334*130%
+# change storage eff
+  storage_eff_70_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 0.5670000000000001 #0.81*70%
+      battery.constraints.energy_eff: 0.64911 #0.9273*70%
+  storage_eff_80_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 0.6480000000000001 #0.81*80%
+      battery.constraints.energy_eff: 0.7418399999999999 #0.9273*80%
+  storage_eff_90_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 0.7290000000000001 #0.81*90%
+      battery.constraints.energy_eff: 0.83457 #0.9273*90%
+  # storage_eff_100_perc:
+  #   techs:
+  #     hydrogen_storage.constraints.energy_eff: 0.81 #0.81*100%
+  #     battery.constraints.energy_eff: 0.9273 #0.9273*100%
+  storage_eff_110_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 0.8910000000000001 #0.81*110%
+      battery.constraints.energy_eff: 1.02003 #0.9273*110%
+  storage_eff_120_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 0.972 #0.81*120%
+      battery.constraints.energy_eff: 1.11276 #0.9273*120%
+  storage_eff_130_perc:
+    techs:
+      hydrogen_storage.constraints.energy_eff: 1.0530000000000002 #0.81*130%
+      battery.constraints.energy_eff: 1.2054900000000002 #0.9273*130%
+
+#TODO# change hydrogen transformation eff
+#TODO# change bio transformation eff

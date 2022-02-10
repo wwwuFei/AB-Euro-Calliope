@@ -1685,6 +1685,7 @@ overrides:
                 chp_hydrogen_heat_storage_big:
                 chp_hydrogen_tech_heat_to_demand:
 
+# different from pre-built 2021-06-25 where all .inf is 0.95
     heat_tech_grouping:
         group_constraints:
             cooking_demand_share_ALB:
@@ -2147,4 +2148,4 @@ overrides:
                 carrier_prod_equals.waste: 184.85277777777776  # (0.1 TWh_waste)
 
 scenarios:
-    heat: [heat_storage_max, heat_techs, heat_tech_grouping, annual_waste_supply]
+    heat: [heat_storage_max, heat_techs, heat_tech_grouping] #annual_waste_supply,  disabling by Fei
