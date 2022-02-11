@@ -108,6 +108,14 @@ overrides:
         model.time:
             function: resample
             function_options.resolution: 12H
+    res_24h:
+        model.time:
+            function: resample
+            function_options.resolution: 24H
+    res_48h:
+        model.time:
+            function: resample
+            function_options.resolution: 48H
     
     
     # for relaxing tolerence, added by fei
@@ -126,14 +134,14 @@ overrides:
     # better not use when feasible, otherwise systemwide capacity factos will be slightly different
         run.solver_options.BarHomogeneous: 1 
 
-    ethanol_for_transport: # added by fei 
-        techs:
-            ldv_transport_ice: # also: bus_transport_ice, motorcycle_transport_ice, passenger_car_transport_ice, light_transport_ice
-                essentials:
-                    parent: conversion_plus
-                    # TODO: set a specific % of blending ethanol or just assume an arbritary one?
-                    carrier_in: [diesel, ethanol] 
-                    primary_carrier_in: diesel
+    # ethanol_for_transport: # added by fei 
+    #     techs:
+    #         ldv_transport_ice: # also: bus_transport_ice, motorcycle_transport_ice, passenger_car_transport_ice, light_transport_ice
+    #             essentials:
+    #                 parent: conversion_plus
+    #                 # TODO: set a specific % of blending ethanol or just assume an arbritary one?
+    #                 carrier_in: [diesel, ethanol] 
+    #                 primary_carrier_in: diesel
 
 
 

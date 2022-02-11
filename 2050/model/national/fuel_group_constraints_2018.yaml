@@ -682,6 +682,710 @@ overrides:
                 locs: [SWE]
                 carrier_con_min:
                     methane: -134.48308672556206
+    
+    # from pre-built 2021-06-25
+    annual_fuel_demand_isolated:
+        group_constraints:
+            ALB_diesel:
+                techs: [demand_industry_diesel]
+                locs: [ALB]
+                carrier_con_min:
+                    diesel: -11.984951358783169
+            ALB_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [ALB]
+                carrier_con_min:
+                    kerosene: -0.8384018264840185
+            ALB_methanol:
+                techs: [demand_industry_methanol]
+                locs: [ALB]
+                carrier_con_min:
+                    methanol: -5.108262214079504
+            ALB_methane:
+                techs: [demand_industry_methane]
+                locs: [ALB]
+                carrier_con_min:
+                    methane: -9.74567888897824
+            AUT_diesel:
+                techs: [demand_industry_diesel]
+                locs: [AUT]
+                carrier_con_min:
+                    diesel: -20.385738906637123
+            AUT_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [AUT]
+                carrier_con_min:
+                    kerosene: -92.658259086758
+            AUT_methanol:
+                techs: [demand_industry_methanol]
+                locs: [AUT]
+                carrier_con_min:
+                    methanol: -181.12926559302738
+            AUT_methane:
+                techs: [demand_industry_methane]
+                locs: [AUT]
+                carrier_con_min:
+                    methane: -139.2639617646877
+            BEL_diesel:
+                techs: [demand_industry_diesel]
+                locs: [BEL]
+                carrier_con_min:
+                    diesel: -795.8975645399427
+            BEL_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [BEL]
+                carrier_con_min:
+                    kerosene: -173.5277305936074
+            BEL_methanol:
+                techs: [demand_industry_methanol]
+                locs: [BEL]
+                carrier_con_min:
+                    methanol: -704.1934488355741
+            BEL_methane:
+                techs: [demand_industry_methane]
+                locs: [BEL]
+                carrier_con_min:
+                    methane: -191.90234986643668
+            BGR_diesel:
+                techs: [demand_industry_diesel]
+                locs: [BGR]
+                carrier_con_min:
+                    diesel: -11.147606395548813
+            BGR_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [BGR]
+                carrier_con_min:
+                    kerosene: -27.068401826484028
+            BGR_methanol:
+                techs: [demand_industry_methanol]
+                locs: [BGR]
+                carrier_con_min:
+                    methanol: -130.4065166067375
+            BGR_methane:
+                techs: [demand_industry_methane]
+                locs: [BGR]
+                carrier_con_min:
+                    methane: -55.051444335102396
+            BIH_diesel:
+                techs: [demand_industry_diesel]
+                locs: [BIH]
+                carrier_con_min:
+                    diesel: -0.7879549287669777
+            BIH_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [BIH]
+                carrier_con_min:
+                    kerosene: -1.2244566210045664
+            BIH_methanol:
+                techs: [demand_industry_methanol]
+                locs: [BIH]
+                carrier_con_min:
+                    methanol: -7.813554514950284
+            BIH_methane:
+                techs: [demand_industry_methane]
+                locs: [BIH]
+                carrier_con_min:
+                    methane: -11.98794205424044
+            CHE_diesel:
+                techs: [demand_industry_diesel]
+                locs: [CHE]
+                carrier_con_min:
+                    diesel: -3.168279799825776
+            CHE_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [CHE]
+                carrier_con_min:
+                    kerosene: -206.59223744292234
+            CHE_methanol:
+                techs: [demand_industry_methanol]
+                locs: [CHE]
+                carrier_con_min:
+                    methanol: -47.95137433703161
+            CHE_methane:
+                techs: [demand_industry_methane]
+                locs: [CHE]
+                carrier_con_min:
+                    methane: -61.52887267152998
+            CYP_diesel:
+                techs: [demand_industry_diesel]
+                locs: [CYP]
+                carrier_con_min:
+                    diesel: -33.60903998173788
+            CYP_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [CYP]
+                carrier_con_min:
+                    kerosene: -32.42860273972603
+            CYP_methanol:
+                techs: [demand_industry_methanol]
+                locs: [CYP]
+                carrier_con_min:
+                    methanol: -2.8037370645367523
+            CYP_methane:
+                techs: [demand_industry_methane]
+                locs: [CYP]
+                carrier_con_min:
+                    methane: -16.507451821760974
+            CZE_diesel:
+                techs: [demand_industry_diesel]
+                locs: [CZE]
+                carrier_con_min:
+                    diesel: -4.974681580891542
+            CZE_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [CZE]
+                carrier_con_min:
+                    kerosene: -42.0932589041096
+            CZE_methanol:
+                techs: [demand_industry_methanol]
+                locs: [CZE]
+                carrier_con_min:
+                    methanol: -137.75250722622027
+            CZE_methane:
+                techs: [demand_industry_methane]
+                locs: [CZE]
+                carrier_con_min:
+                    methane: -153.84591415286107
+            DEU_diesel:
+                techs: [demand_industry_diesel]
+                locs: [DEU]
+                carrier_con_min:
+                    diesel: -366.4402908261434
+            DEU_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [DEU]
+                carrier_con_min:
+                    kerosene: -1095.483011872146
+            DEU_methanol:
+                techs: [demand_industry_methanol]
+                locs: [DEU]
+                carrier_con_min:
+                    methanol: -3004.4033744862827
+            DEU_methane:
+                techs: [demand_industry_methane]
+                locs: [DEU]
+                carrier_con_min:
+                    methane: -912.1069045024846
+            DNK_diesel:
+                techs: [demand_industry_diesel]
+                locs: [DNK]
+                carrier_con_min:
+                    diesel: -114.14298418984781
+            DNK_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [DNK]
+                carrier_con_min:
+                    kerosene: -114.38384360730595
+            DNK_methanol:
+                techs: [demand_industry_methanol]
+                locs: [DNK]
+                carrier_con_min:
+                    methanol: -30.455071567635574
+            DNK_methane:
+                techs: [demand_industry_methane]
+                locs: [DNK]
+                carrier_con_min:
+                    methane: -61.14615932687344
+            ESP_diesel:
+                techs: [demand_industry_diesel]
+                locs: [ESP]
+                carrier_con_min:
+                    diesel: -993.5009685440004
+            ESP_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [ESP]
+                carrier_con_min:
+                    kerosene: -724.4866940639271
+            ESP_methanol:
+                techs: [demand_industry_methanol]
+                locs: [ESP]
+                carrier_con_min:
+                    methanol: -482.32650576457223
+            ESP_methane:
+                techs: [demand_industry_methane]
+                locs: [ESP]
+                carrier_con_min:
+                    methane: -361.98880842275184
+            EST_diesel:
+                techs: [demand_industry_diesel]
+                locs: [EST]
+                carrier_con_min:
+                    diesel: -33.89296735213389
+            EST_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [EST]
+                carrier_con_min:
+                    kerosene: -5.477039589041096
+            EST_methanol:
+                techs: [demand_industry_methanol]
+                locs: [EST]
+                carrier_con_min:
+                    methanol: -2.642087032081682
+            EST_methane:
+                techs: [demand_industry_methane]
+                locs: [EST]
+                carrier_con_min:
+                    methane: -16.06682498681067
+            FIN_diesel:
+                techs: [demand_industry_diesel]
+                locs: [FIN]
+                carrier_con_min:
+                    diesel: -64.24777548554336
+            FIN_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [FIN]
+                carrier_con_min:
+                    kerosene: -88.4062694063927
+            FIN_methanol:
+                techs: [demand_industry_methanol]
+                locs: [FIN]
+                carrier_con_min:
+                    methanol: -191.7486692482432
+            FIN_methane:
+                techs: [demand_industry_methane]
+                locs: [FIN]
+                carrier_con_min:
+                    methane: -113.61532873819746
+            FRA_diesel:
+                techs: [demand_industry_diesel]
+                locs: [FRA]
+                carrier_con_min:
+                    diesel: -322.32903630247137
+            FRA_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [FRA]
+                carrier_con_min:
+                    kerosene: -861.0837851598175
+            FRA_methanol:
+                techs: [demand_industry_methanol]
+                locs: [FRA]
+                carrier_con_min:
+                    methanol: -798.4121348098155
+            FRA_methane:
+                techs: [demand_industry_methane]
+                locs: [FRA]
+                carrier_con_min:
+                    methane: -546.630636011117
+            GBR_diesel:
+                techs: [demand_industry_diesel]
+                locs: [GBR]
+                carrier_con_min:
+                    diesel: -446.1359347861469
+            GBR_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [GBR]
+                carrier_con_min:
+                    kerosene: -1407.5891692694067
+            GBR_methanol:
+                techs: [demand_industry_methanol]
+                locs: [GBR]
+                carrier_con_min:
+                    methanol: -817.0296162626996
+            GBR_methane:
+                techs: [demand_industry_methane]
+                locs: [GBR]
+                carrier_con_min:
+                    methane: -508.82016270838193
+            GRC_diesel:
+                techs: [demand_industry_diesel]
+                locs: [GRC]
+                carrier_con_min:
+                    diesel: -276.2638833080499
+            GRC_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [GRC]
+                carrier_con_min:
+                    kerosene: -140.25821917808221
+            GRC_methanol:
+                techs: [demand_industry_methanol]
+                locs: [GRC]
+                carrier_con_min:
+                    methanol: -30.799890233523403
+            GRC_methane:
+                techs: [demand_industry_methane]
+                locs: [GRC]
+                carrier_con_min:
+                    methane: -99.93643042021283
+            HRV_diesel:
+                techs: [demand_industry_diesel]
+                locs: [HRV]
+                carrier_con_min:
+                    diesel: -13.101336560680103
+            HRV_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [HRV]
+                carrier_con_min:
+                    kerosene: -15.673044748858448
+            HRV_methanol:
+                techs: [demand_industry_methanol]
+                locs: [HRV]
+                carrier_con_min:
+                    methanol: -9.302950217351722
+            HRV_methane:
+                techs: [demand_industry_methane]
+                locs: [HRV]
+                carrier_con_min:
+                    methane: -44.42095752103282
+            HUN_diesel:
+                techs: [demand_industry_diesel]
+                locs: [HUN]
+                carrier_con_min:
+                    diesel: -7.507698256454815
+            HUN_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [HUN]
+                carrier_con_min:
+                    kerosene: -23.389851141552516
+            HUN_methanol:
+                techs: [demand_industry_methanol]
+                locs: [HUN]
+                carrier_con_min:
+                    methanol: -127.22124260133144
+            HUN_methane:
+                techs: [demand_industry_methane]
+                locs: [HUN]
+                carrier_con_min:
+                    methane: -97.15977378464407
+            IRL_diesel:
+                techs: [demand_industry_diesel]
+                locs: [IRL]
+                carrier_con_min:
+                    diesel: -33.37366865299149
+            IRL_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [IRL]
+                carrier_con_min:
+                    kerosene: -101.46358123287675
+            IRL_methanol:
+                techs: [demand_industry_methanol]
+                locs: [IRL]
+                carrier_con_min:
+                    methanol: -29.006138036208753
+            IRL_methane:
+                techs: [demand_industry_methane]
+                locs: [IRL]
+                carrier_con_min:
+                    methane: -86.47890596092341
+            ISL_diesel:
+                techs: [demand_industry_diesel]
+                locs: [ISL]
+                carrier_con_min:
+                    diesel: -28.43104588660605
+            ISL_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [ISL]
+                carrier_con_min:
+                    kerosene: -37.00514863013698
+            ISL_methanol:
+                techs: [demand_industry_methanol]
+                locs: [ISL]
+                carrier_con_min:
+                    methanol: -1.9238464486932179
+            ISL_methane:
+                techs: [demand_industry_methane]
+                locs: [ISL]
+                carrier_con_min:
+                    methane: -12.9420982749816
+            ITA_diesel:
+                techs: [demand_industry_diesel]
+                locs: [ITA]
+                carrier_con_min:
+                    diesel: -393.48893778411065
+            ITA_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [ITA]
+                carrier_con_min:
+                    kerosene: -483.8804109589042
+            ITA_methanol:
+                techs: [demand_industry_methanol]
+                locs: [ITA]
+                carrier_con_min:
+                    methanol: -437.95564509457324
+            ITA_methane:
+                techs: [demand_industry_methane]
+                locs: [ITA]
+                carrier_con_min:
+                    methane: -501.5199128388762
+            LTU_diesel:
+                techs: [demand_industry_diesel]
+                locs: [LTU]
+                carrier_con_min:
+                    diesel: -20.965918418894617
+            LTU_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [LTU]
+                carrier_con_min:
+                    kerosene: -12.153205479452055
+            LTU_methanol:
+                techs: [demand_industry_methanol]
+                locs: [LTU]
+                carrier_con_min:
+                    methanol: -80.12091500965859
+            LTU_methane:
+                techs: [demand_industry_methane]
+                locs: [LTU]
+                carrier_con_min:
+                    methane: -27.339166547793354
+            LUX_diesel:
+                techs: [demand_industry_diesel]
+                locs: [LUX]
+                carrier_con_min:
+                    diesel: -0.2775021592841757
+            LUX_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [LUX]
+                carrier_con_min:
+                    kerosene: -59.24998520547947
+            LUX_methanol:
+                techs: [demand_industry_methanol]
+                locs: [LUX]
+                carrier_con_min:
+                    methanol: -4.9422505708727105
+            LUX_methane:
+                techs: [demand_industry_methane]
+                locs: [LUX]
+                carrier_con_min:
+                    methane: -10.992143332903206
+            LVA_diesel:
+                techs: [demand_industry_diesel]
+                locs: [LVA]
+                carrier_con_min:
+                    diesel: -39.39665966058925
+            LVA_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [LVA]
+                carrier_con_min:
+                    kerosene: -14.442794520547945
+            LVA_methanol:
+                techs: [demand_industry_methanol]
+                locs: [LVA]
+                carrier_con_min:
+                    methanol: -2.6184286633373257
+            LVA_methane:
+                techs: [demand_industry_methane]
+                locs: [LVA]
+                carrier_con_min:
+                    methane: -42.23791394018505
+            MKD_diesel:
+                techs: [demand_industry_diesel]
+                locs: [MKD]
+                carrier_con_min:
+                    diesel: -0.37931683089645574
+            MKD_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [MKD]
+                carrier_con_min:
+                    kerosene: -1.8495534246575345
+            MKD_methanol:
+                techs: [demand_industry_methanol]
+                locs: [MKD]
+                carrier_con_min:
+                    methanol: -9.830237653837358
+            MKD_methane:
+                techs: [demand_industry_methane]
+                locs: [MKD]
+                carrier_con_min:
+                    methane: -7.923893909841205
+            MNE_diesel:
+                techs: [demand_industry_diesel]
+                locs: [MNE]
+                carrier_con_min:
+                    diesel: -0.5324131348793818
+            MNE_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [MNE]
+                carrier_con_min:
+                    kerosene: -2.3264675799086763
+            MNE_methanol:
+                techs: [demand_industry_methanol]
+                locs: [MNE]
+                carrier_con_min:
+                    methanol: -1.8389406550815124
+            MNE_methane:
+                techs: [demand_industry_methane]
+                locs: [MNE]
+                carrier_con_min:
+                    methane: -2.6883559088768045
+            NLD_diesel:
+                techs: [demand_industry_diesel]
+                locs: [NLD]
+                carrier_con_min:
+                    diesel: -1466.5324527709581
+            NLD_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [NLD]
+                carrier_con_min:
+                    kerosene: -459.3283009132421
+            NLD_methanol:
+                techs: [demand_industry_methanol]
+                locs: [NLD]
+                carrier_con_min:
+                    methanol: -2000.1229230541414
+            NLD_methane:
+                techs: [demand_industry_methane]
+                locs: [NLD]
+                carrier_con_min:
+                    methane: -168.75277574627899
+            NOR_diesel:
+                techs: [demand_industry_diesel]
+                locs: [NOR]
+                carrier_con_min:
+                    diesel: -139.70661076688606
+            NOR_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [NOR]
+                carrier_con_min:
+                    kerosene: -111.0509178082192
+            NOR_methanol:
+                techs: [demand_industry_methanol]
+                locs: [NOR]
+                carrier_con_min:
+                    methanol: -255.54711105930355
+            NOR_methane:
+                techs: [demand_industry_methane]
+                locs: [NOR]
+                carrier_con_min:
+                    methane: -72.83526271817558
+            POL_diesel:
+                techs: [demand_industry_diesel]
+                locs: [POL]
+                carrier_con_min:
+                    diesel: -34.73542558349179
+            POL_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [POL]
+                carrier_con_min:
+                    kerosene: -82.53383561643837
+            POL_methanol:
+                techs: [demand_industry_methanol]
+                locs: [POL]
+                carrier_con_min:
+                    methanol: -586.148568829365
+            POL_methane:
+                techs: [demand_industry_methane]
+                locs: [POL]
+                carrier_con_min:
+                    methane: -393.8755737992025
+            PRT_diesel:
+                techs: [demand_industry_diesel]
+                locs: [PRT]
+                carrier_con_min:
+                    diesel: -118.37844365815043
+            PRT_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [PRT]
+                carrier_con_min:
+                    kerosene: -151.99305936073063
+            PRT_methanol:
+                techs: [demand_industry_methanol]
+                locs: [PRT]
+                carrier_con_min:
+                    methanol: -48.97085012653472
+            PRT_methane:
+                techs: [demand_industry_methane]
+                locs: [PRT]
+                carrier_con_min:
+                    methane: -102.86871265802398
+            ROU_diesel:
+                techs: [demand_industry_diesel]
+                locs: [ROU]
+                carrier_con_min:
+                    diesel: -21.46328612965833
+            ROU_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [ROU]
+                carrier_con_min:
+                    kerosene: -37.149621141552494
+            ROU_methanol:
+                techs: [demand_industry_methanol]
+                locs: [ROU]
+                carrier_con_min:
+                    methanol: -244.75635101467105
+            ROU_methane:
+                techs: [demand_industry_methane]
+                locs: [ROU]
+                carrier_con_min:
+                    methane: -136.4068468873756
+            SRB_diesel:
+                techs: [demand_industry_diesel]
+                locs: [SRB]
+                carrier_con_min:
+                    diesel: -5.350751265393393
+            SRB_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [SRB]
+                carrier_con_min:
+                    kerosene: -13.906721506849316
+            SRB_methanol:
+                techs: [demand_industry_methanol]
+                locs: [SRB]
+                carrier_con_min:
+                    methanol: -88.80272536363172
+            SRB_methane:
+                techs: [demand_industry_methane]
+                locs: [SRB]
+                carrier_con_min:
+                    methane: -52.065345073360504
+            SVK_diesel:
+                techs: [demand_industry_diesel]
+                locs: [SVK]
+                carrier_con_min:
+                    diesel: -0.8106253300681487
+            SVK_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [SVK]
+                carrier_con_min:
+                    kerosene: -5.789150684931506
+            SVK_methanol:
+                techs: [demand_industry_methanol]
+                locs: [SVK]
+                carrier_con_min:
+                    methanol: -64.53304966390161
+            SVK_methane:
+                techs: [demand_industry_methane]
+                locs: [SVK]
+                carrier_con_min:
+                    methane: -54.78728519632625
+            SVN_diesel:
+                techs: [demand_industry_diesel]
+                locs: [SVN]
+                carrier_con_min:
+                    diesel: -15.89910604131685
+            SVN_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [SVN]
+                carrier_con_min:
+                    kerosene: -2.6665634703196353
+            SVN_methanol:
+                techs: [demand_industry_methanol]
+                locs: [SVN]
+                carrier_con_min:
+                    methanol: -7.180576536261623
+            SVN_methane:
+                techs: [demand_industry_methane]
+                locs: [SVN]
+                carrier_con_min:
+                    methane: -25.358499496793776
+            SWE_diesel:
+                techs: [demand_industry_diesel]
+                locs: [SWE]
+                carrier_con_min:
+                    diesel: -256.5792265632207
+            SWE_kerosene:
+                techs: [demand_industry_kerosene]
+                locs: [SWE]
+                carrier_con_min:
+                    kerosene: -120.421668173516
+            SWE_methanol:
+                techs: [demand_industry_methanol]
+                locs: [SWE]
+                carrier_con_min:
+                    methanol: -195.86694312418425
+            SWE_methane:
+                techs: [demand_industry_methane]
+                locs: [SWE]
+                carrier_con_min:
+                    methane: -134.3697049870266
 
 # industry_techs:
     #     techs:
@@ -1931,3 +2635,4 @@ overrides:
  
 scenarios:
     industry_fuel: [annual_fuel_demand, industry_techs] # formal 'industry_fuel_isolated'
+    industry_fuel_isolated: [annual_fuel_demand_isolated, industry_techs]
