@@ -1,3 +1,9 @@
+# so, now, you can say python create_input.py -i [path_to_model_yaml] -o [path_to_output_nc] --scenario [scenario] from the command line to create the model NetCDF
+# and python run.py -i [path_to_model_input_data_nc] -o [path_to_optimised_output_nc] to optimise it
+# you then just need to include an extra script and argument in run.py to update the underlying model data with e.g. your sensitivity data before you run it
+
+import sys,os
+sys.path.append(os.getcwd())
 import argparse
 
 import pyomo.core as po
@@ -73,23 +79,13 @@ def add_production_max_time_varying_constraint(model, backend_model):
         Set maximum carrier production for technologies with time varying maximum capacity
         """
         energy_cap_max = backend_model.energy_cap_max_time_varying[loc_tech, timestep]
-
         if invalid(energy_cap_max):
             return po.Constraint.Skip
         model_data_dict = backend_model.__calliope_model_data["data"]
         timestep_resolution = backend_model.timestep_resolution[timestep]
-        if loc_tech in backend_model.loc_techs_conversion_plus:
-            loc_tech_carriers_out = split_comma_list(
-                model_data_dict["lookup_loc_techs_conversion_plus"]["out", loc_tech]
-            )
-        elif loc_tech in backend_model.loc_techs_conversion:
-            loc_tech_carriers_out = [
-                model_data_dict["lookup_loc_techs_conversion"]["out", loc_tech]
-            ]
-        else:
-            loc_tech_carriers_out = [
-                model_data_dict["lookup_loc_techs"]["out", loc_tech]
-            ]
+        loc_tech_carriers_out = split_comma_list(
+            model_data_dict["lookup_loc_techs_conversion_plus"]["out", loc_tech]
+        )
 
         carrier_prod = sum(
             backend_model.carrier_prod[loc_tech_carrier, timestep]
@@ -101,7 +97,7 @@ def add_production_max_time_varying_constraint(model, backend_model):
 
     backend_model.loc_tech_carrier_production_max_time_varying_constraint = po.Set(
         initialize=[
-            loc_tech for loc_tech in backend_model.loc_techs
+            loc_tech for loc_tech in backend_model.loc_techs_conversion_plus
             if model.inputs.energy_cap_max_time_varying.loc[{"loc_techs": loc_tech}].notnull().all()
         ],
         ordered=True

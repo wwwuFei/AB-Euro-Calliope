@@ -40,7 +40,7 @@ techs:
         essentials:
             name: 'Industrial bio_methanol transport (truck)'
             parent: bio_fuel_tranport
-            carrier: methanol_transmission #methanol # 19.9 MJ/kg, DEA fuels P202 | energy density = 0.00552 MWh/kg = 5.52 MWh/ton = (X/3600*1000)
+            carrier: methanol #methanol # 19.9 MJ/kg, DEA fuels P202 | energy density = 0.00552 MWh/kg = 5.52 MWh/ton = (X/3600*1000)
     # methanol_convert_for_trans:
     #     exists: false
     #     essentials:
