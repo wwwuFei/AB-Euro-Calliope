@@ -58,7 +58,7 @@ function process_case () {
 
 if [[ $# -eq 0 ]] ; then
     echo No parameter given, running all runs sequentially...
-    for i in $(seq 1 10); do process_case $i; done
+    for i in $(seq 1 49); do process_case $i; done
 else
     echo Running run $1
     process_case $1

@@ -12,7 +12,7 @@ import pdb
 
 # pdb.set_trance()
 path_to_model_yaml = '2050/model/national/bio-model-2018.yaml'
-os.mkdir('sensitivity')
+# os.mkdir('sensitivity')
 
 
 # path_to_netcdf_of_model_inputs = os.path.join(parent_path, 'test_inputs.nc')
