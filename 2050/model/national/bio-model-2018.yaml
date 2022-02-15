@@ -117,7 +117,35 @@ overrides:
             function: resample
             function_options.resolution: 48H
     
+# for sensitivity analysi: change gurobi optimisation methods
+    opt_crossover_1:
+        run:
+            solver_options:
+                Method: 2 # use barrier, but do not run simplex in parallel
+                Crossover: 1 # perform crossover, stop even when it is not the most optimal solution
+    opt_method_0:
+        run:
+            solver_options:
+                Method: 0 # primal simplex
+    opt_method_1:
+        run:
+            solver_options:
+                Method: 1 # dual simplex   
+    # the default method is 2
+    opt_method_3:
+        run:
+            solver_options:
+                Method: 3 # concurrent   
+    opt_method_4:
+        run:
+            solver_options:
+                Method: 4 # deterministic concurrent
+    opt_method_5:
+        run:
+            solver_options:
+                Method: 5 # deterministic concurrent simplex
     
+
     # for relaxing tolerence, added by fei
     opt_tol_3: # notworking
         run.solver_options.OptimalityTol: 1e-3 # original: 1e-4
