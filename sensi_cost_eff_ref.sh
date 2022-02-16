@@ -4,6 +4,6 @@
 #BSUB -R "rusage[mem=80G]"
 #BSUB -W 24:00
 #BSUB -r
-#BSUB -o log_sensi_ref_%I.log
+#BSUB -o log_sensi_cost_eff_ref_%I.log
 
-./sensi_ref_submit_runs.sh.array.sh ${LSB_JOBINDEX}
+./sensi_cost_eff_ref.sh.array.sh ${LSB_JOBINDEX}
