@@ -1,9 +1,9 @@
 #!/bin/sh
-#BSUB -J calliope[1-49]
+#BSUB -J calliope[1-20]
 #BSUB -n 6
-#BSUB -R "rusage[mem=80G]"
-#BSUB -W 24:00
+#BSUB -R "rusage[mem=60G]"
+#BSUB -W 12:00
 #BSUB -r
-#BSUB -o log_sensi_cost_eff_ref_%I.log
+#BSUB -o log_2_sensi_cost_eff_ref_%I.log
 
 ./sensi_cost_eff_ref.sh.array.sh ${LSB_JOBINDEX}
