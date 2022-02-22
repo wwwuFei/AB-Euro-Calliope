@@ -46,9 +46,6 @@ overrides:
   electrolysis_cost_90_perc:
     techs:
       electrolysis.costs.monetary.energy_cap: 54.776621756950234 #60.86291306327804*90%
-  # electrolysis_cost_100_perc:
-  #   techs:
-  #     # electrolysis.costs.monetary.energy_cap: 60.86291306327805 #60.86291306327804*100%
   electrolysis_cost_110_perc:
     techs:
       electrolysis.costs.monetary.energy_cap: 66.94920436960585 #60.86291306327804*110%
@@ -217,29 +214,56 @@ overrides:
       fats_uco_hydrogen_to_kerosene.costs.monetary.energy_cap: 92.3 #71*130%
 
 
-## energy_eff (70%, 80%, 90%, 100% (no change), 110%, 120%, 130%)
+## energy_eff range(85, 115, 15)
 # change hydrogen production eff
-  electrolysis_eff_70_perc:
+  # electrolysis_eff_70_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.5021333333333334 #0.7173333333333334*70%
+  # electrolysis_eff_80_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.5738666666666667 #0.7173333333333334*80%
+  # electrolysis_eff_90_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.6456000000000001 #0.7173333333333334*90%
+  # # electrolysis_eff_100_perc:
+  # #   techs:
+  # #     electrolysis.constraints.energy_eff: 0.7173333333333334 #0.7173333333333334*100%
+  # electrolysis_eff_110_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.7890666666666667 #0.7173333333333334*110%
+  # electrolysis_eff_120_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.8608000000000001 #0.7173333333333334*120%
+  # electrolysis_eff_130_perc:
+  #   techs:
+  #     electrolysis.constraints.energy_eff: 0.9325333333333334 #0.7173333333333334*130%
+  electrolysis_eff_95_perc:
     techs:
-      electrolysis.constraints.energy_eff: 0.5021333333333334 #0.7173333333333334*70%
-  electrolysis_eff_80_perc:
+      electrolysis.constraints.energy_eff: 0.6814666666666668 #0.7173333333333334*95%
+  electrolysis_eff_105_perc:
     techs:
-      electrolysis.constraints.energy_eff: 0.5738666666666667 #0.7173333333333334*80%
+      electrolysis.constraints.energy_eff: 0.7532000000000001 #0.7173333333333334*105%
   electrolysis_eff_90_perc:
     techs:
       electrolysis.constraints.energy_eff: 0.6456000000000001 #0.7173333333333334*90%
-  # electrolysis_eff_100_perc:
-  #   techs:
-  #     electrolysis.constraints.energy_eff: 0.7173333333333334 #0.7173333333333334*100%
   electrolysis_eff_110_perc:
     techs:
       electrolysis.constraints.energy_eff: 0.7890666666666667 #0.7173333333333334*110%
-  electrolysis_eff_120_perc:
+  electrolysis_eff_85_perc:
     techs:
-      electrolysis.constraints.energy_eff: 0.8608000000000001 #0.7173333333333334*120%
-  electrolysis_eff_130_perc:
+      electrolysis.constraints.energy_eff: 0.6097333333333333 #0.7173333333333334*85%
+  electrolysis_eff_115_perc:
     techs:
-      electrolysis.constraints.energy_eff: 0.9325333333333334 #0.7173333333333334*130%
+      electrolysis.constraints.energy_eff: 0.8249333333333334 #0.7173333333333334*115%
+  electrolysis_eff_low_bound:
+    techs:
+      electrolysis.constraints.energy_eff: 0.706 #lower bound from DEA
+  electrolysis_eff_high_bound:
+    techs:
+      electrolysis.constraints.energy_eff: 0.7692 #higher bound from DEA
+  
+
+  
 # change storage eff
   storage_eff_70_perc:
     techs:
@@ -270,75 +294,96 @@ overrides:
       hydrogen_storage.constraints.energy_eff: 1.0530000000000002 #0.81*130%
       battery.constraints.energy_eff: 1.2054900000000002 #0.9273*130%
 
-# change hydrogen transformation eff
-  hydrogen_trans_eff_70_perc:
+# # change hydrogen transformation eff
+  hydrogen_trans_eff_95_perc:
     techs:
-      hydrogen_to_methanol.constraints.energy_eff: 0.611251876876877 #0.8732169669669672*70%
-      hydrogen_to_methane.constraints.energy_eff: 0.5782 #0.826*70%
-      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.31499999999999995 #0.1995*0.7
-  hydrogen_trans_eff_80_perc:
+      hydrogen_to_methanol.constraints.energy_eff: 0.8295561186186188 #0.8732169669669672*95%
+      hydrogen_to_methane.constraints.energy_eff: 0.7847 #0.826*95%
+      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.42749999999999994 #0.1995*0.95
+  hydrogen_trans_eff_105_perc:
     techs:
-      hydrogen_to_methanol.constraints.energy_eff: 0.6985735735735737 #0.8732169669669672*80%
-      hydrogen_to_methane.constraints.energy_eff: 0.6607999999999999 #0.826*80%
-      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.36 #0.1995*0.8
+      hydrogen_to_methanol.constraints.energy_eff: 0.9168778153153155 #0.8732169669669672*105%
+      hydrogen_to_methane.constraints.energy_eff: 0.8672999999999998 #0.826*105%
+      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.4724999999999999 #0.1995*1.05
   hydrogen_trans_eff_90_perc:
     techs:
       hydrogen_to_methanol.constraints.energy_eff: 0.7858952702702705 #0.8732169669669672*90%
       hydrogen_to_methane.constraints.energy_eff: 0.7433999999999998 #0.826*90%
       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.4049999999999999 #0.1995*0.9
-  hydrogen_trans_eff_100_perc:
-    techs:
-      hydrogen_to_methanol.constraints.energy_eff: 0.8732169669669672 #0.8732169669669672*100%
-      hydrogen_to_methane.constraints.energy_eff: 0.826 #0.826*100%
-      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.44999999999999996 #0.1995*1.0
   hydrogen_trans_eff_110_perc:
     techs:
       hydrogen_to_methanol.constraints.energy_eff: 0.9605386636636639 #0.8732169669669672*110%
       hydrogen_to_methane.constraints.energy_eff: 0.9086 #0.826*110%
       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.49499999999999994 #0.1995*1.1
-  hydrogen_trans_eff_120_perc:
+  hydrogen_trans_eff_85_perc:
     techs:
-      hydrogen_to_methanol.constraints.energy_eff: 1.0478603603603605 #0.8732169669669672*120%
-      hydrogen_to_methane.constraints.energy_eff: 0.9911999999999999 #0.826*120%
-      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.5399999999999999 #0.1995*1.2
-  hydrogen_trans_eff_130_perc:
+      hydrogen_to_methanol.constraints.energy_eff: 0.7422344219219221 #0.8732169669669672*85%
+      hydrogen_to_methane.constraints.energy_eff: 0.7021 #0.826*85%
+      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.38249999999999995 #0.1995*0.85
+  hydrogen_trans_eff_115_perc:
     techs:
-      hydrogen_to_methanol.constraints.energy_eff: 1.1351820570570572 #0.8732169669669672*130%
-      hydrogen_to_methane.constraints.energy_eff: 1.0737999999999999 #0.826*130%
-      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.585 #0.1995*1.3
-# change bio transformation eff
-  bio_trans_eff_100_perc: # for example, not using
-      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.1995
-      biofuel_to_diesel.constraints.energy_eff: 0.6
-      biofuel_to_methanol.constraints.energy_eff: 0.65
-      biofuel_to_methane.constraints.energy_eff: 0.7
-      biogas_to_sng.constraints.energy_eff: 0.89
-      biogas_engines.constraints.energy_eff: 0.45
-      fats_uco_to_diesel.constraints.energy_eff: 0.87
-      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.85
-      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.66
-  bio_trans_eff_70_perc:
+      hydrogen_to_methanol.constraints.energy_eff: 1.0041995120120122 #0.8732169669669672*115%
+      hydrogen_to_methane.constraints.energy_eff: 0.9499 #0.826*115%
+      hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.5175 #0.1995*1.15
+#   hydrogen_trans_eff_70_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 0.611251876876877 #0.8732169669669672*70%
+#       hydrogen_to_methane.constraints.energy_eff: 0.5782 #0.826*70%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.31499999999999995 #0.1995*0.7
+#   hydrogen_trans_eff_80_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 0.6985735735735737 #0.8732169669669672*80%
+#       hydrogen_to_methane.constraints.energy_eff: 0.6607999999999999 #0.826*80%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.36 #0.1995*0.8
+#   hydrogen_trans_eff_90_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 0.7858952702702705 #0.8732169669669672*90%
+#       hydrogen_to_methane.constraints.energy_eff: 0.7433999999999998 #0.826*90%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.4049999999999999 #0.1995*0.9
+#   hydrogen_trans_eff_100_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 0.8732169669669672 #0.8732169669669672*100%
+#       hydrogen_to_methane.constraints.energy_eff: 0.826 #0.826*100%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.44999999999999996 #0.1995*1.0
+#   hydrogen_trans_eff_110_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 0.9605386636636639 #0.8732169669669672*110%
+#       hydrogen_to_methane.constraints.energy_eff: 0.9086 #0.826*110%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.49499999999999994 #0.1995*1.1
+#   hydrogen_trans_eff_120_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 1.0478603603603605 #0.8732169669669672*120%
+#       hydrogen_to_methane.constraints.energy_eff: 0.9911999999999999 #0.826*120%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.5399999999999999 #0.1995*1.2
+#   hydrogen_trans_eff_130_perc:
+#     techs:
+#       hydrogen_to_methanol.constraints.energy_eff: 1.1351820570570572 #0.8732169669669672*130%
+#       hydrogen_to_methane.constraints.energy_eff: 1.0737999999999999 #0.826*130%
+#       hydrogen_to_liquids.constraints.carrier_ratios.carrier_out.kerosene: 0.585 #0.1995*1.3
+
+# # change bio transformation eff
+  bio_trans_eff_95_perc:
     techs:
-      biofuel_to_diesel.constraints.energy_eff: 0.42 #0.6*70%
-      biofuel_to_methanol.constraints.energy_eff: 0.455 #0.65*70%
-      biofuel_to_methane.constraints.energy_eff: 0.49 #0.7*70%
-      biogas_to_sng.constraints.energy_eff: 0.623 #0.89*70%
-      biogas_engines.constraints.energy_eff: 0.315 #0.45*70%
-      fats_uco_to_diesel.constraints.energy_eff: 0.609 #0.87*70%
-      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.595 #0.85*70%
-      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.462 #0.66*70%
-      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.13965 #0.1995*0.7
-  bio_trans_eff_80_perc:
+      biofuel_to_diesel.constraints.energy_eff: 0.57 #0.6*95%
+      biofuel_to_methanol.constraints.energy_eff: 0.6175 #0.65*95%
+      biofuel_to_methane.constraints.energy_eff: 0.665 #0.7*95%
+      biogas_to_sng.constraints.energy_eff: 0.8454999999999999 #0.89*95%
+      biogas_engines.constraints.energy_eff: 0.4275 #0.45*95%
+      fats_uco_to_diesel.constraints.energy_eff: 0.8265 #0.87*95%
+      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.8075 #0.85*95%
+      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.627 #0.66*95%
+      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.189525 #0.1995*0.95
+  bio_trans_eff_105_perc:
     techs:
-      biofuel_to_diesel.constraints.energy_eff: 0.48 #0.6*80%
-      biofuel_to_methanol.constraints.energy_eff: 0.52 #0.65*80%
-      biofuel_to_methane.constraints.energy_eff: 0.56 #0.7*80%
-      biogas_to_sng.constraints.energy_eff: 0.7120000000000001 #0.89*80%
-      biogas_engines.constraints.energy_eff: 0.36 #0.45*80%
-      fats_uco_to_diesel.constraints.energy_eff: 0.696 #0.87*80%
-      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.68 #0.85*80%
-      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.528 #0.66*80%
-      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.15960000000000002 #0.1995*0.8
+      biofuel_to_diesel.constraints.energy_eff: 0.63 #0.6*105%
+      biofuel_to_methanol.constraints.energy_eff: 0.6825 #0.65*105%
+      biofuel_to_methane.constraints.energy_eff: 0.735 #0.7*105%
+      biogas_to_sng.constraints.energy_eff: 0.9345 #0.89*105%
+      biogas_engines.constraints.energy_eff: 0.4725 #0.45*105%
+      fats_uco_to_diesel.constraints.energy_eff: 0.9135 #0.87*105%
+      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.8925 #0.85*105%
+      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.693 #0.66*105%
+      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.20947500000000002 #0.1995*1.05
   bio_trans_eff_90_perc:
     techs:
       biofuel_to_diesel.constraints.energy_eff: 0.54 #0.6*90%
@@ -361,25 +406,101 @@ overrides:
       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.935 #0.85*110%
       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.7260000000000001 #0.66*110%
       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.21945 #0.1995*1.1
-  bio_trans_eff_120_perc:
+  bio_trans_eff_85_perc:
     techs:
-      biofuel_to_diesel.constraints.energy_eff: 0.72 #0.6*120%
-      biofuel_to_methanol.constraints.energy_eff: 0.78 #0.65*120%
-      biofuel_to_methane.constraints.energy_eff: 0.84 #0.7*120%
-      biogas_to_sng.constraints.energy_eff: 1.068 #0.89*120%
-      biogas_engines.constraints.energy_eff: 0.54 #0.45*120%
-      fats_uco_to_diesel.constraints.energy_eff: 1.044 #0.87*120%
-      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 1.02 #0.85*120%
-      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.792 #0.66*120%
-      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.2394 #0.1995*1.2
-  bio_trans_eff_130_perc:
+      biofuel_to_diesel.constraints.energy_eff: 0.51 #0.6*85%
+      biofuel_to_methanol.constraints.energy_eff: 0.5525 #0.65*85%
+      biofuel_to_methane.constraints.energy_eff: 0.595 #0.7*85%
+      biogas_to_sng.constraints.energy_eff: 0.7565000000000001 #0.89*85%
+      biogas_engines.constraints.energy_eff: 0.3825 #0.45*85%
+      fats_uco_to_diesel.constraints.energy_eff: 0.7395 #0.87*85%
+      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.7225 #0.85*85%
+      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.561 #0.66*85%
+      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.169575 #0.1995*0.85
+  bio_trans_eff_115_perc:
     techs:
-      biofuel_to_diesel.constraints.energy_eff: 0.78 #0.6*130%
-      biofuel_to_methanol.constraints.energy_eff: 0.845 #0.65*130%
-      biofuel_to_methane.constraints.energy_eff: 0.91 #0.7*130%
-      biogas_to_sng.constraints.energy_eff: 1.157 #0.89*130%
-      biogas_engines.constraints.energy_eff: 0.585 #0.45*130%
-      fats_uco_to_diesel.constraints.energy_eff: 1.131 #0.87*130%
-      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 1.105 #0.85*130%
-      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.858 #0.66*130%
-      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.25935 #0.1995*1.3
+      biofuel_to_diesel.constraints.energy_eff: 0.69 #0.6*115%
+      biofuel_to_methanol.constraints.energy_eff: 0.7475 #0.65*115%
+      biofuel_to_methane.constraints.energy_eff: 0.805 #0.7*115%
+      biogas_to_sng.constraints.energy_eff: 1.0235 #0.89*115%
+      biogas_engines.constraints.energy_eff: 0.5175 #0.45*115%
+      fats_uco_to_diesel.constraints.energy_eff: 1.0005 #0.87*115%
+      fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.9775 #0.85*115%
+      fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.759 #0.66*115%
+      biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.22942500000000002 #0.1995*1.15
+#   bio_trans_eff_100_perc: # for example, not using
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.1995
+#       biofuel_to_diesel.constraints.energy_eff: 0.6
+#       biofuel_to_methanol.constraints.energy_eff: 0.65
+#       biofuel_to_methane.constraints.energy_eff: 0.7
+#       biogas_to_sng.constraints.energy_eff: 0.89
+#       biogas_engines.constraints.energy_eff: 0.45
+#       fats_uco_to_diesel.constraints.energy_eff: 0.87
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.85
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.66
+#   bio_trans_eff_70_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.42 #0.6*70%
+#       biofuel_to_methanol.constraints.energy_eff: 0.455 #0.65*70%
+#       biofuel_to_methane.constraints.energy_eff: 0.49 #0.7*70%
+#       biogas_to_sng.constraints.energy_eff: 0.623 #0.89*70%
+#       biogas_engines.constraints.energy_eff: 0.315 #0.45*70%
+#       fats_uco_to_diesel.constraints.energy_eff: 0.609 #0.87*70%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.595 #0.85*70%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.462 #0.66*70%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.13965 #0.1995*0.7
+#   bio_trans_eff_80_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.48 #0.6*80%
+#       biofuel_to_methanol.constraints.energy_eff: 0.52 #0.65*80%
+#       biofuel_to_methane.constraints.energy_eff: 0.56 #0.7*80%
+#       biogas_to_sng.constraints.energy_eff: 0.7120000000000001 #0.89*80%
+#       biogas_engines.constraints.energy_eff: 0.36 #0.45*80%
+#       fats_uco_to_diesel.constraints.energy_eff: 0.696 #0.87*80%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.68 #0.85*80%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.528 #0.66*80%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.15960000000000002 #0.1995*0.8
+#   bio_trans_eff_90_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.54 #0.6*90%
+#       biofuel_to_methanol.constraints.energy_eff: 0.585 #0.65*90%
+#       biofuel_to_methane.constraints.energy_eff: 0.6299999999999999 #0.7*90%
+#       biogas_to_sng.constraints.energy_eff: 0.8009999999999999 #0.89*90%
+#       biogas_engines.constraints.energy_eff: 0.405 #0.45*90%
+#       fats_uco_to_diesel.constraints.energy_eff: 0.7829999999999999 #0.87*90%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.765 #0.85*90%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.5940000000000001 #0.66*90%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.17955000000000002 #0.1995*0.9
+#   bio_trans_eff_110_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.66 #0.6*110%
+#       biofuel_to_methanol.constraints.energy_eff: 0.715 #0.65*110%
+#       biofuel_to_methane.constraints.energy_eff: 0.77 #0.7*110%
+#       biogas_to_sng.constraints.energy_eff: 0.9790000000000001 #0.89*110%
+#       biogas_engines.constraints.energy_eff: 0.495 #0.45*110%
+#       fats_uco_to_diesel.constraints.energy_eff: 0.9570000000000001 #0.87*110%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 0.935 #0.85*110%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.7260000000000001 #0.66*110%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.21945 #0.1995*1.1
+#   bio_trans_eff_120_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.72 #0.6*120%
+#       biofuel_to_methanol.constraints.energy_eff: 0.78 #0.65*120%
+#       biofuel_to_methane.constraints.energy_eff: 0.84 #0.7*120%
+#       biogas_to_sng.constraints.energy_eff: 1.068 #0.89*120%
+#       biogas_engines.constraints.energy_eff: 0.54 #0.45*120%
+#       fats_uco_to_diesel.constraints.energy_eff: 1.044 #0.87*120%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 1.02 #0.85*120%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.792 #0.66*120%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.2394 #0.1995*1.2
+#   bio_trans_eff_130_perc:
+#     techs:
+#       biofuel_to_diesel.constraints.energy_eff: 0.78 #0.6*130%
+#       biofuel_to_methanol.constraints.energy_eff: 0.845 #0.65*130%
+#       biofuel_to_methane.constraints.energy_eff: 0.91 #0.7*130%
+#       biogas_to_sng.constraints.energy_eff: 1.157 #0.89*130%
+#       biogas_engines.constraints.energy_eff: 0.585 #0.45*130%
+#       fats_uco_to_diesel.constraints.energy_eff: 1.131 #0.87*130%
+#       fats_uco_hydrogen_to_diesel.constraints.energy_eff: 1.105 #0.85*130%
+#       fats_uco_hydrogen_to_kerosene.constraints.energy_eff: 0.858 #0.66*130%
+#       biofuel_to_liquids.constraints.carrier_ratios.carrier_out_2.bio_diesel: 0.25935 #0.1995*1.3

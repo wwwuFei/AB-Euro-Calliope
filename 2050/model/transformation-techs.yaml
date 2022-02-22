@@ -47,6 +47,7 @@ techs:
                 carrier_in_3.co2: 2.079831932773109  # (0.1 tCO2/(MWhe + MWhH2)) | 3.3tCO2/t_fuels * 0.75MWh_fuels/MWh_in / 11.9MWh_fuels/t_fuels
                 # carrier_out.syn_kerosene: 0.44999999999999996  # MWh_kerosene/MWh_in @ 60% liquids content
                 # carrier_out_2.syn_diesel: 0.30000000000000004  # MWh_diesel/MWh_in @ 40% liquids content (combining diesel oil and light oil production)
+            # uncertatinty range: +/-20%
                 carrier_out.kerosene: 0.44999999999999996  # MWh_kerosene/MWh_in @ 60% liquids content
                 carrier_out_2.diesel: 0.30000000000000004  # MWh_diesel/MWh_in @ 40% liquids content (combining diesel oil and light oil production)
             lifetime: 25  # 2020 technical lifetime
@@ -135,6 +136,7 @@ techs:
             primary_carrier_in: hydrogen
             carrier_in_2: co2
             # carrier_out: syn_methanol
+        # uncertainty range: 0-30%
             carrier_out: methanol
             #carrier_out_2: district_heat  # ignoring for now
         constraints:
@@ -193,6 +195,7 @@ techs:
             carrier_in: electricity
             carrier_out: hydrogen
         constraints:
+        # energy_eff uncertainty range: 0.7060 - 0.7692
             energy_eff: 0.7173333333333334  # average of SOEC, PEM, and Alkaline
             lifetime: 23.333333333333332  # average of SOEC, PEM, and Alkaline
         costs:
