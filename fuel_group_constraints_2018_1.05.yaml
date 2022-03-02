@@ -3,7 +3,7 @@ overrides:
     group_constraints:
       ALB_diesel:
         carrier_con_min:
-          diesel: -10.420985005752414
+          diesel: -12.157815840044483
         locs:
         - ALB
         techs:
@@ -31,7 +31,7 @@ overrides:
         - demand_industry_methanol
       AUT_diesel:
         carrier_con_min:
-          diesel: -18.683612955967845
+          diesel: -21.797548448629154
         locs:
         - AUT
         techs:
@@ -59,7 +59,7 @@ overrides:
         - demand_industry_methanol
       BEL_diesel:
         carrier_con_min:
-          diesel: -987.4662534615828
+          diesel: -1152.0439623718466
         locs:
         - BEL
         techs:
@@ -87,7 +87,7 @@ overrides:
         - demand_industry_methanol
       BGR_diesel:
         carrier_con_min:
-          diesel: -10.640113293547053
+          diesel: -12.413465509138229
         locs:
         - BGR
         techs:
@@ -115,7 +115,7 @@ overrides:
         - demand_industry_methanol
       BIH_diesel:
         carrier_con_min:
-          diesel: -0.6757928340184761
+          diesel: -0.7884249730215555
         locs:
         - BIH
         techs:
@@ -143,7 +143,7 @@ overrides:
         - demand_industry_methanol
       CHE_diesel:
         carrier_con_min:
-          diesel: -2.779880144665326
+          diesel: -3.243193502109547
         locs:
         - CHE
         techs:
@@ -171,7 +171,7 @@ overrides:
         - demand_industry_methanol
       CYP_diesel:
         carrier_con_min:
-          diesel: -28.61217194798082
+          diesel: -33.38086727264429
         locs:
         - CYP
         techs:
@@ -192,7 +192,7 @@ overrides:
         - demand_industry_methane
       CZE_diesel:
         carrier_con_min:
-          diesel: -4.293786231127701
+          diesel: -5.009417269648985
         locs:
         - CZE
         techs:
@@ -220,7 +220,7 @@ overrides:
         - demand_industry_methanol
       DEU_diesel:
         carrier_con_min:
-          diesel: -213.89672359609813
+          diesel: -249.54617752878116
         locs:
         - DEU
         techs:
@@ -248,7 +248,7 @@ overrides:
         - demand_industry_methanol
       DNK_diesel:
         carrier_con_min:
-          diesel: -93.38734246140298
+          diesel: -108.95189953830348
         locs:
         - DNK
         techs:
@@ -269,7 +269,7 @@ overrides:
         - demand_industry_methane
       ESP_diesel:
         carrier_con_min:
-          diesel: -881.0483388363871
+          diesel: -1027.8897286424517
         locs:
         - ESP
         techs:
@@ -297,7 +297,7 @@ overrides:
         - demand_industry_methanol
       EST_diesel:
         carrier_con_min:
-          diesel: -32.58518934247153
+          diesel: -38.016054232883455
         locs:
         - EST
         techs:
@@ -325,7 +325,7 @@ overrides:
         - demand_industry_methanol
       FIN_diesel:
         carrier_con_min:
-          diesel: -61.97094711466718
+          diesel: -72.29943830044505
         locs:
         - FIN
         techs:
@@ -353,7 +353,7 @@ overrides:
         - demand_industry_methanol
       FRA_diesel:
         carrier_con_min:
-          diesel: -323.84499807093357
+          diesel: -377.8191644160892
         locs:
         - FRA
         techs:
@@ -381,7 +381,7 @@ overrides:
         - demand_industry_methanol
       GBR_diesel:
         carrier_con_min:
-          diesel: -375.94318457035445
+          diesel: -438.60038199874685
         locs:
         - GBR
         techs:
@@ -409,7 +409,7 @@ overrides:
         - demand_industry_methanol
       GRC_diesel:
         carrier_con_min:
-          diesel: -299.6488219505244
+          diesel: -349.5902922756118
         locs:
         - GRC
         techs:
@@ -437,7 +437,7 @@ overrides:
         - demand_industry_methanol
       HRV_diesel:
         carrier_con_min:
-          diesel: -13.94943716254669
+          diesel: -16.274343356304474
         locs:
         - HRV
         techs:
@@ -465,7 +465,7 @@ overrides:
         - demand_industry_methanol
       HUN_diesel:
         carrier_con_min:
-          diesel: -8.135019824409863
+          diesel: -9.490856461811507
         locs:
         - HUN
         techs:
@@ -493,7 +493,7 @@ overrides:
         - demand_industry_methanol
       IRL_diesel:
         carrier_con_min:
-          diesel: -30.80872013704697
+          diesel: -35.943506826554795
         locs:
         - IRL
         techs:
@@ -514,7 +514,7 @@ overrides:
         - demand_industry_methane
       ISL_diesel:
         carrier_con_min:
-          diesel: -28.271264677013946
+          diesel: -32.98314212318294
         locs:
         - ISL
         techs:
@@ -542,7 +542,7 @@ overrides:
         - demand_industry_methanol
       ITA_diesel:
         carrier_con_min:
-          diesel: -372.1819310261289
+          diesel: -434.212252863817
         locs:
         - ITA
         techs:
@@ -570,7 +570,7 @@ overrides:
         - demand_industry_methanol
       LTU_diesel:
         carrier_con_min:
-          diesel: -23.14029639863716
+          diesel: -26.99701246507669
         locs:
         - LTU
         techs:
@@ -598,7 +598,7 @@ overrides:
         - demand_industry_methanol
       LUX_diesel:
         carrier_con_min:
-          diesel: -0.1906582880970139
+          diesel: -0.22243466944651624
         locs:
         - LUX
         techs:
@@ -619,7 +619,7 @@ overrides:
         - demand_industry_methane
       LVA_diesel:
         carrier_con_min:
-          diesel: -7.170292417977186
+          diesel: -8.365341154306718
         locs:
         - LVA
         techs:
@@ -647,7 +647,7 @@ overrides:
         - demand_industry_methanol
       MKD_diesel:
         carrier_con_min:
-          diesel: -0.32070419229165825
+          diesel: -0.3741548910069346
         locs:
         - MKD
         techs:
@@ -675,7 +675,7 @@ overrides:
         - demand_industry_methanol
       MNE_diesel:
         carrier_con_min:
-          diesel: -0.20473393583190827
+          diesel: -0.23885625847055966
         locs:
         - MNE
         techs:
@@ -703,7 +703,7 @@ overrides:
         - demand_industry_methanol
       NLD_diesel:
         carrier_con_min:
-          diesel: -1241.9525961241027
+          diesel: -1448.9446954781197
         locs:
         - NLD
         techs:
@@ -731,7 +731,7 @@ overrides:
         - demand_industry_methanol
       NOR_diesel:
         carrier_con_min:
-          diesel: -107.94116079476169
+          diesel: -125.9313542605553
         locs:
         - NOR
         techs:
@@ -759,7 +759,7 @@ overrides:
         - demand_industry_methanol
       POL_diesel:
         carrier_con_min:
-          diesel: -41.044832683291006
+          diesel: -47.88563813050617
         locs:
         - POL
         techs:
@@ -787,7 +787,7 @@ overrides:
         - demand_industry_methanol
       PRT_diesel:
         carrier_con_min:
-          diesel: -110.25422686380536
+          diesel: -128.62993134110624
         locs:
         - PRT
         techs:
@@ -815,7 +815,7 @@ overrides:
         - demand_industry_methanol
       ROU_diesel:
         carrier_con_min:
-          diesel: -16.972124108348133
+          diesel: -19.80081145973949
         locs:
         - ROU
         techs:
@@ -843,7 +843,7 @@ overrides:
         - demand_industry_methanol
       SRB_diesel:
         carrier_con_min:
-          diesel: -4.357068323002777
+          diesel: -5.083246376836573
         locs:
         - SRB
         techs:
@@ -871,7 +871,7 @@ overrides:
         - demand_industry_methanol
       SVK_diesel:
         carrier_con_min:
-          diesel: -1.0032724286686254
+          diesel: -1.1704845001133966
         locs:
         - SVK
         techs:
@@ -899,7 +899,7 @@ overrides:
         - demand_industry_methanol
       SVN_diesel:
         carrier_con_min:
-          diesel: -25.164997295202603
+          diesel: -29.359163511069706
         locs:
         - SVN
         techs:
@@ -927,7 +927,7 @@ overrides:
         - demand_industry_methanol
       SWE_diesel:
         carrier_con_min:
-          diesel: -206.72441037744977
+          diesel: -241.1784787736914
         locs:
         - SWE
         techs:
@@ -957,7 +957,7 @@ overrides:
     group_constraints:
       ALB_diesel:
         carrier_con_min:
-          diesel: -10.786456222904853
+          diesel: -12.584198926722328
         locs:
         - ALB
         techs:
@@ -985,7 +985,7 @@ overrides:
         - demand_industry_methanol
       AUT_diesel:
         carrier_con_min:
-          diesel: -18.34716501597341
+          diesel: -21.40502585196898
         locs:
         - AUT
         techs:
@@ -1013,7 +1013,7 @@ overrides:
         - demand_industry_methanol
       BEL_diesel:
         carrier_con_min:
-          diesel: -716.3078080859484
+          diesel: -835.6924427669398
         locs:
         - BEL
         techs:
@@ -1041,7 +1041,7 @@ overrides:
         - demand_industry_methanol
       BGR_diesel:
         carrier_con_min:
-          diesel: -10.032845755993932
+          diesel: -11.704986715326253
         locs:
         - BGR
         techs:
@@ -1069,7 +1069,7 @@ overrides:
         - demand_industry_methanol
       BIH_diesel:
         carrier_con_min:
-          diesel: -0.70915943589028
+          diesel: -0.8273526752053266
         locs:
         - BIH
         techs:
@@ -1097,7 +1097,7 @@ overrides:
         - demand_industry_methanol
       CHE_diesel:
         carrier_con_min:
-          diesel: -2.851451819843198
+          diesel: -3.3266937898170648
         locs:
         - CHE
         techs:
@@ -1125,7 +1125,7 @@ overrides:
         - demand_industry_methanol
       CYP_diesel:
         carrier_con_min:
-          diesel: -30.248135983564094
+          diesel: -35.28949198082478
         locs:
         - CYP
         techs:
@@ -1153,7 +1153,7 @@ overrides:
         - demand_industry_methanol
       CZE_diesel:
         carrier_con_min:
-          diesel: -4.4772134228023885
+          diesel: -5.223415659936119
         locs:
         - CZE
         techs:
@@ -1181,7 +1181,7 @@ overrides:
         - demand_industry_methanol
       DEU_diesel:
         carrier_con_min:
-          diesel: -329.79626174352904
+          diesel: -384.76230536745055
         locs:
         - DEU
         techs:
@@ -1209,7 +1209,7 @@ overrides:
         - demand_industry_methanol
       DNK_diesel:
         carrier_con_min:
-          diesel: -102.72868577086302
+          diesel: -119.85013339934021
         locs:
         - DNK
         techs:
@@ -1237,7 +1237,7 @@ overrides:
         - demand_industry_methanol
       ESP_diesel:
         carrier_con_min:
-          diesel: -894.1508716896004
+          diesel: -1043.1760169712004
         locs:
         - ESP
         techs:
@@ -1265,7 +1265,7 @@ overrides:
         - demand_industry_methanol
       EST_diesel:
         carrier_con_min:
-          diesel: -30.5036706169205
+          diesel: -35.58761571974058
         locs:
         - EST
         techs:
@@ -1293,7 +1293,7 @@ overrides:
         - demand_industry_methanol
       FIN_diesel:
         carrier_con_min:
-          diesel: -57.822997936989026
+          diesel: -67.46016425982053
         locs:
         - FIN
         techs:
@@ -1321,7 +1321,7 @@ overrides:
         - demand_industry_methanol
       FRA_diesel:
         carrier_con_min:
-          diesel: -290.09613267222426
+          diesel: -338.44548811759495
         locs:
         - FRA
         techs:
@@ -1349,7 +1349,7 @@ overrides:
         - demand_industry_methanol
       GBR_diesel:
         carrier_con_min:
-          diesel: -401.5223413075322
+          diesel: -468.44273152545423
         locs:
         - GBR
         techs:
@@ -1377,7 +1377,7 @@ overrides:
         - demand_industry_methanol
       GRC_diesel:
         carrier_con_min:
-          diesel: -248.63749497724493
+          diesel: -290.07707747345245
         locs:
         - GRC
         techs:
@@ -1405,7 +1405,7 @@ overrides:
         - demand_industry_methanol
       HRV_diesel:
         carrier_con_min:
-          diesel: -11.791202904612094
+          diesel: -13.756403388714109
         locs:
         - HRV
         techs:
@@ -1433,7 +1433,7 @@ overrides:
         - demand_industry_methanol
       HUN_diesel:
         carrier_con_min:
-          diesel: -6.756928430809333
+          diesel: -7.8830831692775565
         locs:
         - HUN
         techs:
@@ -1461,7 +1461,7 @@ overrides:
         - demand_industry_methanol
       IRL_diesel:
         carrier_con_min:
-          diesel: -30.03630178769234
+          diesel: -35.04235208564106
         locs:
         - IRL
         techs:
@@ -1489,7 +1489,7 @@ overrides:
         - demand_industry_methanol
       ISL_diesel:
         carrier_con_min:
-          diesel: -25.587941297945445
+          diesel: -29.852598180936354
         locs:
         - ISL
         techs:
@@ -1517,7 +1517,7 @@ overrides:
         - demand_industry_methanol
       ITA_diesel:
         carrier_con_min:
-          diesel: -354.14004400569956
+          diesel: -413.1633846733162
         locs:
         - ITA
         techs:
@@ -1545,7 +1545,7 @@ overrides:
         - demand_industry_methanol
       LTU_diesel:
         carrier_con_min:
-          diesel: -18.869326577005157
+          diesel: -22.01421433983935
         locs:
         - LTU
         techs:
@@ -1573,7 +1573,7 @@ overrides:
         - demand_industry_methanol
       LUX_diesel:
         carrier_con_min:
-          diesel: -0.24975194335575815
+          diesel: -0.29137726724838453
         locs:
         - LUX
         techs:
@@ -1601,7 +1601,7 @@ overrides:
         - demand_industry_methanol
       LVA_diesel:
         carrier_con_min:
-          diesel: -35.456993694530325
+          diesel: -41.36649264361871
         locs:
         - LVA
         techs:
@@ -1629,7 +1629,7 @@ overrides:
         - demand_industry_methanol
       MKD_diesel:
         carrier_con_min:
-          diesel: -0.3413851478068102
+          diesel: -0.3982826724412785
         locs:
         - MKD
         techs:
@@ -1657,7 +1657,7 @@ overrides:
         - demand_industry_methanol
       MNE_diesel:
         carrier_con_min:
-          diesel: -0.47917182139144365
+          diesel: -0.5590337916233509
         locs:
         - MNE
         techs:
@@ -1685,7 +1685,7 @@ overrides:
         - demand_industry_methanol
       NLD_diesel:
         carrier_con_min:
-          diesel: -1319.8792074938624
+          diesel: -1539.859075409506
         locs:
         - NLD
         techs:
@@ -1713,7 +1713,7 @@ overrides:
         - demand_industry_methanol
       NOR_diesel:
         carrier_con_min:
-          diesel: -125.73594969019746
+          diesel: -146.69194130523036
         locs:
         - NOR
         techs:
@@ -1741,7 +1741,7 @@ overrides:
         - demand_industry_methanol
       POL_diesel:
         carrier_con_min:
-          diesel: -31.261883025142613
+          diesel: -36.47219686266638
         locs:
         - POL
         techs:
@@ -1769,7 +1769,7 @@ overrides:
         - demand_industry_methanol
       PRT_diesel:
         carrier_con_min:
-          diesel: -106.54059929233539
+          diesel: -124.29736584105795
         locs:
         - PRT
         techs:
@@ -1797,7 +1797,7 @@ overrides:
         - demand_industry_methanol
       ROU_diesel:
         carrier_con_min:
-          diesel: -19.316957516692497
+          diesel: -22.536450436141244
         locs:
         - ROU
         techs:
@@ -1825,7 +1825,7 @@ overrides:
         - demand_industry_methanol
       SRB_diesel:
         carrier_con_min:
-          diesel: -4.815676138854054
+          diesel: -5.618288828663063
         locs:
         - SRB
         techs:
@@ -1853,7 +1853,7 @@ overrides:
         - demand_industry_methanol
       SVK_diesel:
         carrier_con_min:
-          diesel: -0.7295627970613339
+          diesel: -0.8511565965715562
         locs:
         - SVK
         techs:
@@ -1881,7 +1881,7 @@ overrides:
         - demand_industry_methanol
       SVN_diesel:
         carrier_con_min:
-          diesel: -14.309195437185165
+          diesel: -16.694061343382693
         locs:
         - SVN
         techs:
@@ -1909,7 +1909,7 @@ overrides:
         - demand_industry_methanol
       SWE_diesel:
         carrier_con_min:
-          diesel: -230.92130390689863
+          diesel: -269.4081878913817
         locs:
         - SWE
         techs:

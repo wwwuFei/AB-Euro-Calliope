@@ -35,6 +35,7 @@ import:
     - './bio-define-newtechs.yaml' # new by Fei
     - './bio-link-all-neighbours.yaml' # new by Fei
     - './bio-sensitivity-analysis.yaml' # new by Fei
+    - './bio-fuel-demand-overrides.yaml' # new by Fei
 
 
 

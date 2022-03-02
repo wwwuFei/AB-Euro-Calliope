@@ -10,7 +10,7 @@ def recursion(obj, key):
         if isinstance(v, dict):
             item = recursion(v, key)
             if item is not None:
-                item[key] *= 0.9
+                item[key] *= per
 
 per = float(sys.argv[1])
 if per  > 0:
