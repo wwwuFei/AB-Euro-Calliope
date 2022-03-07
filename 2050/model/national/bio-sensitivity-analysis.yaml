@@ -8,7 +8,7 @@ overrides:
         resource_area_max: 20.0
   resource_area_15:
     group_constraints:
-      resource_area_20_max:
+      resource_area_15_max:
         techs: ['open_field_pv', 'wind_onshore_competing']
         resource_area_max: 15.0
 ##cost relaxation (70%, 80%, 90%, 100% (no change), 110%, 120%, 130%)
