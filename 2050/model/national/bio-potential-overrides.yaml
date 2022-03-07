@@ -1730,7 +1730,6 @@ overrides:
         - SWE
         techs:
         - biomass_forest_supply
-
 # Calliope_Organic_0_Waste0_Byfeed0_Byfood0:
   manure_org0:
     group_constraints:
@@ -1980,6 +1979,1242 @@ overrides:
         techs:
         - biomass_manure_supply
 
+## what if constraining all AB potential to be used?
+  agr_1st_org0_equals: #solm, 50% availability
+    group_constraints:
+      biomass_agr_ALB:
+        carrier_prod_equals:
+          biomass_agr: 9.372012109833037
+        locs:
+        - ALB
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_AUT:
+        carrier_prod_equals:
+          biomass_agr: 82.44906839670854
+        locs:
+        - AUT
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_BEL:
+        carrier_prod_equals:
+          biomass_agr: 28.23214432396378
+        locs:
+        - BEL
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_BGR:
+        carrier_prod_equals:
+          biomass_agr: 86.76631580276779
+        locs:
+        - BGR
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_BIH:
+        carrier_prod_equals:
+          biomass_agr: 9.96707872799404
+        locs:
+        - BIH
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_CHE:
+        carrier_prod_equals:
+          biomass_agr: 74.33094061988669
+        locs:
+        - CHE
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_CYP:
+        carrier_prod_equals:
+          biomass_agr: 0.3886340758304896
+        locs:
+        - CYP
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_CZE:
+        carrier_prod_equals:
+          biomass_agr: 74.06995976779606
+        locs:
+        - CZE
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_DEU:
+        carrier_prod_equals:
+          biomass_agr: 451.5363013140723
+        locs:
+        - DEU
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_DNK:
+        carrier_prod_equals:
+          biomass_agr: 67.03450621321828
+        locs:
+        - DNK
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_ESP:
+        carrier_prod_equals:
+          biomass_agr: 289.83258574725687
+        locs:
+        - ESP
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_EST:
+        carrier_prod_equals:
+          biomass_agr: 7.160916851830747
+        locs:
+        - EST
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_FIN:
+        carrier_prod_equals:
+          biomass_agr: 29.907824202460205
+        locs:
+        - FIN
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_FRA:
+        carrier_prod_equals:
+          biomass_agr: 518.1467420247512
+        locs:
+        - FRA
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_GBR:
+        carrier_prod_equals:
+          biomass_agr: 183.03063203528714
+        locs:
+        - GBR
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_GRC:
+        carrier_prod_equals:
+          biomass_agr: 86.46279821637232
+        locs:
+        - GRC
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_HRV:
+        carrier_prod_equals:
+          biomass_agr: 20.727143543262866
+        locs:
+        - HRV
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_HUN:
+        carrier_prod_equals:
+          biomass_agr: 92.95993508279825
+        locs:
+        - HUN
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_IRL:
+        carrier_prod_equals:
+          biomass_agr: 17.272057997149723
+        locs:
+        - IRL
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_ISL:
+        carrier_prod_equals:
+          biomass_agr: 0.00019606663354661112
+        locs:
+        - ISL
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_ITA:
+        carrier_prod_equals:
+          biomass_agr: 211.7921109185522
+        locs:
+        - ITA
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_LTU:
+        carrier_prod_equals:
+          biomass_agr: 29.357919738912116
+        locs:
+        - LTU
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_LUX:
+        carrier_prod_equals:
+          biomass_agr: 0.12484725027293471
+        locs:
+        - LUX
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_LVA:
+        carrier_prod_equals:
+          biomass_agr: 14.338464374817086
+        locs:
+        - LVA
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_MKD:
+        carrier_prod_equals:
+          biomass_agr: 0.0
+        locs:
+        - MKD
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_MNE:
+        carrier_prod_equals:
+          biomass_agr: 5.26488428833703
+        locs:
+        - MNE
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_NLD:
+        carrier_prod_equals:
+          biomass_agr: 13.985776866412833
+        locs:
+        - NLD
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_NOR:
+        carrier_prod_equals:
+          biomass_agr: 11.836634982659927
+        locs:
+        - NOR
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_POL:
+        carrier_prod_equals:
+          biomass_agr: 186.62329296861833
+        locs:
+        - POL
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_PRT:
+        carrier_prod_equals:
+          biomass_agr: 17.225310330553036
+        locs:
+        - PRT
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_ROU:
+        carrier_prod_equals:
+          biomass_agr: 154.1137652294877
+        locs:
+        - ROU
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_SRB:
+        carrier_prod_equals:
+          biomass_agr: 82.75680720397946
+        locs:
+        - SRB
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_SVK:
+        carrier_prod_equals:
+          biomass_agr: 30.548533549298114
+        locs:
+        - SVK
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_SVN:
+        carrier_prod_equals:
+          biomass_agr: 0.33949071733950914
+        locs:
+        - SVN
+        techs:
+        - biomass_agr_1st_residue_supply
+      biomass_agr_SWE:
+        carrier_prod_equals:
+          biomass_agr: 37.46413990792454
+        locs:
+        - SWE
+        techs:
+        - biomass_agr_1st_residue_supply
+  shell_equals: # solm, reference 
+    group_constraints: 
+      biomass_shell_ALB:
+        carrier_prod_equals:
+          biomass_shell: 2.98690594968915
+        locs:
+        - ALB
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_AUT:
+        carrier_prod_equals:
+          biomass_shell: 1.505649861940964
+        locs:
+        - AUT
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_BEL:
+        carrier_prod_equals:
+          biomass_shell: 0.0778028905059805
+        locs:
+        - BEL
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_BGR:
+        carrier_prod_equals:
+          biomass_shell: 1.4327027282456508
+        locs:
+        - BGR
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_BIH:
+        carrier_prod_equals:
+          biomass_shell: 1.7561929478990113
+        locs:
+        - BIH
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_CHE:
+        carrier_prod_equals:
+          biomass_shell: 0.2960793874859667
+        locs:
+        - CHE
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_CYP:
+        carrier_prod_equals:
+          biomass_shell: 0.4872503588922526
+        locs:
+        - CYP
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_CZE:
+        carrier_prod_equals:
+          biomass_shell: 0.4227388100360778
+        locs:
+        - CZE
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_DEU:
+        carrier_prod_equals:
+          biomass_shell: 1.0036701334142029
+        locs:
+        - DEU
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_DNK:
+        carrier_prod_equals:
+          biomass_shell: 0.0614872430076656
+        locs:
+        - DNK
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_ESP:
+        carrier_prod_equals:
+          biomass_shell: 232.0580135942932
+        locs:
+        - ESP
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_EST:
+        carrier_prod_equals:
+          biomass_shell: 0.0016858710086497
+        locs:
+        - EST
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_FIN:
+        carrier_prod_equals:
+          biomass_shell: 0.0
+        locs:
+        - FIN
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_FRA:
+        carrier_prod_equals:
+          biomass_shell: 7.095649924672932
+        locs:
+        - FRA
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_GBR:
+        carrier_prod_equals:
+          biomass_shell: 0.0
+        locs:
+        - GBR
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_GRC:
+        carrier_prod_equals:
+          biomass_shell: 60.30622368674074
+        locs:
+        - GRC
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_HRV:
+        carrier_prod_equals:
+          biomass_shell: 1.8641938201805168
+        locs:
+        - HRV
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_HUN:
+        carrier_prod_equals:
+          biomass_shell: 1.3271656330235269
+        locs:
+        - HUN
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_IRL:
+        carrier_prod_equals:
+          biomass_shell: 0.0
+        locs:
+        - IRL
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_ISL:
+        carrier_prod_equals:
+          biomass_shell: 0.0
+        locs:
+        - ISL
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_ITA:
+        carrier_prod_equals:
+          biomass_shell: 114.0913884151423
+        locs:
+        - ITA
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_LTU:
+        carrier_prod_equals:
+          biomass_shell: 0.0167635129439166
+        locs:
+        - LTU
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_LUX:
+        carrier_prod_equals:
+          biomass_shell: 0.0007020433990805
+        locs:
+        - LUX
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_LVA:
+        carrier_prod_equals:
+          biomass_shell: 0.0008833297075354
+        locs:
+        - LVA
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_MKD:
+        carrier_prod_equals:
+          biomass_shell: 0.0
+        locs:
+        - MKD
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_MNE:
+        carrier_prod_equals:
+          biomass_shell: 1.1553804815322222
+        locs:
+        - MNE
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_NLD:
+        carrier_prod_equals:
+          biomass_shell: 0.0312048697312347
+        locs:
+        - NLD
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_NOR:
+        carrier_prod_equals:
+          biomass_shell: 0.0198291958836138
+        locs:
+        - NOR
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_POL:
+        carrier_prod_equals:
+          biomass_shell: 2.7435541358384694
+        locs:
+        - POL
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_PRT:
+        carrier_prod_equals:
+          biomass_shell: 15.374921099647318
+        locs:
+        - PRT
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_ROU:
+        carrier_prod_equals:
+          biomass_shell: 11.7477095139645
+        locs:
+        - ROU
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_SRB:
+        carrier_prod_equals:
+          biomass_shell: 5.883858791071834
+        locs:
+        - SRB
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_SVK:
+        carrier_prod_equals:
+          biomass_shell: 0.0589184065330899
+        locs:
+        - SVK
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_SVN:
+        carrier_prod_equals:
+          biomass_shell: 0.1410929197467302
+        locs:
+        - SVN
+        techs:
+        - biomass_by_shell_supply
+      biomass_shell_SWE:
+        carrier_prod_equals:
+          biomass_shell: 0.0077057835776725
+        locs:
+        - SWE
+        techs:
+        - biomass_by_shell_supply
+  fats_equals: #solm, reference 
+    group_constraints: 
+      biomass_fats_ALB:
+        carrier_prod_equals:
+          biomass_fats: 0.278864875948523
+        locs:
+        - ALB
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_AUT:
+        carrier_prod_equals:
+          biomass_fats: 0.136790280487043
+        locs:
+        - AUT
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_BEL:
+        carrier_prod_equals:
+          biomass_fats: 0.3583071589142018
+        locs:
+        - BEL
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_BGR:
+        carrier_prod_equals:
+          biomass_fats: 0.6722739729490698
+        locs:
+        - BGR
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_BIH:
+        carrier_prod_equals:
+          biomass_fats: 0.2066045266815395
+        locs:
+        - BIH
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_CHE:
+        carrier_prod_equals:
+          biomass_fats: 0.0870586863256607
+        locs:
+        - CHE
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_CYP:
+        carrier_prod_equals:
+          biomass_fats: 0.0348180388888888
+        locs:
+        - CYP
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_CZE:
+        carrier_prod_equals:
+          biomass_fats: 0.4758324441778256
+        locs:
+        - CZE
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_DEU:
+        carrier_prod_equals:
+          biomass_fats: 0.013731082896347
+        locs:
+        - DEU
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_DNK:
+        carrier_prod_equals:
+          biomass_fats: 0.0016719888888888
+        locs:
+        - DNK
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_ESP:
+        carrier_prod_equals:
+          biomass_fats: 5.928782398147961
+        locs:
+        - ESP
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_EST:
+        carrier_prod_equals:
+          biomass_fats: 0.0990643623015079
+        locs:
+        - EST
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_FIN:
+        carrier_prod_equals:
+          biomass_fats: 0.0442404943061072
+        locs:
+        - FIN
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_FRA:
+        carrier_prod_equals:
+          biomass_fats: 2.576756109601576
+        locs:
+        - FRA
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_GBR:
+        carrier_prod_equals:
+          biomass_fats: 2.10772275
+        locs:
+        - GBR
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_GRC:
+        carrier_prod_equals:
+          biomass_fats: 0.0597278434917922
+        locs:
+        - GRC
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_HRV:
+        carrier_prod_equals:
+          biomass_fats: 0.7937711074724738
+        locs:
+        - HRV
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_HUN:
+        carrier_prod_equals:
+          biomass_fats: 0.1496210371663691
+        locs:
+        - HUN
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_IRL:
+        carrier_prod_equals:
+          biomass_fats: 0.0063846063605477
+        locs:
+        - IRL
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_ISL:
+        carrier_prod_equals:
+          biomass_fats: 0.2123977359561802
+        locs:
+        - ISL
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_ITA:
+        carrier_prod_equals:
+          biomass_fats: 0.0427479624439394
+        locs:
+        - ITA
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_LTU:
+        carrier_prod_equals:
+          biomass_fats: 0.2405030899579273
+        locs:
+        - LTU
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_LUX:
+        carrier_prod_equals:
+          biomass_fats: 0.0002824305555555
+        locs:
+        - LUX
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_LVA:
+        carrier_prod_equals:
+          biomass_fats: 0.2908929571910842
+        locs:
+        - LVA
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_MKD:
+        carrier_prod_equals:
+          biomass_fats: 0.0
+        locs:
+        - MKD
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_MNE:
+        carrier_prod_equals:
+          biomass_fats: 0.0002485388888888
+        locs:
+        - MNE
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_NLD:
+        carrier_prod_equals:
+          biomass_fats: 1.9201662666666668
+        locs:
+        - NLD
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_NOR:
+        carrier_prod_equals:
+          biomass_fats: 19.61072066880985
+        locs:
+        - NOR
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_POL:
+        carrier_prod_equals:
+          biomass_fats: 2.0498417284602337
+        locs:
+        - POL
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_PRT:
+        carrier_prod_equals:
+          biomass_fats: 0.9345903300326264
+        locs:
+        - PRT
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_ROU:
+        carrier_prod_equals:
+          biomass_fats: 0.2892552502894208
+        locs:
+        - ROU
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_SRB:
+        carrier_prod_equals:
+          biomass_fats: 1.6497605018679649
+        locs:
+        - SRB
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_SVK:
+        carrier_prod_equals:
+          biomass_fats: 0.0901462397141023
+        locs:
+        - SVK
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_SVN:
+        carrier_prod_equals:
+          biomass_fats: 0.0
+        locs:
+        - SVN
+        techs:
+        - biomass_by_fats_supply
+      biomass_fats_SWE:
+        carrier_prod_equals:
+          biomass_fats: 1.3166848113040623
+        locs:
+        - SWE
+        techs:
+        - biomass_by_fats_supply
+  forest_equals: #JRC 
+    group_constraints: 
+      biomass_forest_ALB:
+        carrier_prod_equals:
+          biomass_forest: 5.833333333
+        locs:
+        - ALB
+        techs:
+        - biomass_forest_supply
+      biomass_forest_AUT:
+        carrier_prod_equals:
+          biomass_forest: 70.0
+        locs:
+        - AUT
+        techs:
+        - biomass_forest_supply
+      biomass_forest_BEL:
+        carrier_prod_equals:
+          biomass_forest: 22.5
+        locs:
+        - BEL
+        techs:
+        - biomass_forest_supply
+      biomass_forest_BGR:
+        carrier_prod_equals:
+          biomass_forest: 27.22222222
+        locs:
+        - BGR
+        techs:
+        - biomass_forest_supply
+      biomass_forest_BIH:
+        carrier_prod_equals:
+          biomass_forest: 0.0
+        locs:
+        - BIH
+        techs:
+        - biomass_forest_supply
+      biomass_forest_CHE:
+        carrier_prod_equals:
+          biomass_forest: 42.5
+        locs:
+        - CHE
+        techs:
+        - biomass_forest_supply
+      biomass_forest_CYP:
+        carrier_prod_equals:
+          biomass_forest: 0.0
+        locs:
+        - CYP
+        techs:
+        - biomass_forest_supply
+      biomass_forest_CZE:
+        carrier_prod_equals:
+          biomass_forest: 48.33333333
+        locs:
+        - CZE
+        techs:
+        - biomass_forest_supply
+      biomass_forest_DEU:
+        carrier_prod_equals:
+          biomass_forest: 246.9444444
+        locs:
+        - DEU
+        techs:
+        - biomass_forest_supply
+      biomass_forest_DNK:
+        carrier_prod_equals:
+          biomass_forest: 13.88888889
+        locs:
+        - DNK
+        techs:
+        - biomass_forest_supply
+      biomass_forest_ESP:
+        carrier_prod_equals:
+          biomass_forest: 76.66666667
+        locs:
+        - ESP
+        techs:
+        - biomass_forest_supply
+      biomass_forest_EST:
+        carrier_prod_equals:
+          biomass_forest: 20.83333333
+        locs:
+        - EST
+        techs:
+        - biomass_forest_supply
+      biomass_forest_FIN:
+        carrier_prod_equals:
+          biomass_forest: 127.7777778
+        locs:
+        - FIN
+        techs:
+        - biomass_forest_supply
+      biomass_forest_FRA:
+        carrier_prod_equals:
+          biomass_forest: 136.3888889
+        locs:
+        - FRA
+        techs:
+        - biomass_forest_supply
+      biomass_forest_GBR:
+        carrier_prod_equals:
+          biomass_forest: 21.38888889
+        locs:
+        - GBR
+        techs:
+        - biomass_forest_supply
+      biomass_forest_GRC:
+        carrier_prod_equals:
+          biomass_forest: 6.666666667
+        locs:
+        - GRC
+        techs:
+        - biomass_forest_supply
+      biomass_forest_HRV:
+        carrier_prod_equals:
+          biomass_forest: 11.11111111
+        locs:
+        - HRV
+        techs:
+        - biomass_forest_supply
+      biomass_forest_HUN:
+        carrier_prod_equals:
+          biomass_forest: 36.94444444
+        locs:
+        - HUN
+        techs:
+        - biomass_forest_supply
+      biomass_forest_IRL:
+        carrier_prod_equals:
+          biomass_forest: 13.33333333
+        locs:
+        - IRL
+        techs:
+        - biomass_forest_supply
+      biomass_forest_ISL:
+        carrier_prod_equals:
+          biomass_forest: 0.0
+        locs:
+        - ISL
+        techs:
+        - biomass_forest_supply
+      biomass_forest_ITA:
+        carrier_prod_equals:
+          biomass_forest: 93.88888889
+        locs:
+        - ITA
+        techs:
+        - biomass_forest_supply
+      biomass_forest_LTU:
+        carrier_prod_equals:
+          biomass_forest: 23.33333333
+        locs:
+        - LTU
+        techs:
+        - biomass_forest_supply
+      biomass_forest_LUX:
+        carrier_prod_equals:
+          biomass_forest: 1.944444444
+        locs:
+        - LUX
+        techs:
+        - biomass_forest_supply
+      biomass_forest_LVA:
+        carrier_prod_equals:
+          biomass_forest: 47.22222222
+        locs:
+        - LVA
+        techs:
+        - biomass_forest_supply
+      biomass_forest_MKD:
+        carrier_prod_equals:
+          biomass_forest: 4.444444444
+        locs:
+        - MKD
+        techs:
+        - biomass_forest_supply
+      biomass_forest_MNE:
+        carrier_prod_equals:
+          biomass_forest: 16.66666667
+        locs:
+        - MNE
+        techs:
+        - biomass_forest_supply
+      biomass_forest_NLD:
+        carrier_prod_equals:
+          biomass_forest: 5.0
+        locs:
+        - NLD
+        techs:
+        - biomass_forest_supply
+      biomass_forest_NOR:
+        carrier_prod_equals:
+          biomass_forest: 55.55555556
+        locs:
+        - NOR
+        techs:
+        - biomass_forest_supply
+      biomass_forest_POL:
+        carrier_prod_equals:
+          biomass_forest: 137.2222222
+        locs:
+        - POL
+        techs:
+        - biomass_forest_supply
+      biomass_forest_PRT:
+        carrier_prod_equals:
+          biomass_forest: 42.22222222
+        locs:
+        - PRT
+        techs:
+        - biomass_forest_supply
+      biomass_forest_ROU:
+        carrier_prod_equals:
+          biomass_forest: 111.1111111
+        locs:
+        - ROU
+        techs:
+        - biomass_forest_supply
+      biomass_forest_SRB:
+        carrier_prod_equals:
+          biomass_forest: 19.72222222
+        locs:
+        - SRB
+        techs:
+        - biomass_forest_supply
+      biomass_forest_SVK:
+        carrier_prod_equals:
+          biomass_forest: 27.22222222
+        locs:
+        - SVK
+        techs:
+        - biomass_forest_supply
+      biomass_forest_SVN:
+        carrier_prod_equals:
+          biomass_forest: 24.72222222
+        locs:
+        - SVN
+        techs:
+        - biomass_forest_supply
+      biomass_forest_SWE:
+        carrier_prod_equals:
+          biomass_forest: 202.7777778
+        locs:
+        - SWE
+        techs:
+        - biomass_forest_supply
+  manure_org0_equals:
+    group_constraints:
+      manure_ALB:
+        carrier_prod_equals:
+          manure: 1.7782957979387368
+        locs:
+        - ALB
+        techs:
+        - biomass_manure_supply
+      manure_AUT:
+        carrier_prod_equals:
+          manure: 6.61697570474398
+        locs:
+        - AUT
+        techs:
+        - biomass_manure_supply
+      manure_BEL:
+        carrier_prod_equals:
+          manure: 7.3277730645840595
+        locs:
+        - BEL
+        techs:
+        - biomass_manure_supply
+      manure_BGR:
+        carrier_prod_equals:
+          manure: 1.7827320974694825
+        locs:
+        - BGR
+        techs:
+        - biomass_manure_supply
+      manure_BIH:
+        carrier_prod_equals:
+          manure: 2.0806811109666787
+        locs:
+        - BIH
+        techs:
+        - biomass_manure_supply
+      manure_CHE:
+        carrier_prod_equals:
+          manure: 6.354785144205294
+        locs:
+        - CHE
+        techs:
+        - biomass_manure_supply
+      manure_CYP:
+        carrier_prod_equals:
+          manure: 0.1622965437062329
+        locs:
+        - CYP
+        techs:
+        - biomass_manure_supply
+      manure_CZE:
+        carrier_prod_equals:
+          manure: 3.6067345834372038
+        locs:
+        - CZE
+        techs:
+        - biomass_manure_supply
+      manure_DEU:
+        carrier_prod_equals:
+          manure: 32.15082025922572
+        locs:
+        - DEU
+        techs:
+        - biomass_manure_supply
+      manure_DNK:
+        carrier_prod_equals:
+          manure: 9.764996781669014
+        locs:
+        - DNK
+        techs:
+        - biomass_manure_supply
+      manure_ESP:
+        carrier_prod_equals:
+          manure: 26.703220390503205
+        locs:
+        - ESP
+        techs:
+        - biomass_manure_supply
+      manure_EST:
+        carrier_prod_equals:
+          manure: 0.6516513552674174
+        locs:
+        - EST
+        techs:
+        - biomass_manure_supply
+      manure_FIN:
+        carrier_prod_equals:
+          manure: 2.7180541378249634
+        locs:
+        - FIN
+        techs:
+        - biomass_manure_supply
+      manure_FRA:
+        carrier_prod_equals:
+          manure: 39.551451595489304
+        locs:
+        - FRA
+        techs:
+        - biomass_manure_supply
+      manure_GBR:
+        carrier_prod_equals:
+          manure: 19.373806340476776
+        locs:
+        - GBR
+        techs:
+        - biomass_manure_supply
+      manure_GRC:
+        carrier_prod_equals:
+          manure: 2.2022344821837345
+        locs:
+        - GRC
+        techs:
+        - biomass_manure_supply
+      manure_HRV:
+        carrier_prod_equals:
+          manure: 1.6164887073669614
+        locs:
+        - HRV
+        techs:
+        - biomass_manure_supply
+      manure_HUN:
+        carrier_prod_equals:
+          manure: 4.014924231231224
+        locs:
+        - HUN
+        techs:
+        - biomass_manure_supply
+      manure_IRL:
+        carrier_prod_equals:
+          manure: 9.18194737279034
+        locs:
+        - IRL
+        techs:
+        - biomass_manure_supply
+      manure_ISL:
+        carrier_prod_equals:
+          manure: 0.20337877561147052
+        locs:
+        - ISL
+        techs:
+        - biomass_manure_supply
+      manure_ITA:
+        carrier_prod_equals:
+          manure: 17.69427571919295
+        locs:
+        - ITA
+        techs:
+        - biomass_manure_supply
+      manure_LTU:
+        carrier_prod_equals:
+          manure: 2.329555370171344
+        locs:
+        - LTU
+        techs:
+        - biomass_manure_supply
+      manure_LUX:
+        carrier_prod_equals:
+          manure: 0.1357517053120959
+        locs:
+        - LUX
+        techs:
+        - biomass_manure_supply
+      manure_LVA:
+        carrier_prod_equals:
+          manure: 0.9834292254935413
+        locs:
+        - LVA
+        techs:
+        - biomass_manure_supply
+      manure_MKD:
+        carrier_prod_equals:
+          manure: 0.0
+        locs:
+        - MKD
+        techs:
+        - biomass_manure_supply
+      manure_MNE:
+        carrier_prod_equals:
+          manure: 0.9603899145862278
+        locs:
+        - MNE
+        techs:
+        - biomass_manure_supply
+      manure_NLD:
+        carrier_prod_equals:
+          manure: 15.044280443977978
+        locs:
+        - NLD
+        techs:
+        - biomass_manure_supply
+      manure_NOR:
+        carrier_prod_equals:
+          manure: 1.6935381415102777
+        locs:
+        - NOR
+        techs:
+        - biomass_manure_supply
+      manure_POL:
+        carrier_prod_equals:
+          manure: 25.60175763781625
+        locs:
+        - POL
+        techs:
+        - biomass_manure_supply
+      manure_PRT:
+        carrier_prod_equals:
+          manure: 4.145883279627541
+        locs:
+        - PRT
+        techs:
+        - biomass_manure_supply
+      manure_ROU:
+        carrier_prod_equals:
+          manure: 9.851032032163396
+        locs:
+        - ROU
+        techs:
+        - biomass_manure_supply
+      manure_SRB:
+        carrier_prod_equals:
+          manure: 5.668992537260408
+        locs:
+        - SRB
+        techs:
+        - biomass_manure_supply
+      manure_SVK:
+        carrier_prod_equals:
+          manure: 1.3173585033047706
+        locs:
+        - SVK
+        techs:
+        - biomass_manure_supply
+      manure_SVN:
+        carrier_prod_equals:
+          manure: 0.4198874277636441
+        locs:
+        - SVN
+        techs:
+        - biomass_manure_supply
+      manure_SWE:
+        carrier_prod_equals:
+          manure: 3.1968952007194287
+        locs:
+        - SWE
+        techs:
+        - biomass_manure_supply
 # organic 50%
   # Calliope_Organic_50_Waste0_Byfeed0_Byfood0:
   manure_org50:
@@ -2486,9 +3721,10 @@ scenarios:
     # bio_potential_ref: [manure_ref, agr_1st_ref, shell_ref, fats_ref, msw_ref, forest_ref]
     bio_potential_org0_msw_max: [manure_org0, agr_1st_org0, shell_ref, fats_ref, msw_ref_max, forest_ref]
     bio_potential_org0_msw_equals: [manure_org0, agr_1st_org0, shell_ref, fats_ref, msw_ref_equals, forest_ref]
+    bio_potential_org0_agr_manure_msw_equals: [manure_org0_equals,agr_1st_org0_equals,shell_ref, fats_ref, msw_ref_equals, forest_ref]
+    bio_potential_org0_all_equals: [manure_org0_equals, agr_1st_org0_equals, shell_equals, msw_ref_equals, fats_equals, forest_equals]
     # bio_potential_org50: [manure_org50, #agr_1st_ref, shell_ref, fats_ref, msw_ref, forest_ref]
     # bio_potential_org100: [manure_org100, #agr_1st_ref, shell_ref, fats_ref, msw_ref, forest_ref]
-
     # bio_potential_org0_noforest: [manure_org0, agr_1st_ref, shell_ref, fats_ref, msw_ref, noforest]
 
 # invalid stuff
