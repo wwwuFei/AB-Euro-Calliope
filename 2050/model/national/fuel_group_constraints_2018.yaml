@@ -1220,6 +1220,6 @@ overrides:
                 demand_industry_methanol:
                 demand_industry_methane:
  
-# scenarios:
-#     industry_fuel: [annual_fuel_demand, industry_techs] # formal 'industry_fuel_isolated'
+scenarios:
+    industry_fuel: [annual_fuel_demand, industry_techs] # formal 'industry_fuel_isolated'
 
