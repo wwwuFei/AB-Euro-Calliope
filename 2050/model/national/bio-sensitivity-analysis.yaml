@@ -1,6 +1,6 @@
 
 overrides:
-## stricter resource_area policy/lower acceptance?
+## stricter resource_area policy/lower acceptance? (in ref scenario, resource_area: 24.822)
   resource_area_20:
     group_constraints:
       resource_area_20_max:
