@@ -1,4 +1,16 @@
+
 overrides:
+## stricter resource_area policy/lower acceptance?
+  resource_area_20:
+    group_constraints:
+      resource_area_20_max:
+        techs: ['open_field_pv', 'wind_onshore_competing']
+        resource_area_max: 20.0
+  resource_area_15:
+    group_constraints:
+      resource_area_20_max:
+        techs: ['open_field_pv', 'wind_onshore_competing']
+        resource_area_max: 15.0
 ##cost relaxation (70%, 80%, 90%, 100% (no change), 110%, 120%, 130%)
 # change hydrogen transformation tech costs
   hydrogen_trans_cost_70_perc:

@@ -1,5 +1,5 @@
 overrides:
-  annual_fuel_demand:
+  annual_fuel_demand_diesel_105:
     group_constraints:
       ALB_diesel:
         carrier_con_min:
@@ -953,6 +953,7 @@ overrides:
         - SWE
         techs:
         - demand_industry_methanol
+  ###
   annual_fuel_demand_isolated:
     group_constraints:
       ALB_diesel:

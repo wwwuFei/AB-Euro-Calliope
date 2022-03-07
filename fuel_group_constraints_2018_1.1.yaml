@@ -1,5 +1,5 @@
 overrides:
-  annual_fuel_demand_115:
+  annual_fuel_demand_diesel_115:
     group_constraints:
       ALB_diesel:
         carrier_con_min:
