@@ -1,0 +1,334 @@
+import:
+    - '../interest-rate.yaml'
+    # - '../renewable-techs.yaml' # modified by Fei as in `bio-renewable-techs.yaml'
+    - '../storage-techs.yaml'
+    - '../link-techs.yaml'
+    # - '../heat-techs.yaml' # modified by Fei in `bio-heat-techs.yaml'
+    - '../transformation-techs.yaml' # modified by Fei, allow only non-bio transformation techs
+    - '../transport-techs.yaml'
+    - '../demand-techs.yaml'
+    - '../legacy-techs.yaml'
+    # - '../spores.yaml' # disabling for 2050 bio-model by Fei
+    - '../fuel_scenarios.yaml'
+    - '../demand_share.yaml'
+    # - '../overrides-2030/renewable-techs.yaml' # disabling for 2050 bio-model by Fei
+    # - '../overrides-2030/storage-techs.yaml' # disabling for 2050 bio-model by Fei
+    # - '../overrides-2030/heat-techs.yaml' # disabling for 2050 bio-model by Fei
+    # - '../overrides-2030/transformation-techs.yaml' # disabling for 2050 bio-model by Fei
+    - '../config_overrides.yaml' # modified by Fei, adding config_overrides_2
+    - './locations.yaml' # modified by Fei in `bio-locations.yaml`
+    - './links.yaml'
+    - './directional-rooftop.yaml'
+    - './vehicle_group_constraints_2011.yaml' # new in pre-built 2022-02-08
+    - './heat_group_constraints_2011.yaml' # new in pre-built 2022-02-08
+    - './fuel_group_constraints_2011.yaml' # new in pre-built 2022-02-08; modified industry_techs disabling unused bio-transformation techs
+    - './emissions-scenarios.yaml' # not used by fei, as only fossil-fuel-supply.yaml has co2 cost, which is disabled in 2050
+    - './gas_storage.yaml'
+    # - '../fossil-fuel-supply.yaml' # disabling by Fei, now all methane, diesel, kerosene, and methanol are from ancillary biomass
+    # - './biofuel-supply.yaml' # disabling by Fei
+
+    - './bio-potential-overrides.yaml' # new by Fei
+    # - './bio-locations.yaml' # new by Fei
+    - '../bio-renewable-techs.yaml' # new by Fei
+    - './bio-transformation-techs.yaml' # new by Fei
+    - '../bio-heat-techs.yaml' # new by Fei
+    - './bio-define-newtechs.yaml' # new by Fei
+    - './bio-link-all-neighbours.yaml' # new by Fei
+    - './bio-sensitivity-analysis.yaml' # new by Fei
+    - './bio-fuel-demand-overrides.yaml' # new by Fei
+
+
+
+    
+model:
+    name: 'Euro-Calliope'
+    calliope_version: 0.6.8 #0.6.6
+    timeseries_data_path: './'
+    subset_time: ['2011-01-01', '2011-12-31']
+run:
+    objective_options: {
+        'cost_class': {'monetary': 1},
+        'sense': 'minimize'
+    }
+    solver: gurobi
+    solver_io: python
+    mode: plan
+    solver_options:
+        Threads: 6
+        Method: 2 # use barrier, but do not run simplex in parallel
+        Crossover: 0 # stop after barrier, do not perform crossover
+        FeasibilityTol: 1e-3
+        OptimalityTol: 1e-4
+        BarConvTol: 1e-4
+    relax_constraint.demand_share_per_timestep_decision_main_constraint: 0.025
+techs: # new, added by Fei
+    # biofuel_supply.exists: false # now `biogas_to_electricity_supply` # negating former bio-supply techs in EC2
+    waste_supply.exists: false # negating former bio-supply techs in EC2
+    # biogas_to_electricity_supply.exists: false  # already disabled in config_overrides
+
+overrides:
+    no-hydro-costs:
+        # Because we force all hydro to current levels, there
+        # should be annual O&M costs and variable costs only.
+        techs.pumped_hydro.costs.monetary.storage_cap: 0
+        techs.pumped_hydro.costs.monetary.energy_cap: 0
+        techs.hydro_run_of_river.costs.monetary.energy_cap: 0
+        techs.hydro_run_of_river.costs.monetary.om_con: 0
+        techs.hydro_reservoir.costs.monetary.storage_cap: 0
+        techs.hydro_reservoir.costs.monetary.energy_cap: 0
+        techs.hydro_reservoir.costs.monetary.om_con: 0
+    stylised-storage:
+        # Transform battery and hydrogen to stylised short term
+        # and long term storage solutions.
+        techs:
+            load_shedding.exists: False
+            battery:
+                constraints:
+                    energy_cap_per_storage_cap_min: 0.25 # max 4h full-power discharge
+                costs:
+                    monetary:
+                        om_prod: 0 # ASSUME 0 instead of 0.000378 €/kWh, as the tiny number causes numerical issues
+            hydrogen_storage:
+                constraints:
+                    energy_cap_per_storage_cap_max: 0.25 # min 4h full-power discharge
+    res_1h:
+        model.time: null
+
+    res_2h:
+        model.time:
+            function: resample
+            function_options.resolution: 2H
+    res_3h:
+        model.time:
+            function: resample
+            function_options.resolution: 3H
+    res_6h:
+        model.time:
+            function: resample
+            function_options.resolution: 6H
+    res_12h:
+        model.time:
+            function: resample
+            function_options.resolution: 12H
+    res_24h:
+        model.time:
+            function: resample
+            function_options.resolution: 24H
+    res_48h:
+        model.time:
+            function: resample
+            function_options.resolution: 48H
+    
+# for sensitivity analysi: change gurobi optimisation methods
+    opt_crossover_1:
+        run:
+            solver_options:
+                Method: 2 # use barrier, but do not run simplex in parallel
+                Crossover: 1 # perform crossover, stop even when it is not the most optimal solution
+    opt_method_0:
+        run:
+            solver_options:
+                Method: 0 # primal simplex
+    opt_method_1:
+        run:
+            solver_options:
+                Method: 1 # dual simplex   
+    # the default method is 2
+    opt_method_3:
+        run:
+            solver_options:
+                Method: 3 # concurrent   
+    opt_method_4:
+        run:
+            solver_options:
+                Method: 4 # deterministic concurrent
+    opt_method_5:
+        run:
+            solver_options:
+                Method: 5 # deterministic concurrent simplex
+    
+
+    # for relaxing tolerence, added by fei
+    opt_tol_3: # notworking
+        run.solver_options.OptimalityTol: 1e-3 # original: 1e-4
+    bar_tol_3: # notworking
+        run.solver_options.BarConvTol: 1e-3 # original: 1e-4
+    opt_tol_5: 
+        run.solver_options.OptimalityTol: 1e-5 # original: 1e-4
+    bar_tol_5: 
+        run.solver_options.BarConvTol: 1e-5 # original: 1e-4
+    fsb_tol_2: # notworking
+        run.solver_options.FeasibilityTol: 1e-2 # original: 1e-3
+    bar_hom: # not included by default, adding here to debug
+    # for recognizing infeasibility or unboundedness, a bit slower than the default algorithm
+    # better not use when feasible, otherwise systemwide capacity factos will be slightly different
+        run.solver_options.BarHomogeneous: 1 
+
+    # ethanol_for_transport: # added by fei 
+    #     techs:
+    #         ldv_transport_ice: # also: bus_transport_ice, motorcycle_transport_ice, passenger_car_transport_ice, light_transport_ice
+    #             essentials:
+    #                 parent: conversion_plus
+    #                 # TODO: set a specific % of blending ethanol or just assume an arbritary one?
+    #                 carrier_in: [diesel, ethanol] 
+    #                 primary_carrier_in: diesel
+
+
+
+    # no_nuclear: # not included by default, added by fei
+    #     techs:
+    #         nuclear.exists: false
+    # # no_barrier_tech: # no need for now, already covered by `config_overrides_2`
+    # #     techs:
+    # #         hydrogen_electricity_storage.exists: false
+    # #         solar_thermal_collector.exists: false  
+    # #         solar_thermal_energy.exists: false
+    
+    # # could add some overrides to force bio-techs out / in (wrong format maybe!)
+    # # force_biofuel_to_liquids_1:
+    # #     techs:
+    # #         biofuel_to_liquids:
+    # #             constraints:
+    # #                 energy_cap_min: 1 # (100,000 MW)
+    # # force_biofuel_to_liquids_0:
+    # #     techs:
+    # #         biofuel_to_liquids:
+    # #             constraints:
+    # #                 energy_cap_max: 0 # (100,000 MW)
+    # # # force_chp_wte_back_pressure_0: 
+    # # #     techs:
+    # # #         chp_wte_back_pressure:
+    # # #             constraints:
+    # # #                 energy_cap_max: 0 # (100,000 MW)
+    # # force_biogas_engines_1: 
+    # #     techs:
+    # #         biogas_engines:
+    # #             constraints:
+    # #                 energy_cap_min: 1 # (100,000 MW)
+    # no_wte:
+    #     techs:
+    #         chp_wte_back_pressure.exists: false
+    #         chp_wte_back_pressure_heat_storage_big.exists: false
+    #         chp_wte_back_pressure_tech_heat_to_demand.exists: false
+    
+    # no_chp_methane:
+    #     techs:
+    #         chp_methane_extraction.exists: false
+    #         chp_methane_extraction_heat_storage_big.exists: false
+    #         chp_methane_extraction_tech_heat_to_demand.exists: false
+    
+    # force_ccge_0.1:
+    #     techs: ccgt
+    #     carrier_prod_share_min: 0.1 # in align with bio_org and nobio_org
+
+    # no_b2m:
+    #     techs:
+    #         biofuel_to_methanol.exists: false
+
+    # no_biofuel_boiler: # now the sole source for biofuel_heat; disabling to force useing other CHP techs!
+    #     techs.biofuel_boiler.exists: false
+    
+    # 30_biogas_engine:
+    #     techs.biogas_engines.costs.monetary.energy_cap: 30 #  (10,000 EUR2015/MW)| original: 0.85 MEur/MW
+
+    # no_heat_demand: 
+    # # exists by default, unlike transport or industry
+    # # apply to run power system only
+    #     techs:
+    #         demand_space_heat.exists: false
+    #         demand_water_heat.exists: false
+    #         demand_heat.exists: false
+    #         demand_cooking.exists: false
+
+
+    
+# for generating multiple runs on euler
+# bsub < submit_runs.sh
+
+# run1: without bio
+# run2: defalut (bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2)
+# run3: default + monthly_bio_max
+# run4: default + force_biofuel_to_liquids_0 (force off high-capacity B2L)
+# run5: run2 + force_biofuel_to_liquids_1 (force monthly model to use B2L)
+# run6: default + no_nuclear
+
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=12:00 --cluster_threads=6  --scenarios "transport,industry_fuel_shared,heat,config_overrides_2,no_bio_new;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,monthly_bio_max;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,force_biofuel_to_liquids_0;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,monthly_bio_max,force_biofuel_to_liquids_0;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,no_nuclear"
+
+# ----20210902
+# run1: without bio (config_overrides)
+# run2: defalut + no_wte
+
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=12:00 --cluster_threads=6  --scenarios "transport,industry_fuel_shared,heat,config_overrides,no_bio_new,res_12h;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,no_wte"
+
+# ----20210906
+# 1. try disabling biofuel_to_methanol in sector-coupled
+# 2. power only with bio
+# 3. power only without bio
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=12:00 --cluster_threads=6  --scenarios "bio_bau_potential,res_12h,transport,industry_fuel_shared,heat,config_overrides_2,no_b2m;bio_bau_potential,res_12h,config_overrides;config_overrides,no_bio_new,res_12h"
+
+# ----20210922
+# differentiating bio-carriers with regular ones (bio-model-test.yaml) --> get default carrier_con/prod
+# 1. default
+# 2. default + monthly
+# 3. default + nonuclear
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=12:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,monthly_bio_max;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,no_nuclear"
+
+# ----20210928
+# force changing end-use bioenergy via carrier_prod_equals
+# 1-3. default + overrides biofuel_heat_+100/500/900 (infeasible!)
+# 4-6. monthly + overrides biofuel_heat_+100/500/900 (infeasible!)
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+100;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+500;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+900;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+100,monthly_bio_max;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+500,monthly_bio_max;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_+900,monthly_bio_max"
+
+# ----20211001 try carrier_prod_min instead
+
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_+100;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_+300;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_+500;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_+900;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_-100;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_-300;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_-500;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_-900;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_-100;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_-300;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_-500;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,biofuel_heat_-900"
+
+# ----20211005 play around with bio_electricity, methanol, and methane
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,bio_methanol_half;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,bio_methane_double;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,bio_methanol_half_methane_double;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,bio_electricity_1;bio_bau_potential,transport,industry_fuel_shared,heat,config_overrides_2,res_12h,bio_electricity_0.3;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,bio_methanol_half;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,bio_methane_double;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,bio_methanol_half_methane_double;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,bio_electricity_1;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,bio_electricity_0.3"
+
+#gas_storage,link_cap_dynamic,freeze-hydro-capacities
+
+# ----20211014 (2round) more overrides: bio_sus_potential,add_agr_2nd_residue,no_bio_transmission_all,(gas_storage)
+# 1-3. bio_bau_potential 
+#   - without bio_transmission, but with gas_storage
+#   - with bio_transmission + gas_storage
+#   - with bio_transmission, but without gas_storage
+# 4-6. bio_sus_potential
+#   - without bio_transmission, but with gas_storage
+#   - with bio_transmission + gas_storage
+#   - with bio_transmission, but without gas_storage
+
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,no_bio_transmission_all,gas_storage;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage;bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h;bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,no_bio_transmission_all,gas_storage;bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage;bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h"
+
+# ----20211014 (3round) 
+# 1-2. without bio_transmission, without gas_storage (bau&sus potential) --> new default baseline
+# 3. nobio & isolated industry --> new countrol group
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_bau_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,no_bio_transmission_all;bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,no_bio_transmission_all;transport,industry_fuel_isolated,heat,config_overrides,no_bio_new,res_12h"
+
+# ----20211015, how'd the updated bio_transmission cost (cheaper) alter results?
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,bio_trans_supply_chain_1;bio_sus_potential,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,bio_trans_supply_chain_2"
+
+# ----20211024 power-only system with/without bio
+# 1. power-only + no bio 
+# 2. power-only + bio + biotrans
+# 3. power-only + bio + no biotrans
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "config_overrides_2,no_bio_new,no_heat_demand,res_12h;config_overrides_2,no_heat_demand,res_12h;config_overrides_2,no_heat_demand,res_12h,no_bio_transmission_all"
+
+# ----20211118  different manure potential (0, 50, 100% organic)
+# 1. Calliope_Organic_0_Waste0_Byfeed0_Byfood0
+# 2. Calliope_Organic_50_Waste0_Byfeed0_Byfood0
+# 3. Calliope_Organic_100_Waste0_Byfeed0_Byfood0
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_potential_org0,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage;bio_potential_org50,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage;bio_potential_org100,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage"
+# ----20211125 same, but disabling transporation network
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_potential_org0,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,no_bio_transmission_all;bio_potential_org50,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,no_bio_transmission_all;bio_potential_org100,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,no_bio_transmission_all"
+
+
+# ----20211122 higher/lower costs of hydrogen and storage techs
+# purpose: competing with AB utilization?
+# 1. reference: no change of any costs
+# 2. cheaper storage by 20% (pumped_hydro, battery, hydrogen)
+# 3. cheaper hydrogen production by 20% (electrolysis)
+# 4. expansive storage by 20% (pumped_hydro, battery, hydrogen)
+# 5. expansive hydrogen production by 20% (electrolysis)
+
+# calliope generate_runs /cluster/work/apatt/feiwu/Abbie/2021-06-25/Archive/2050/model/national/bio-model-test.yaml submit_runs.sh --kind=bsub --cluster_mem=80G --cluster_time=4:00 --cluster_threads=6 --scenarios "bio_potential_org0_noforest,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage;bio_potential_org0_noforest,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,cheaper_storage_20;bio_potential_org0_noforest,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,cheaper_hydrogen_20;bio_potential_org0_noforest,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,expansive_storage_20;bio_potential_org0_noforest,transport,industry_fuel_isolated,heat,config_overrides_2,res_12h,gas_storage,expansive_hydrogen_20"
