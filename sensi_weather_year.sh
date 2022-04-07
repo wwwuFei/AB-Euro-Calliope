@@ -1,5 +1,5 @@
 #!/bin/sh
-#BSUB -J calliope[1-9]
+#BSUB -J calliope[1-19]
 #BSUB -n 6
 #BSUB -R "rusage[mem=60G]"
 #BSUB -W 24:00
