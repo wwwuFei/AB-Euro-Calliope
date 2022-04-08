@@ -2147,4 +2147,4 @@ overrides:
                 carrier_prod_equals.waste: 178.15555555555557  # (0.1 TWh_waste)
 
 scenarios:
-    heat: [heat_storage_max, heat_techs, heat_tech_grouping, annual_waste_supply]
+    heat: [heat_storage_max, heat_techs, heat_tech_grouping] #annual_waste_supply,  disabling by Fei

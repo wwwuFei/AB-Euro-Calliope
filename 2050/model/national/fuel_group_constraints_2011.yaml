@@ -678,714 +678,542 @@ overrides:
                 carrier_con_min:
                     methane: -124.13827967266226
 
+# modified industry_techs disabling unused bio-transformation techs   
     industry_techs:
         techs:
             demand_industry_diesel.exists: true
             demand_industry_kerosene.exists: true
             demand_industry_methanol.exists: true
             demand_industry_methane.exists: true
-            demand_industry_biofuel.exists: true
-
+            # demand_industry_biofuel.exists: true
+            demand_industry_biofuel.exists: false # modified by fei
+            # demand_industry_ethanol.exists: true # ignoring for now
         locations:
             ALB.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             AUT.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             BEL.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             BGR.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             BIH.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             CHE.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             CYP.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
-                demand_industry_methanol.exists: false
+                demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             CZE.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             DEU.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             DNK.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
-                demand_industry_methanol.exists: false
+                demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             ESP.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             EST.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
-                demand_industry_methanol.exists: false
+                demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             FIN.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             FRA.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             GBR.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             GRC.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             HRV.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             HUN.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             IRL.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
-                demand_industry_methanol.exists: false
+                demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             ISL.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             ITA.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             LTU.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             LUX.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
-                demand_industry_methanol.exists: false
+                demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             LVA.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             MKD.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             MNE.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             NLD.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             NOR.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             POL.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             PRT.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             ROU.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             SRB.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             SVK.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             SVN.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
             SWE.techs:
-                biofuel_to_liquids:
+                # biofuel_to_liquids:
                 hydrogen_to_liquids:
-                biofuel_to_diesel:
-                biofuel_to_gas_and_liquids:
-                biofuel_to_methanol:
+                # biofuel_to_diesel:
+                # biofuel_to_gas_and_liquids:
+                # biofuel_to_methanol:
                 hydrogen_to_methanol:
-                biofuel_to_methane:
+                # biofuel_to_methane:
                 hydrogen_to_methane:
                 electrolysis:
                 dac:
-                syn_diesel_converter:
-                syn_methane_converter:
-                syn_kerosene_converter:
-                syn_methanol_converter:
                 demand_industry_diesel:
                 demand_industry_kerosene:
                 demand_industry_methanol:
                 demand_industry_methane:
-                demand_industry_biofuel.exists: false
+ 
 scenarios:
     industry_fuel: [annual_fuel_demand, industry_techs]
