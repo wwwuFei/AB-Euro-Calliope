@@ -6,19 +6,25 @@ Same as in the original model, `AB-Euro-Calliope` is pre-packaged and ready to b
 
 a. Install a specific conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
 
+
 b. Pick up the weather year of your choice by specifying the right model file. Our default weather year is 2018, so in that case you will need to run `./2050/model/natioal/bio-model-2018.yaml`
+
 
 c.1. Include specific strings of overrides to to reproduce the same scenarios analysed in our paper: 
 
 * `2050 Reference`: This is our refernce scenario for default settings without addtional infrasturcture/utilisation constraints `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals`
 
-* `BioDistribution`
+* `BioDistribution`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals,biofuel_supply_only_1`
 
-* `GasStorage`
+* `GasStorage`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals,gas_storage`
 
-* `FullUtiAgr`
+* `FullUtiAgr`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_agr_manure_msw_equals`
 
-* `FullUtiAll`
+* `FullUtiAll`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals`
+
+You can also combine overrides to have a mixed new scenario:
+
+* `BioDistribution+FullUtiAll`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals,biofuel_supply_only_1`
 
 c.2. For a brief introduction to essential overrides and what they refer to in the model:
 
@@ -41,6 +47,7 @@ c.2. For a brief introduction to essential overrides and what they refer to in t
 * `freeze-hydro-capacities`: Sets hydro capacities to equal "today's" capacities. This seems more reasonable than setting current capacities as upper limits, as this causes the model to install no hydro.
 
 ----------------------------------------------------------------------------------
+
 
 d.1. Run the model via the dedicated scripts found in this directory. This is a new part of the process, since we now rely on a new version of Calliope with all custom euro-calliope constraints added as 'custom constraints'. These scripts have been copied directly from snakemake, but you can load and run them in an interactive session / with your own python script to call them:
 
