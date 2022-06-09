@@ -1,0 +1,6 @@
+*.nc
+*.csv
+*.log
+euler*
+
+#ignoring large data files
