@@ -18,7 +18,6 @@ locations:
             # biomass_agr_supply:
             # biomass_agr_fats_supply:
             # biogas:
-            # to be continued
             wind_onshore_competing:
             wind_onshore_monopoly:
                 constraints:

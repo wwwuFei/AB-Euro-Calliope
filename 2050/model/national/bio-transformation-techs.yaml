@@ -1,19 +1,3 @@
-## ❗️❗️❗️
-# whenever we have only one carrier_out, just use the original costs data for conversion_plus 
-# A `primary_carrier_out` must be defined when there are multiple carrier_out values defined!! same for primary_carrier_in
-# The chosen output carrier will be the one to which production costs are applied!!
-
-    #🧐 i know what to do, but how?
-        # emissions of methane converted into co2 equivalent --> costs
-        # land use per tehc --> new costs.land, necessary?
-    #👀 questions to be considered:
-        # ?not much bio-conversion techs would have electricity output (85, 95, 97, but at low%), or is that so after introducing bio-gaseous techs?
-        # ?👆what to do with balancing power intermittency as the main aim (another storage of some converted biofuels to produce dispatchable electricity?) 
-        # ?but quite a lot have district heating; how do we consider DH in EC2?
-
-
-
-
 
 ######################################
 # assumptions in existing EC2
@@ -66,17 +50,6 @@ techs:
             carrier_in: bio_ethanol
             carrier_out: ethanol
 
-    biofuel_four: # not working
-        essentials:
-            name: Aggregate all four biofuels
-            parent: conversion_plus
-            # group constraints not working, wrong definition of carrier_in here?
-            carrier_in: [bio_diesel, bio_methanol, bio_methane, bio_kerosene]
-            primary_carrier_in: bio_methanol
-            carrier_out: biofuel_four
-        constraints:
-            carrier_ratios.carrier_in: {bio_diesel: 1, bio_methanol: 1, bio_methane: 1, bio_kerosene: 1}
-
 # ASSUME: Naptha production can be diverted to kerosene and diesel production, in equal measure.
     biofuel_to_liquids: # [Danish energy agency, renewable fuels, 85 Gasif. Ent. Flow FT, liq fu, 2050]
         essentials:
@@ -103,9 +76,6 @@ techs:
                 om_annual: 15.534837092731827  # (10,000 EUR2015/MW_diesel/year) | 104kEur/MW_liquids/year / 0.195 MW_diesel/MW_in * 0.299 MW_liquids/MW_in
                 om_prod: 0.00015878395989974935  # (10,000 EUR2015/MW_diesel) | 1.063Eur/MWh_liquids / 0.195 MWh_diesel/MWh_in * 0.299 MWh_liquids/MWh_in
 
-# i'd prefer sperate #101.2 and #100 to make life eaiser.
-# what will bryn deal with this after removing #101.1? --  he keeps only #101.2! yeah!
-
 # ASSUME: ignore electricity input, as it is 1% of the input energy requirements.
     biofuel_to_diesel: # [Danish energy agency, renewable fuels, 101 Catalytic Hydropyrolysis 2, 2050]
         essentials:
@@ -122,7 +92,6 @@ techs:
             monetary:
                 energy_cap: 93.0 # (10,000 EUR2015/MW_diesel | 0.93 MEUR/MW_biooil
                 om_annual: 2.7  # (10,000 EUR2015/MW_diesel/year | 0.027 MEUR/MW/year_biooil)
-                # TODO: triple check this: the number seems too high...
                 om_prod: 0.000131  # (10,000 EUR2015/MWh_diesel | 1.31 EUR/MWh_biooil)
 
     biofuel_to_methanol: # [Danish energy agency, renewable fuels, 97 Methanol from biomass gasif., 2050]
@@ -191,8 +160,6 @@ techs:
                 energy_cap: 150  #  (10,000 EUR2015/MW_methane | 1.5 MEUR/Mwth)
                 om_annual: 2.413  #  (10,000 EUR2015/MW_methane/year | 24100 EUR/MWth/year)
                 om_prod: 0.00016  #  (10,000 EUR2015/MWh_methane 1.6 EUR/MWHth)
-            #UNSURE: emissions: #840.1 kg NOx, 0.1 kg S, 0.05 kg NH3 and 0.002 kg N2O per MWh gas produced
-            #UNSURE: land: # similar as biomass power plants (The main space requirements typically relate to the storage, handling, and possibly drying of biomass feedstock, which can be assumed to correspond to what is required for biomass power plants.)
 
     manure_to_biogas: # [Danish energy agency, renewable fuels, 81 Biogas Plant, Basic conf 2050]
         essentials:
@@ -214,11 +181,6 @@ techs:
             monetary:
                 energy_cap: 139 # (10,000 EUR2015/MW_biogas) | 1.39 mio Eur/MW)
                 om_annual: 19.5722 # (10,000 EUR2015/MW_biogas) | 195,722€/MW/year) 
-             # UNSURE: we only have Total O&M from datasheets -- fits here or om_prod?
-             # om_prod: 
-            # emissions: 
-                # ?methane_emissions: # 0.42 Methane emission (Nm3 CH4/ton input/year) --> co2_equivalent
-                #reduce greenhouse gas emission by 60-180 kg CO2 equivalent per ton of biomass digested in Denmark
 
     biogas_to_methane: # [Danish energy agency, renewable fuels, 82 Biogas Plant, upgrading 2050]  
         essentials: 
@@ -291,15 +253,14 @@ techs:
             carrier_in: biomass_fats 
             primary_carrier_in: biomass_fats 
             carrier_in_2: methanol
-            carrier_in_3: methane # ❓as in natural gas in Danish source
+            carrier_in_3: methane # as in natural gas in Danish source
             # carrier_in_4: electricity # too small, to be ignored?
             carrier_out: bio_diesel # we ignore minor outputs of Glycerine (0.04)
         constraints:
             energy_eff: 0.87
             lifetime: 25
             carrier_ratios:
-                carrier_in.biomass_fats: 0.912 # ❓how to define carrier ratios of [biomass_agr_fats, biomass_mw_uco] as anyone of them would satisfy inputs?
-                carrier_in_2.methanol: 0.044
+                carrier_in.biomass_fats: 0.912
                 carrier_in_3.methane: 0.032
                 # carrier_in_4.electricity: 0.004 # too small, to be ignored?
         costs: 
@@ -310,7 +271,7 @@ techs:
                 om_prod: 0.000765 # (10,000 EUR2015/MW_diesel)| 7.65 EUR/MW_yr_diesel)
              # land: # 340 m2/MW_biodiesel, Dake plant in Denmark
     
-# ASSUME: here we treat HVO as diesel outputs. ❓Or can we? 
+# ASSUME: here we treat HVO as diesel outputs. 
 # HVO is a mixture of straight chain and branched paraffins – the simplest type of hydrocarbon molecules from the point of view of clean and complete combustion
     fats_uco_hydrogen_to_diesel:  # [Danish energy agency, renewable fuels, 91 Hydrogenetaed Vegetable Oil / Renewable Diesel , 2050]
         essentials:
@@ -337,7 +298,7 @@ techs:
                 om_prod: 0.000848 # (10,000 EUR2015/MW_diesel | 8.48 Eur/MWh_diesel)
             # land: 220 m2/MW
 
-# ASSUME: here we treat HVO jet as kerosene for aviation. ❓Or can we? 
+# ASSUME: here we treat HVO jet as kerosene for aviation. 
     fats_uco_hydrogen_to_kerosene: # [Danish energy agency, renewable fuels, 92 HVO Jet Fuel]
         essentials:
             name: kerosene/jetfuel from animal fats and used cooking oil with hydrogen
@@ -362,134 +323,3 @@ techs:
                 energy_cap: 71 # (10,000 EUR2015/MW_diesel | 0.71 MEUR/MW_HVOJet)
                 om_annual: 3.6 # (10,000 EUR2015/MW_diesel | 0.036 MEUR/MW_yr_HVOJet)
                 om_prod: 0.0008501 # (10,000 EUR2015/MW_diesel | 8.501 EUR/MWh_HVOJet)
-            # land: 220 m2/MW
-
-
-# notes from BP
-# move to fuel_group_constraints.yaml (using supply) or stay as conversion_plus (meaning using electricity & head as carrier_in)?
-# techs:
-    # biogas_from_manure:
-    #     essentials:
-    #         carrier: biogas
-    #         name: Biogas produced from manure
-    #         parent: supply
-    #     constraints:
-    #         energy_eff: 0.838
-    # biogas_from_straw:
-    #     essentials:
-    #         carrier: biogas
-    #         name: Biogas produced from straw
-    #         parent: supply
-    #     constraints:
-    #         energy_eff: XX
-    # group_constraints:
-    #     biofuel_ALB:
-    #         locs: [ALB]
-    #         techs: [biogas_from_straw]
-    #         carrier_prod_max:
-    #             biogas: {{annual_straw_availability * biogas_from_straw_efficiency}} # (100,000 MW)
-
-###################################### 
-# abondoned stuff
-######################################
-
-# No more 101.1 from now on
-    # biofuel_to_gas_and_liquids: # [Danish energy agency, renewable fuels, 101 Catalytic Hydropyrolysis 1, 2050]
-    #     essentials:
-    #         name: Biofuel to liquid and gas fuels converter
-    #         parent: conversion_plus
-    #         carrier_in: biofuel
-    #         carrier_in_2: hydrogen
-    #         primary_carrier_in: hydrogen
-    #         carrier_out: kerosene
-    #         primary_carrier_out: kerosene 
-    #         carrier_out_2: methane 
-    #         carrier_out_3: diesel
-    #         #carrier_out_4: district_heat  # ignoring for now (also the process produces biochar)
-    #         #carrier_out_5: biochar # ?possible carrier_in for other tehcs?
-    #     constraints:
-    #         carrier_ratios:
-    #             carrier_in.biofuel: 0.77
-    #             carrier_in_2.hydrogen: 0.23
-    #             carrier_out.kerosene: 0.22799999999999998  # MWh_kerosene/MWh_in @ 60% liquids content (based on hydrogen to liquids assumption)
-    #             carrier_out_3.diesel: 0.15200000000000002  # MWh_diesel/MWh_in @ 40% liquids content (based on hydrogen to liquids assumption)
-    #             carrier_out_2.methane: 0.31  # MWh_methane/MWh_in
-    #         lifetime: 20  # assumption, not given
-    #     costs:
-    #         monetary:
-    #             # TODO: sense check energy_cap vs om_annual costs (does the difference make sense?)
-    #             # ❓ how to get `11940MWh_kerosene/t`? got so confused when specific investment is given in liquid fuels..
-    #             energy_cap: 81.51870463428253 # (10,000 EUR2015/MW_kerosene) | 0.73MEur/1000t/year / (1000t/8000h_operation/year * 11940MWh_kerosene/t) / 0.6MW_kerosene/MW_liquids
-    #             om_annual: 7.001675041876048  # (10,000 EUR2015/MW_kerosene/year) | 44kEur/MW_out * (228MW_out/160 1000t_liquids/year) / (1000t_liquids/8000h_operation/year * 11940MWh_kerosene/t) / 0.6MW_kerosene/MW_liquids
-    #             # FIXME: om_prod is '(€ /MWh of fuel)', does this mean input or output fuel? Going with it meaning 'liquid fuel'
-    #             # TODO: triple check this; the value seems too small. # ? i think it makes sense as the original Variable O&M is already too small, but the Fixed O&M is higher than other techs -- just the charcteristic of this tech
-    #             om_prod: 3.3333333333333333e-06  # (10,000 EUR2015/MW_kerosene) | 0.02Eur/MWh_liquid_fuel / 0.6MWh_kerosene/MW_liquid_fuel
-
-    ## "The values refer to a part of a total plant processing only the straw or waste. It is thereby possible to model the production and costs of a plant with input of straw or waste by adding a ‘basic plant’-part and a ‘straw/waste input’ part."
-# these two additional configuartions are too confusing for calculating parameters --> maybe later
-#     add_straw_to_biogas: # [Danish energy agency, renewable fuels, 81 Biogas Plant, Add. Straw 2050]
-## probably not the best use of straw & solid biomass:
-## lower energy output than if the same feedstock was used for thermal gasification and/or combustion.
-#         essentials:
-#             name: Straw to Biogas converter
-#                 parent: conversion_plus
-#                 carrier_in: straw # TODO: potential supply data to be defined
-#                 carrier_in_2: electricity
-#                 carrier_in_3: heat 
-#                 carrier_out: biogas
-#         constraints:
-#             carrier_ratios:
-#                 carrier_in_1.straw: 1.82 # ? how to deal with additional % over 100% ?: Straw input (% of additional output)
-#                 carrier_out.biogas: 1  # MWh_biogas/MWh_in
-#             lifetime: 20
-#         costs:
-#             monetary:
-#                 energy_cap: 37.1930 # ?(10,000 EUR2015/MW_biogas) | 371,930Eur/MW)
-#                 om_annual: 5.6692 # ?(10,000 EUR2015/MW_biogas) | 56,692€/MW/year) # we only have Total O&M -- fits here or om_prod?
-#                 # om_prod: 
-#             emissions: 
-#                 energy_cap: # emissions per MW_biogas
-#                 # ?methane_emissions: # 4.4 Methane emission (Nm3 CH4/ton input/year)
-
-#     add_orgwaste_to_biogas: # [Danish energy agency, renewable fuels, 81 Biogas Plant, Add. Org Waste 2050]
-#         essentials:
-#             name: Organic Waste to Biogas converter
-#                 parent: #supply?
-#                 carrier_in: organic_waste
-#                 # carrier_in_2: aux_electricity # do we even have auxiliary electricity in EC?
-#                 # carrier_in_3: aux_heat 
-#                 carrier_out: biogas
-#         constraints:
-#             carrier_ratios:
-#                 carrier_in.straw: # 1.25-2? #? how to deal with data given in range? take average? highest? or..?
-#                 carrier_out.biogas: 1  # MWh_biogas/MWh_in
-#             lifetime: 20
-#         costs:
-#             monetary:
-#                 energy_cap: 27.6050 # ?(10,000 EUR2015/MW_biogas) | 276,050Eur/MW)
-#                 om_annual: 5.3132 # ?(10,000 EUR2015/MW_biogas) | 53,132€/MW/year) # we only have Total O&M -- fits here or om_prod?
-#                 # om_prod: 
-
-## not for methanation since it uses air as gasification
-## input biofuels should be in lower calorific value
-    # biomass_to_producer_gas: # [Danish energy agency, renewable fuels, 83 Gasif. Fixed Bed, Producer gas 2050]  
-    #     essentials: 
-    #          name: Biomass gasification for producer gas
-    #          parent: conversion_plus
-    #          carrier_in: [wood_chips, pellets, ind_wood_residues] # TODO: to be defined in potential yaml
-    #          carrier_in_2: electricity # auxiliary electricity for process machinery
-    #          primary_carrier_in:
-    #     constraints:
-    #         energy_eff: 0.830
-    #         carrier_ratios: 
-    #             #carrier_in: {wood_chips, pellets, ind_wood_residues} # 🧐 syntax of whatever ratio among potential carrier_in?
-    #             carrier_in_2.electricity: 0.02
-    #             lifetime: 20
-    #     cost: 
-    #         monetary:
-    #             energy_cap: # | 1.1 MEur/MWth / 0.830 # (MWth): lower calorific value of the input biomass 
-    #             om_annual: # | 16,200 Eur/MWth/year /0.830
-    #             om_prod: # | 2.0 Eur/MWhth /0.830
-
-
-
