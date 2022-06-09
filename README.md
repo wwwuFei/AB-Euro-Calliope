@@ -1,6 +1,6 @@
-# Ancillary-Bioenergy (AB) Version of Sector-coupled Euro-Calliope Pre-built Model (National Scale)
+# Ancillary-Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model (AB-Euro-Calliope)
 
-This is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with addtional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is dedicated to [![Link to AB paper]](https://). We refer to it as `AB-Euro-Calliope` hereafter.
+This is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with addtional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is dedicated to [[Link to AB paper]](https://). We refer to it as `AB-Euro-Calliope` hereafter.
 
 Same as in the original model, `AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope model. To configue the environment and run the model, you will need to do the following:
 
@@ -42,7 +42,7 @@ c.2. For a brief introduction to essential overrides and what they refer to in t
 
 ----------------------------------------------------------------------------------
 
-d. run the model via the dedicated scripts found in this directory. This is a new part of the process, since we now rely on a new version of Calliope with all custom euro-calliope constraints added as 'custom constraints'. These scripts have been copied directly from snakemake, but you can load and run them in an interactive session / with your own python script to call them:
+d.1. Run the model via the dedicated scripts found in this directory. This is a new part of the process, since we now rely on a new version of Calliope with all custom euro-calliope constraints added as 'custom constraints'. These scripts have been copied directly from snakemake, but you can load and run them in an interactive session / with your own python script to call them:
 
 ```python
 import create_input
@@ -55,8 +55,16 @@ run.run_model(path_to_netcdf_of_model_inputs, path_to_netcdf_of_results)
 
 ```
 
-e. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default year 2018 in just one line: 
+d.2. Alternatively, you can also use the `bio-run.py` to complete the work of both scripts (`create_input.py` and `run.py`) and pass scenarios strings on to the model, as introduced below:
+
+----------------------------------------------------------------------------------
+
+An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default year 2018 in just one line useing `bio-run.py`: 
 
 `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
 
 The output files will be automatically stored in a new folder called `output_nc` named with `out_YourScenarios.nc`. In this example of `2050 Reference`, it will be `out_res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals`
+
+----------------------------------------------------------------------------------
+
+Fei Wu @Delft, 20220609
