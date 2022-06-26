@@ -1,4 +1,4 @@
-overrides: 
+overrides:  #(100,000 MW)
 # referennce scenario# 50% biomass_agr, manure as in SOLm
   manure_ref: # solm, 75% avilability
     group_constraints: 
@@ -3714,6 +3714,254 @@ overrides:
         techs:
         - biomass_manure_supply
 
+# addtional deidcated miscanthus biomass
+  miscanthus: # ENS_LOW, JRC
+    group_constraints: 
+      biomass_miscanthus_ALB:
+        carrier_prod_max:
+          biomass_miscanthus: 795.0745249
+        locs:
+        - ALB
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_AUT:
+        carrier_prod_max:
+          biomass_miscanthus: 206.2051372
+        locs:
+        - AUT
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_BEL:
+        carrier_prod_max:
+          biomass_miscanthus: 65.67888588
+        locs:
+        - BEL
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_BGR:
+        carrier_prod_max:
+          biomass_miscanthus: 783.4600712
+        locs:
+        - BGR
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_BIH:
+        carrier_prod_max:
+          biomass_miscanthus: 1766.117524
+        locs:
+        - BIH
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_CHE:
+        carrier_prod_max:
+          biomass_miscanthus: 0
+        locs:
+        - CHE
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_CYP:
+        carrier_prod_max:
+          biomass_miscanthus: 8.445617868
+        locs:
+        - CYP
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_CZE:
+        carrier_prod_max:
+          biomass_miscanthus: 281.5232808
+        locs:
+        - CZE
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_DEU:
+        carrier_prod_max:
+          biomass_miscanthus: 3196.044224
+        locs:
+        - DEU
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_DNK:
+        carrier_prod_max:
+          biomass_miscanthus: 0
+        locs:
+        - DNK
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_ESP:
+        carrier_prod_max:
+          biomass_miscanthus: 4803.178843
+        locs:
+        - ESP
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_EST:
+        carrier_prod_max:
+          biomass_miscanthus: 25.99382635
+        locs:
+        - EST
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_FIN:
+        carrier_prod_max:
+          biomass_miscanthus: 376.8203015
+        locs:
+        - FIN
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_FRA:
+        carrier_prod_max:
+          biomass_miscanthus: 4214.236705
+        locs:
+        - FRA
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_GBR:
+        carrier_prod_max:
+          biomass_miscanthus: 737.6714235
+        locs:
+        - GBR
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_GRC:
+        carrier_prod_max:
+          biomass_miscanthus: 309.315803
+        locs:
+        - GRC
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_HRV:
+        carrier_prod_max:
+          biomass_miscanthus: 0
+        locs:
+        - HRV
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_HUN:
+        carrier_prod_max:
+          biomass_miscanthus: 1551.639852
+        locs:
+        - HUN
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_IRL:
+        carrier_prod_max:
+          biomass_miscanthus: 76.72336693
+        locs:
+        - IRL
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_ISL:
+        carrier_prod_max:
+          biomass_miscanthus: 0.0
+        locs:
+        - ISL
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_ITA:
+        carrier_prod_max:
+          biomass_miscanthus: 1695.173023
+        locs:
+        - ITA
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_LTU:
+        carrier_prod_max:
+          biomass_miscanthus: 188.4777341
+        locs:
+        - LTU
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_LUX:
+        carrier_prod_max:
+          biomass_miscanthus: 0
+        locs:
+        - LUX
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_LVA:
+        carrier_prod_max:
+          biomass_miscanthus: 0.0008833297075354
+        locs:
+        - LVA
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_MKD:
+        carrier_prod_max:
+          biomass_miscanthus: 498.4859543
+        locs:
+        - MKD
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_MNE:
+        carrier_prod_max:
+          biomass_miscanthus: 69.48527781
+        locs:
+        - MNE
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_NLD:
+        carrier_prod_max:
+          biomass_miscanthus: 340.4880502
+        locs:
+        - NLD
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_NOR:
+        carrier_prod_max:
+          biomass_miscanthus: 119.9054293
+        locs:
+        - NOR
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_POL:
+        carrier_prod_max:
+          biomass_miscanthus: 2644.601005
+        locs:
+        - POL
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_PRT:
+        carrier_prod_max:
+          biomass_miscanthus: 396.0583724
+        locs:
+        - PRT
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_ROU:
+        carrier_prod_max:
+          biomass_miscanthus: 4214.506149
+        locs:
+        - ROU
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_SRB:
+        carrier_prod_max:
+          biomass_miscanthus: 838.1490039
+        locs:
+        - SRB
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_SVK:
+        carrier_prod_max:
+          biomass_miscanthus: 31.74605317
+        locs:
+        - SVK
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_SVN:
+        carrier_prod_max:
+          biomass_miscanthus: 35.24227819
+        locs:
+        - SVN
+        techs:
+        - biomass_agr_miscanthus_supply
+      biomass_miscanthus_SWE:
+        carrier_prod_max:
+          biomass_miscanthus: 164.5257983
+        locs:
+        - SWE
+        techs:
+        - biomass_agr_miscanthus_supply
 # end of potential overrides
 
 scenarios:
@@ -3722,3 +3970,4 @@ scenarios:
     bio_potential_org0_msw_equals: [manure_org0, agr_1st_org0, shell_ref, fats_ref, msw_ref_equals, forest_ref]
     bio_potential_org0_agr_manure_msw_equals: [manure_org0_equals,agr_1st_org0_equals,shell_ref, fats_ref, msw_ref_equals, forest_ref]
     bio_potential_org0_all_equals: [manure_org0_equals, agr_1st_org0_equals, shell_equals, msw_ref_equals, fats_equals, forest_equals]
+    

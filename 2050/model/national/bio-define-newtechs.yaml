@@ -12,6 +12,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -38,6 +40,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -64,6 +68,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -90,6 +96,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -116,6 +124,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -142,6 +152,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -168,6 +180,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -194,6 +208,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -220,6 +236,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -246,6 +264,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -272,6 +292,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -298,6 +320,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -324,6 +348,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -350,6 +376,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -376,6 +404,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -402,6 +432,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -428,6 +460,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -454,6 +488,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -480,6 +516,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -506,6 +544,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -532,6 +572,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -558,6 +600,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -584,6 +628,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -610,6 +656,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -636,6 +684,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -662,6 +712,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -688,6 +740,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -714,6 +768,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -740,6 +796,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -766,6 +824,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -792,6 +852,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -818,6 +880,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -844,6 +908,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -870,6 +936,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:
@@ -896,6 +964,8 @@ locations:
     biogas_to_sng:
     bioheat_to_heat:
     biokerosene_to_kerosene:
+    biomass_agr_miscanthus_supply:
+    miscanthus_to_forestary:
     biomass_agr_1st_residue_supply:
     biomass_by_fats_supply:
     biomass_by_shell_supply:

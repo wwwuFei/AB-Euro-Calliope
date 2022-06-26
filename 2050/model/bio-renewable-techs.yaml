@@ -180,6 +180,13 @@ techs:
         essentials: 
             name: agricultural 2nd residue biomass
             parent: biomass
-            carrier: biomass_agr # units: 10000 MWh 
+            carrier: biomass_agr # units: 10000 MWh
+    
+    # not enabled in reference scenarios
+    biomass_agr_miscanthus_supply:
+        essentials: 
+            name: agricultural dedicated biomass (miscanthus, switchgrass) from JRC
+            parent: biomass
+            carrier: biomass_miscanthus # units: 10000 MWh  
 
     # for new supply techs, first update `dic_dump_yaml.ipynb` --> new yaml --> call them in the end of `bio-define-newtechs.yaml`

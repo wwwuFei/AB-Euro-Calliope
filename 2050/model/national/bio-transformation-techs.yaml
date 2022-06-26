@@ -13,6 +13,12 @@
 
 techs: 
 # add more converters per carrier to monitor/constraint carrier_prod/con
+    miscanthus_to_forestary:
+        essentials:
+            name: Dummy convertor assuming same energy flow of both
+            parent: conversion
+            carrier_in: biomass_miscanthus
+            carrier_out: biomass_forest
     bioelec_to_elec:
         essentials:
             name: Convert different bio-electriciy to electricity
