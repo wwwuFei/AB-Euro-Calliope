@@ -1,8 +1,9 @@
 locations:
   ALB.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs:
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -27,10 +28,12 @@ locations:
     fats_uco_hydrogen_to_kerosene:
     fats_uco_to_diesel:
     manure_to_biogas:
+    
   AUT.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -56,9 +59,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   BEL.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -84,9 +89,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   BGR.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -112,9 +119,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   BIH.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -140,9 +149,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   CHE.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -168,9 +179,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   CYP.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -196,9 +209,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   CZE.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -224,9 +239,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   DEU.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -252,9 +269,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   DNK.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -280,9 +299,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   ESP.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -308,9 +329,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   EST.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -336,9 +359,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   FIN.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -364,9 +389,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   FRA.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -392,9 +419,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   GBR.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -420,9 +449,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   GRC.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -448,9 +479,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   HRV.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -476,9 +509,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   HUN.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -504,9 +539,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   IRL.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -532,9 +569,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   ISL.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -560,9 +599,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   ITA.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -588,9 +629,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   LTU.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -616,9 +659,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   LUX.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -644,9 +689,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   LVA.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -672,9 +719,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   MKD.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -700,9 +749,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   MNE.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -728,9 +779,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   NLD.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -756,9 +809,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   NOR.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -784,9 +839,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   POL.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -812,9 +869,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   PRT.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -840,9 +899,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   ROU.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -868,9 +929,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   SRB.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -896,9 +959,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   SVK.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -924,9 +989,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   SVN.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:
@@ -952,9 +1019,11 @@ locations:
     fats_uco_to_diesel:
     manure_to_biogas:
   SWE.techs:
+    bio_combustion_ccs: 
+    bio_liquid_ccs: 
     biodiesel_to_diesel:
     bioelec_to_elec:
-    biofuel_four:
+    
     biofuel_to_diesel:
     biofuel_to_liquids:
     biofuel_to_methane:

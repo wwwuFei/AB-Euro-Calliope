@@ -67,6 +67,8 @@ techs: # new, added by Fei
     # biogas_to_electricity_supply.exists: false  # already disabled in config_overrides
 
 overrides:
+    no-nuclear:
+        techs.nuclear.exists: false
     no-hydro-costs:
         # Because we force all hydro to current levels, there
         # should be annual O&M costs and variable costs only.
