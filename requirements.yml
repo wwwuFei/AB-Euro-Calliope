@@ -1,0 +1,7 @@
+name: ab_euro_calliope
+channels:
+    - conda-forge
+    - default
+dependencies:
+    - python=3.8
+    - calliope=0.6.8
