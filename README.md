@@ -1,11 +1,13 @@
 # AB-Euro-Calliope (Ancillary-Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model )
 
-This is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with addtional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is dedicated to our paper entitled Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system. We refer to it as `AB-Euro-Calliope` hereafter.
+This is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with addtional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is dedicated to our paper entitled _Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system_. We refer to this model as `AB-Euro-Calliope` hereafter.
 
 Same as in the original model, `AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope model. To configue the environment and run the model, you will need to do the following:
 
 a.1. Install a specific conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
+
 a.2. Download all `.csv files` from the original pre-built as they do not fit into the git repo here. Be careful about their relative directory! [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988)
+
 
 b. Pick up the weather year of your choice by specifying the right model file. Our default weather year is 2018, so in that case you will need to run `./2050/model/natioal/bio-model-2018.yaml`
 
@@ -21,6 +23,15 @@ c.1. Include specific strings of overrides to to reproduce the same scenarios an
 * `FullUtiAgr`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_agr_manure_msw_equals`
 
 * `FullUtiAll`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals`
+
+* `NoUti`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,no-bio-new`
+
+* `NoNuclear`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals,no-nuclear`
+
+* `DedicatedBiomass`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacitiesbio_potential_org0_msw_equals,miscanthus`
+
+* `AllBECCS`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals,all_bio_for_ccs`
+
 
 You can also combine overrides to have a mixed new scenario:
 
