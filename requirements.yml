@@ -1,7 +1,8 @@
 name: ab_euro_calliope
 channels:
     - conda-forge
-    - default
+    - gurobi
 dependencies:
     - python=3.8
+    - gurobi=9.5
     - calliope=0.6.8
