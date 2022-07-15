@@ -1,4 +1,4 @@
-# for overrides: all_bio_for_power
+# for overrides: all_bio_for_ccs
 techs:
     bio_combustion_ccs: # [Grant et al., 2021, Electricity|Biomass|w/ CCS, 2050]
         exists: false
@@ -7,7 +7,7 @@ techs:
             parent: conversion_plus
             carrier_in: [biomass_forest, biomass_agr, biomass_shell, biomass_fats, manure]
             primary_carrier_in: biomass_forest
-            carrier_out: electircity
+            carrier_out: electricity
         constraints:
             energy_eff: 0.34
             lifetime: 30
@@ -28,7 +28,7 @@ techs:
         constraints:
             energy_eff: 0.46
             lifetime: 25
-            carrier_ratios.carrier_in: {biomass_forest: 1, biomass_agr: 1, biomass_shell: 1, biomass_fats: 1, manure: 1}
+            carrier_ratios.carrier_in: {biomass_forest: 1, biomass_shell: 1, biomass_fats: 1}
         costs: 
             monetary:
                 energy_cap: 262.10 # (10,000 EUR2015/MW | 2695.662105 US$2010/kW) 
@@ -72,7 +72,6 @@ overrides:
             biogas_to_methane.exists: false
             biogas_to_sng.exists: false
             biogas_engines.exists: false
-            # cellulosic_to_ethanol.exists: false
             fats_uco_hydrogen_to_diesel.exists: false
             fats_uco_hydrogen_to_kerosene.exists: false
             fats_uco_to_diesel.exists: false
@@ -83,9 +82,9 @@ overrides:
             biofuel_heat_storage_small.exists: false
             biofuel_tech_heat_to_demand.exists: false
 
-            # chp_biofuel.exists: false # duplicated with config_overrides
-            # chp_biofuel_heat_storage_big.exists: false
-            # chp_biofuel_tech_heat_to_demand.exists: false
+            chp_biofuel.exists: false 
+            chp_biofuel_heat_storage_big.exists: false
+            chp_biofuel_tech_heat_to_demand.exists: false
 
             chp_biofuel_extraction.exists: false
             chp_biofuel_extraction_heat_storage_big.exists: false
@@ -97,17 +96,16 @@ overrides:
 
     all_bio_for_ccs:
     # ancillary biomass only for power (no biofuels or heat) --> all for negative emissions
-    # MSW stayts how it is
+
         techs: 
             bio_combustion_ccs.exists: true
-
+            bio_liquid_ccs.exists: true
             # biomass_agr_1st_residue_supply.exists: false
             # biomass_by_fats_supply.exists: false
             # biomass_by_shell_supply.exists: false
             # biomass_forest_supply.exists: false
             # biomass_manure_supply.exists: false
-            biomass_msw_supply.exists: false
-
+            # biomass_msw_supply.exists: false
 
             biofuel_to_diesel.exists: false
             biofuel_to_liquids.exists: false
@@ -116,25 +114,24 @@ overrides:
             biogas_to_methane.exists: false
             biogas_to_sng.exists: false
             biogas_engines.exists: false
-            # cellulosic_to_ethanol.exists: false
             fats_uco_hydrogen_to_diesel.exists: false
             fats_uco_hydrogen_to_kerosene.exists: false
             fats_uco_to_diesel.exists: false
             manure_to_biogas.exists: false
 
-
             biofuel_boiler.exists: false
             biofuel_heat_storage_small.exists: false
             biofuel_tech_heat_to_demand.exists: false
 
-            # chp_biofuel.exists: false # duplicated with config_overrides
-            # chp_biofuel_heat_storage_big.exists: false
-            # chp_biofuel_tech_heat_to_demand.exists: false
+            chp_biofuel.exists: false 
+            chp_biofuel_heat_storage_big.exists: false
+            chp_biofuel_tech_heat_to_demand.exists: false
 
             chp_biofuel_extraction.exists: false
             chp_biofuel_extraction_heat_storage_big.exists: false
             chp_biofuel_extraction_tech_heat_to_demand.exists: false
             
+# MSW stayts how it is
             # chp_wte_back_pressure.exists: false
             # chp_wte_back_pressure_heat_storage_big.exists: false
             # chp_wte_back_pressure_tech_heat_to_demand.exists: false

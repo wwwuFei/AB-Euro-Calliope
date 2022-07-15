@@ -2,5 +2,8 @@
 *.csv
 *.log
 euler*
+*.pyc
+_pycache_
+.vscode
 
-#ignoring large data files
+#ignoring large data files and aux files
