@@ -10,11 +10,14 @@ _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
 `AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope. To configure the environment and run the model, you will need to do the following:
 
-* Install a the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
+1. Install a the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
 
-* Download all `.csv files` from the original pre-built as they do not fit into the git repo here. Be careful about their relative directory! [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988)
+2. Download all `.csv files` from the original pre-built as they do not fit into the git repo here ([![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988)). Be careful about their relative directory! 
 
-* Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
+   * Put `annual_industry_energy_demand_2050.csv` into `./2050`
+   * Put the rest of `.csv files` into `./2050/model/national`
+
+3. Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
 
 You can use a different weather year by chaning the reference to `2050/model/national/bio-model-2018.yaml` inside `bio_run.py`.
 
