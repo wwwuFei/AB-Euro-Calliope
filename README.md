@@ -10,12 +10,18 @@ _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
 `AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope. To configure the environment and run the model, you will need to do the following:
 
-1. Install a the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
+1. Install the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
 
-2. Download all `.csv files` from the original pre-built as they do not fit into the git repo here ([![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988)). Be careful about their relative directory! 
+2. Download all `.csv files` (for timeseries data) from the [original pre-built](https://doi.org/10.5281/zenodo.5774988) as they are too large for the git repo here . 
 
-   * Put `annual_industry_energy_demand_2050.csv` into `./2050`
-   * Put the rest of `.csv files` into `./2050/model/national`
+  * Aggregate all subnational data (e.g., ALB_1,AUT_1,AUT_2,AUT_3) into national data, because our `AB-Euro-Calliope` runs on the national resulotion. E.g., a simple and handy line for aggregation (in python) coule be:
+
+```
+df.T.groupby([s.split('_')[0] for s in df.T.index.values]).sum().T # 
+```
+  * Alternatively, you can also [email the author](mailto:fei.wu@usys.ethz.ch) for the ready-to-use national `.csv files` if you have difficulty in aggregating data
+  
+  * Be careful about their relative directory (should be the same as in the [original pre-built](https://doi.org/10.5281/zenodo.5774988))! i.e., Put `annual_industry_energy_demand_2050.csv` into `./2050`; then put the rest of `.csv files` into `./2050/model/national`
 
 3. Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
 
