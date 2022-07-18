@@ -4,7 +4,7 @@
 
 _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
-`AB-Euro-Calliope` is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with additional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is used in the paper entitled _Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system_.
+`AB-Euro-Calliope` is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with additional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is used in the paper entitled _Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system.
 
 ## Instructions
 
@@ -12,16 +12,10 @@ _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
 1. Install the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
 
-2. Download all `.csv files` (for timeseries data) from the [original pre-built](https://doi.org/10.5281/zenodo.5774988) as they are too large for the git repo here . 
+2. Download all `.csv files` (for national timeseries data) from [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6854685.svg)](https://doi.org/10.5281/zenodo.6854685), as they are too large for the git repo here. 
 
-  * Aggregate all subnational data (e.g., ALB_1,AUT_1,AUT_2,AUT_3) into national data, because our `AB-Euro-Calliope` runs on the national resulotion. E.g., a simple and handy line for aggregation (in python) coule be:
+ * Be careful about their relative directory (should be the same as in the Zenodo data repository when you move them here). I.e., Put `annual_industry_energy_demand_2050.csv` into `./2050`; then put the rest of all `.csv files` into `./2050/model/national`
 
-```
-df.T.groupby([s.split('_')[0] for s in df.T.index.values]).sum().T # 
-```
-  * Alternatively, you can also [email the author](mailto:fei.wu@usys.ethz.ch) for the ready-to-use national `.csv files` if you have difficulty in aggregating data
-  
-  * Be careful about their relative directory (should be the same as in the [original pre-built](https://doi.org/10.5281/zenodo.5774988))! i.e., Put `annual_industry_energy_demand_2050.csv` into `./2050`; then put the rest of `.csv files` into `./2050/model/national`
 
 3. Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
 
@@ -73,6 +67,14 @@ These scenarios are defined in the model as combinations of [overrides](#overrid
 * `link_cap_dynamic`: Sets a limit on transmission line capacities. The limits are chosen subjectively based on current capacity, such that lines with smaller current capacities can proportionally increase much more (e.g. 100x) than larger lines (e.g. 2x). See `national/links.yaml` for other override options to apply here.
 
 * `freeze-hydro-capacities`: Sets hydro capacities to equal "today's" capacities. This seems more reasonable than setting current capacities as upper limits, as this causes the model to install no hydro.
+
+
+## Ancillary bioenergy potential data in 2050 (national level)
+`ancillary_bioenergy_potential_twh_utilisation.csv`
+ * Note that this file is not needed for running AB-Euro-Calliope, but summarizes the 2050 potential of ancillary bioenergy per feedstock per country (i.e., as used in [`bio-potential-overrides.yaml`](https://github.com/wwwuFei/AB-Euro-Calliope/blob/main/2050/model/national/bio-potential-overrides.yaml) with the same names of biomass feedstocks)
+ * Column `CountryCode`: follows the three-letter ISO country code (ISO 3166-1)
+ * Units: TWh
+
 
 ## About
 
