@@ -1,5 +1,6 @@
 *.nc
 *.csv
+!ancillary_bioenergy_potential_twh.csv
 *.log
 euler*
 *.pyc
