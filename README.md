@@ -1,18 +1,43 @@
-# Ancillary-Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model (AB-Euro-Calliope)
+[![CC BY 4.0][cc-by-image]][cc-by]
 
-This is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with addtional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is dedicated to [[Link to AB paper]](https://). We refer to it as `AB-Euro-Calliope` hereafter.
+# AB-Euro-Calliope
 
-Same as in the original model, `AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope model. To configue the environment and run the model, you will need to do the following:
+_Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
-a. Install a specific conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
+`AB-Euro-Calliope` is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with additional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is used in the paper entitled _Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system_.
 
+## Instructions
 
-b. Pick up the weather year of your choice by specifying the right model file. Our default weather year is 2018, so in that case you will need to run `./2050/model/natioal/bio-model-2018.yaml`
+`AB-Euro-Calliope` is pre-packaged and ready to be loaded into Calliope. To configure the environment and run the model, you will need to do the following:
 
+1. Install the conda environment to be working with the correct version of Calliope (`conda env create -f requirements.yml`)
 
-c.1. Include specific strings of overrides to to reproduce the same scenarios analysed in our paper: 
+2. Download all `.csv files` (for timeseries data) from the [original pre-built](https://doi.org/10.5281/zenodo.5774988) as they are too large for the git repo here . 
 
-* `2050 Reference`: This is our refernce scenario for default settings without addtional infrasturcture/utilisation constraints `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals`
+  * Aggregate all subnational data (e.g., ALB_1,AUT_1,AUT_2,AUT_3) into national data, because our `AB-Euro-Calliope` runs on the national resulotion. E.g., a simple and handy line for aggregation (in python) coule be:
+
+```
+df.T.groupby([s.split('_')[0] for s in df.T.index.values]).sum().T # 
+```
+  * Alternatively, you can also [email the author](mailto:fei.wu@usys.ethz.ch) for the ready-to-use national `.csv files` if you have difficulty in aggregating data
+  
+  * Be careful about their relative directory (should be the same as in the [original pre-built](https://doi.org/10.5281/zenodo.5774988))! i.e., Put `annual_industry_energy_demand_2050.csv` into `./2050`; then put the rest of `.csv files` into `./2050/model/national`
+
+3. Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
+
+You can use a different weather year by chaning the reference to `2050/model/national/bio-model-2018.yaml` inside `bio_run.py`.
+
+All custom constraints beyond built-in Calliope 0.6.8 constraints are defined and built in the file `run.py`. `create_input.py` is a helper script. Both of these are called by `bio_run.py`.
+
+See below for an overview of the combination of overrides used to build the scenarios presented in the paper.
+
+After running `bio_run.py`, output files will be stored in a new folder called `output_nc` with the filename template `out_{your_overrides}.nc`. In the above example of running `2050 Reference`, the file name will be `out_res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals.nc`.
+
+## Scenarios
+
+These scenarios are defined in the model as combinations of [overrides](#overrides):
+
+* `2050 Reference`: This is our refernce scenario for default settings without addtional infrastructure/utilisation constraints `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals`
 
 * `BioDistribution`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals,biofuel_supply_only_1`
 
@@ -22,13 +47,16 @@ c.1. Include specific strings of overrides to to reproduce the same scenarios an
 
 * `FullUtiAll`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals`
 
-You can also combine overrides to have a mixed new scenario:
+* `NoUti`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,no-bio-new`
 
-* `BioDistribution+FullUtiAll`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals,biofuel_supply_only_1`
+* `NoNuclear`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals,no-nuclear`
 
-c.2. For a brief introduction to essential overrides and what they refer to in the model:
+* `DedicatedBiomass`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacitiesbio_potential_org0_msw_equals,miscanthus`
 
-----------------------------------------------------------------------------------
+* `AllBECCS`: `industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_all_equals,all_bio_for_ccs`
+
+
+## Overrides
 
 * `industry_fuel`: Includes all non-electrical industry demands distributed by region, and the necessary technologies to generate those fuels synthetically. This includes e.g. annual methanol requirements for the chemical industry.
 
@@ -46,42 +74,18 @@ c.2. For a brief introduction to essential overrides and what they refer to in t
 
 * `freeze-hydro-capacities`: Sets hydro capacities to equal "today's" capacities. This seems more reasonable than setting current capacities as upper limits, as this causes the model to install no hydro.
 
-----------------------------------------------------------------------------------
+## About
 
+Author: Fei Wu, ETH Zürich and TU Delft, 20220609
 
-d.1. Run the model via the dedicated scripts found in this directory. This is a new part of the process, since we now rely on a new version of Calliope with all custom euro-calliope constraints added as 'custom constraints'. These scripts have been copied directly from snakemake, but you can load and run them in an interactive session / with your own python script to call them:
+Based on [Sector-Coupled Euro-Calliope by Bryn Pickering](https://doi.org/10.5281/zenodo.5774988), under a CC BY 4.0 license.
 
-```python
-import create_input
-create_input.build_model(path_to_model_yaml, scenarios_string, path_to_netcdf_of_model_inputs)
-```
+License:
 
-```python
-import run
-run.run_model(path_to_netcdf_of_model_inputs, path_to_netcdf_of_results)
-
-```
-
-d.2. Alternatively, you can also use the `bio-run.py` to complete the work of both scripts (`create_input.py` and `run.py`) and pass scenarios strings on to the model, as introduced below:
-
-----------------------------------------------------------------------------------
-
-An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default year 2018 in just one line useing `bio-run.py`: 
-
-`python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
-
-The output files will be automatically stored in a new folder called `output_nc` named with `out_YourScenarios.nc`. In this example of `2050 Reference`, it will be `out_res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities,bio_potential_org0_msw_equals`
-
-----------------------------------------------------------------------------------
-
-Fei Wu @Delft, 20220609
-
-Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY 4.0][cc-by-shield]][cc-by]
 
 This work is licensed under a
 [Creative Commons Attribution 4.0 International License][cc-by].
-
-[![CC BY 4.0][cc-by-image]][cc-by]
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
