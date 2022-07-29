@@ -19,7 +19,7 @@ _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
 3. Use `bio_run.py` to launch a model run. An example of how to run our `2050 Reference` scenario at 2-hour resolution for the default weather year 2018: `python bio_run.py res_2h,industry_fuel,transport,heat,config_overrides,link_cap_dynamic,freeze-hydro-capacities`
 
-You can use a different weather year by chaning the reference to `2050/model/national/bio-model-2018.yaml` inside `bio_run.py`.
+You can use a different weather year by changing the reference to `2050/model/national/bio-model-2018.yaml` inside `bio_run.py`.
 
 All custom constraints beyond built-in Calliope 0.6.8 constraints are defined and built in the file `run.py`. `create_input.py` is a helper script. Both of these are called by `bio_run.py`.
 
