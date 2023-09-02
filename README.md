@@ -4,6 +4,8 @@
 
 _Ancillary Bioenergy Version of Sector-coupled Euro-Calliope Pre-built Model_
 
+This model is primarily used for the scientific paper _Wu, Fei, Adrian Muller, and Stefan Pfenninger. "Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system." Environmental Research Letters 18.1 (2023): 014019. [10.1088/1748-9326/aca9e1]([url](https://iopscience.iop.org/article/10.1088/1748-9326/aca9e1))_
+
 `AB-Euro-Calliope` is the modified version of the sector-coupled Euro-Calliope national pre-built model [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5774988.svg)](https://doi.org/10.5281/zenodo.5774988) with additional ancillary bioenergy technologies, detailed feedstocks, and new overrides. This model version is used in the paper entitled _Strategic uses for ancillary bioenergy in a carbon-neutral and fossil-free 2050 European energy system_.
 
 ## Instructions
